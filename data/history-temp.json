@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1772446430993_0556f2",
+    "title": "ff",
+    "pinned": false,
+    "archived": true,
+    "group": false,
+    "createdAt": 1772446430992,
+    "updatedAt": 1772446453373,
+    "messages": [
+      {
+        "role": "user",
+        "text": "ff"
+      },
+      {
+        "role": "bot",
+        "text": "Đang trả lời..."
+      }
+    ]
+  },
+  {
+    "id": "1772446098831_085391",
+    "title": "hi",
+    "pinned": false,
+    "archived": false,
+    "group": false,
+    "createdAt": 1772446098831,
+    "updatedAt": 1772446418491,
+    "messages": [
+      {
+        "role": "user",
+        "text": "hi"
+      },
+      {
+        "role": "bot",
+        "text": "Đang trả lời..."
+      },
+      {
+        "role": "user",
+        "text": "hi"
+      },
+      {
+        "role": "bot",
+        "text": "Đang trả lời..."
+      }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trợ lý Toán Rời Rạc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-blur"></div>
+
+<div class="app">
+
+    <div class="sidebar">
+        <div class="brand">
+            <div class="logo">D</div>
+            <div class="brand-text">
+                <h2>Trợ lý Toán Rời Rạc</h2>
+                <p>Đại học Sư phạm TP.HCM</p>
+                <p>Khoa Công nghệ Thông tin</p>
+            </div>
+        </div>
+
+        <button class="new-chat-btn">+ Cuộc trò chuyện mới</button>
+
+        <div class="sidebar-section">
+            <div class="section-head">
+                <span class="section-title">Lịch sử</span>
+                <div class="history-filter">
+                    <button class="filter-btn active" data-view="recent">Gần đây</button>
+                    <button class="filter-btn" data-view="archived">Lưu trữ</button>
+                </div>
+            </div>
+            <ul class="chat-history" id="chat-history">
+                <li class="history-empty">Chưa có cuộc trò chuyện nào</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <p class="faculty-badge">HCMUE · FIT</p>
+            <p class="caption">Không gian học tập Toán Rời Rạc hiện đại</p>
+        </div>
+    </div>
+
+    <div class="chat-area">
+
+        <div class="chat-header">
+            <div class="bot-profile">
+                <div class="avatar">🤖</div>
+                <div>
+                    <h3>Trợ lý AI CNTT</h3>
+                    <span class="status">● Đang hoạt động</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <div class="bubble">
+                    Xin chào 👋 Mình là Trợ lý AI CNTT. Bạn cứ hỏi bất kỳ nội dung Toán Rời Rạc nào nhé!
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Nhập câu hỏi của bạn..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
