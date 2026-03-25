@@ -1,0 +1,29 @@
+﻿backend/node_modules/
+backend/.env
+backend/.env.local
+
+# Local conversation DB (should not be pushed)
+data/chatbot.sqlite
+data/chatbot.sqlite-*
+data/chatbot.sqlite-shm
+data/chatbot.sqlite-wal
+data/history-temp.json
+
+# Extracted PDF chunks (often copyrighted / user-provided)
+data/pdf_corpus.json
+
+# Generated datasets / indexes (rebuild via `npm run rebuild:data`)
+data/discrete_math_questions.json
+data/discrete_math_knowledge_base.json
+data/retrieval_corpus.json
+data/discrete_math_model.json
+data/train.json
+data/train.jsonl
+data/test.json
+data/test.jsonl
+data/dataset_summary.json
+data/eval_set.json
+
+# Python cache
+data/__pycache__/
+*.pyc

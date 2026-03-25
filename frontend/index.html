@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trợ lý Toán Rời Rạc</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,7 +11,6 @@
 <div class="background-blur"></div>
 
 <div class="app">
-
     <div class="sidebar">
         <div class="brand">
             <div class="logo">D</div>
@@ -31,6 +31,7 @@
                     <button class="filter-btn" data-view="archived">Lưu trữ</button>
                 </div>
             </div>
+
             <ul class="chat-history" id="chat-history">
                 <li class="history-empty">Chưa có cuộc trò chuyện nào</li>
             </ul>
@@ -43,12 +44,11 @@
     </div>
 
     <div class="chat-area">
-
         <div class="chat-header">
             <div class="bot-profile">
                 <div class="avatar">🤖</div>
                 <div>
-                    <h3>Trợ lý AI CNTT</h3>
+                    <h3>Trợ lý AI Toán Rời Rạc</h3>
                     <span class="status">● Đang hoạt động</span>
                 </div>
             </div>
@@ -57,19 +57,18 @@
         <div class="chat-box" id="chat-box">
             <div class="message bot">
                 <div class="bubble">
-                    Xin chào 👋 Mình là Trợ lý AI CNTT. Bạn cứ hỏi bất kỳ nội dung Toán Rời Rạc nào nhé!
+                    Xin chào! Mình là trợ lý Toán rời rạc. Bạn cứ hỏi về tập hợp, logic, quan hệ, hàm, tổ hợp, truy hồi, đồ thị hoặc cây nhé.
                 </div>
             </div>
         </div>
 
         <div class="chat-input">
             <input type="text" id="user-input" placeholder="Nhập câu hỏi của bạn..." />
-            <button onclick="sendMessage()">➤</button>
+            <button type="button" id="send-button">➤</button>
         </div>
-
     </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=20260326"></script>
 </body>
 </html>

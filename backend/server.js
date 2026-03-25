@@ -1,99 +1,203 @@
-const http = require("http");
-const fs = require("fs");
+﻿const http = require("http");
 const path = require("path");
 
-const PORT = process.env.PORT || 3001;
-const HISTORY_FILE = path.join(__dirname, "..", "data", "history-temp.json");
+const config = require("./config");
+const { ChatService } = require("./chat-service");
+const { ConversationRepository } = require("./conversation-repository");
+const { OpenAIService } = require("./openai-service");
+const { RetrievalEngine } = require("./retrieval-engine");
 
-function ensureHistoryFile() {
-    const dirPath = path.dirname(HISTORY_FILE);
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-
-    if (!fs.existsSync(HISTORY_FILE)) {
-        fs.writeFileSync(HISTORY_FILE, "[]", "utf8");
-    }
-}
-
-function readHistory() {
-    ensureHistoryFile();
-    try {
-        const raw = fs.readFileSync(HISTORY_FILE, "utf8");
-        const parsed = JSON.parse(raw);
-        return Array.isArray(parsed) ? parsed : [];
-    } catch (error) {
-        return [];
-    }
-}
-
-function writeHistory(historyItems) {
-    ensureHistoryFile();
-    fs.writeFileSync(HISTORY_FILE, JSON.stringify(historyItems, null, 2), "utf8");
+function getCorsHeaders() {
+    return {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
+    };
 }
 
 function sendJson(response, statusCode, payload) {
     response.writeHead(statusCode, {
         "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, PUT, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type"
+        ...getCorsHeaders(),
     });
     response.end(JSON.stringify(payload));
 }
 
-function handleRequest(request, response) {
-    if (request.method === "OPTIONS") {
-        response.writeHead(204, {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, PUT, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type"
-        });
-        response.end();
-        return;
-    }
-
-    if (request.url === "/api/history" && request.method === "GET") {
-        const historyItems = readHistory();
-        sendJson(response, 200, historyItems);
-        return;
-    }
-
-    if (request.url === "/api/history" && request.method === "PUT") {
+function readRequestBody(request) {
+    return new Promise((resolve, reject) => {
         let body = "";
-
         request.on("data", chunk => {
             body += chunk;
         });
+        request.on("end", () => resolve(body));
+        request.on("error", reject);
+    });
+}
 
-        request.on("end", () => {
-            try {
-                const parsed = JSON.parse(body || "[]");
-                if (!Array.isArray(parsed)) {
-                    sendJson(response, 400, { message: "Dữ liệu lịch sử phải là mảng" });
+function createServices(options = {}) {
+    const repository = options.repository || new ConversationRepository({
+        dbPath: options.dbPath || config.DB_PATH,
+        legacyHistoryPath: Object.prototype.hasOwnProperty.call(options, "legacyHistoryPath")
+            ? options.legacyHistoryPath
+            : path.join(config.DATA_DIR, "history-temp.json"),
+    });
+    const retrievalEngine = options.retrievalEngine || new RetrievalEngine({
+        modelPath: options.modelPath || config.MODEL_PATH,
+    });
+    const openAIService = options.openAIService || new OpenAIService({
+        chatModel: options.chatModel || config.OPENAI_CHAT_MODEL,
+        embeddingModel: options.embeddingModel || config.OPENAI_EMBEDDING_MODEL,
+        reasoningEffort: options.reasoningEffort || config.OPENAI_REASONING_EFFORT,
+    });
+
+    return {
+        repository,
+        retrievalEngine,
+        openAIService,
+        chatService: new ChatService({ repository, retrievalEngine, openAIService }),
+    };
+}
+
+function parseConversationPatch(payload) {
+    return {
+        title: typeof payload.title === "string" ? payload.title : undefined,
+        pinned: typeof payload.pinned === "boolean" ? payload.pinned : undefined,
+        archived: typeof payload.archived === "boolean" ? payload.archived : undefined,
+        grouped:
+            typeof payload.grouped === "boolean"
+                ? payload.grouped
+                : typeof payload.group === "boolean"
+                    ? payload.group
+                    : undefined,
+    };
+}
+
+function createServer(options = {}) {
+    const services = createServices(options);
+
+    const server = http.createServer(async (request, response) => {
+        try {
+            if (request.method === "OPTIONS") {
+                response.writeHead(204, getCorsHeaders());
+                response.end();
+                return;
+            }
+
+            const url = new URL(request.url || "/", `http://${request.headers.host || "localhost"}`);
+            const pathname = url.pathname;
+
+            if (pathname === "/api/conversations" && request.method === "GET") {
+                sendJson(response, 200, services.chatService.listConversations());
+                return;
+            }
+
+            if (pathname === "/api/history" && request.method === "GET") {
+                sendJson(response, 200, services.repository.listHistoryLegacyFormat());
+                return;
+            }
+
+            if (pathname === "/api/history" && request.method === "PUT") {
+                const body = await readRequestBody(request);
+                const payload = JSON.parse(body || "[]");
+                if (!Array.isArray(payload)) {
+                    sendJson(response, 400, { message: "Dữ liệu lịch sử phải là mảng." });
+                    return;
+                }
+                services.repository.mergeLegacyHistorySnapshot(payload);
+                sendJson(response, 200, { ok: true });
+                return;
+            }
+
+            const conversationMessagesMatch = pathname.match(/^\/api\/conversations\/([^/]+)\/messages$/);
+            if (conversationMessagesMatch && request.method === "GET") {
+                const result = services.chatService.getConversationMessages(conversationMessagesMatch[1]);
+                if (!result) {
+                    sendJson(response, 404, { message: "Không tìm thấy cuộc trò chuyện." });
+                    return;
+                }
+                sendJson(response, 200, result);
+                return;
+            }
+
+            const conversationMatch = pathname.match(/^\/api\/conversations\/([^/]+)$/);
+            if (conversationMatch && request.method === "PATCH") {
+                const body = await readRequestBody(request);
+                const payload = JSON.parse(body || "{}");
+                const updatedConversation = services.chatService.updateConversation(
+                    conversationMatch[1],
+                    parseConversationPatch(payload)
+                );
+                if (!updatedConversation) {
+                    sendJson(response, 404, { message: "Không tìm thấy cuộc trò chuyện." });
+                    return;
+                }
+                sendJson(response, 200, updatedConversation);
+                return;
+            }
+
+            if (conversationMatch && request.method === "DELETE") {
+                const deleted = services.chatService.deleteConversation(conversationMatch[1]);
+                if (!deleted) {
+                    sendJson(response, 404, { message: "Không tìm thấy cuộc trò chuyện." });
+                    return;
+                }
+                sendJson(response, 200, { ok: true });
+                return;
+            }
+
+            if (pathname === "/api/chat" && request.method === "POST") {
+                const body = await readRequestBody(request);
+                const payload = JSON.parse(body || "{}");
+                const message = typeof payload.message === "string" ? payload.message.trim() : "";
+                const conversationId = typeof payload.conversationId === "string" ? payload.conversationId : undefined;
+
+                if (!message) {
+                    sendJson(response, 400, { message: "Trường `message` là bắt buộc." });
                     return;
                 }
 
-                writeHistory(parsed);
-                sendJson(response, 200, { ok: true });
-            } catch (error) {
-                sendJson(response, 400, { message: "JSON không hợp lệ" });
+                const result = await services.chatService.handleChat({ conversationId, message });
+                sendJson(response, 200, result);
+                return;
             }
-        });
-        return;
-    }
 
-    if (request.url === "/api/health" && request.method === "GET") {
-        sendJson(response, 200, { ok: true });
-        return;
-    }
+            if (pathname === "/api/model-status" && request.method === "GET") {
+                sendJson(response, 200, services.chatService.getStatus());
+                return;
+            }
 
-    sendJson(response, 404, { message: "Không tìm thấy endpoint" });
+            if (pathname === "/api/health" && request.method === "GET") {
+                sendJson(response, 200, {
+                    ok: true,
+                    dbPath: services.repository.dbPath,
+                    status: services.chatService.getStatus(),
+                });
+                return;
+            }
+
+            sendJson(response, 404, { message: "Không tìm thấy endpoint." });
+        } catch (error) {
+            const statusCode = error && error.statusCode ? error.statusCode : 500;
+            sendJson(response, statusCode, {
+                message: statusCode === 500 ? "Lỗi server nội bộ." : String(error.message || error),
+                detail: error instanceof Error ? error.message : String(error),
+            });
+        }
+    });
+
+    server.services = services;
+    return server;
 }
 
-ensureHistoryFile();
+if (require.main === module) {
+    const server = createServer();
+    server.listen(config.PORT, () => {
+        console.log(`Discrete Math chat server running at http://localhost:${config.PORT}`);
+        console.log(`SQLite DB: ${server.services.repository.dbPath}`);
+    });
+}
 
-http.createServer(handleRequest).listen(PORT, () => {
-    console.log(`History server đang chạy tại http://localhost:${PORT}`);
-    console.log(`Lưu dữ liệu tại: ${HISTORY_FILE}`);
-});
+module.exports = {
+    createServer,
+    createServices,
+};

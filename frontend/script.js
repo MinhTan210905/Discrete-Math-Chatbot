@@ -1,11 +1,47 @@
-const MAX_HISTORY_ITEMS = 8;
-const HISTORY_API_URL = "http://localhost:3001/api/history";
+﻿const CONVERSATIONS_API_URL = "http://localhost:3001/api/conversations";
+const CHAT_API_URL = "http://localhost:3001/api/chat";
+const MIN_THINKING_MS = 900;
+const DISPLAY_REPLACEMENTS = [
+    [//g, " or "],
+    [/∨/g, " or "],
+    [//g, " and "],
+    [/∧/g, " and "],
+    [//g, " not "],
+    [/¬/g, " not "],
+    [/→/g, " -> "],
+    [/⇒/g, " -> "],
+    [/↔/g, " <-> "],
+    [/⇔/g, " <-> "],
+    [/∪/g, " union "],
+    [/∩/g, " intersection "],
+    [/⊆/g, " subseteq "],
+    [/⊂/g, " subset "],
+    [/⊇/g, " superseteq "],
+    [/⊃/g, " superset "],
+    [/∈/g, " in "],
+    [/∉/g, " not in "],
+];
 let activeMenuId = null;
 let isArchiveView = false;
 let activeConversationId = null;
-let historyCache = [];
+let conversations = [];
+let activeMessages = [];
 let hasShownServerWarning = false;
 let menuAnchorRect = null;
+let sendingInProgress = false;
+
+function sanitizeDisplayText(text) {
+    let output = String(text || "");
+    DISPLAY_REPLACEMENTS.forEach(([pattern, replacement]) => {
+        output = output.replace(pattern, replacement);
+    });
+    return output
+        .replace(/\r/g, "")
+        .replace(/[ \t]+\n/g, "\n")
+        .replace(/\n{3,}/g, "\n\n")
+        .replace(/[ \t]{2,}/g, " ")
+        .trim();
+}
 
 function getHistoryList() {
     return document.getElementById("chat-history");
@@ -13,6 +49,14 @@ function getHistoryList() {
 
 function getChatBox() {
     return document.getElementById("chat-box");
+}
+
+function getInput() {
+    return document.getElementById("user-input");
+}
+
+function getSendButton() {
+    return document.getElementById("send-button");
 }
 
 function getFloatingMenu() {
@@ -27,279 +71,159 @@ function getFloatingMenu() {
     return menu;
 }
 
-function uid() {
-    return `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`;
+async function apiFetch(url, options) {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+        const fallback = { message: "Request failed" };
+        let payload = fallback;
+        try {
+            payload = await response.json();
+        } catch (error) {
+            payload = fallback;
+        }
+        throw new Error(payload.message || "Request failed");
+    }
+    return response.json();
 }
 
-function normalizeItem(item) {
-    if (typeof item === "string") {
-        return {
-            id: uid(),
-            title: item,
-            pinned: false,
-            archived: false,
-            group: false,
-            createdAt: Date.now(),
-            updatedAt: Date.now(),
-            messages: [
-                { role: "user", text: item },
-                { role: "bot", text: "Đang trả lời..." }
-            ]
-        };
+function mapRoleToClass(role) {
+    return role === "assistant" ? "bot" : "user";
+}
+
+function createMessageNode(message, options) {
+    const messageNode = document.createElement("div");
+    const roleClass = mapRoleToClass(message.role);
+    messageNode.className = `message ${roleClass}`;
+    if (options && options.pending) {
+        messageNode.classList.add("pending");
     }
 
-    const safeMessages = Array.isArray(item.messages)
-        ? item.messages
-            .filter(function (message) {
-                return message && (message.role === "user" || message.role === "bot") && typeof message.text === "string";
-            })
-            .map(function (message) {
-                return {
-                    role: message.role,
-                    text: message.text
-                };
-            })
-        : [];
+    const bubble = document.createElement("div");
+    bubble.className = "bubble";
+    bubble.textContent = sanitizeDisplayText(message.text);
+    messageNode.appendChild(bubble);
 
-    return {
-        id: item.id || uid(),
-        title: item.title || "Đoạn chat chưa đặt tên",
-        pinned: Boolean(item.pinned),
-        archived: Boolean(item.archived),
-        group: Boolean(item.group),
-        createdAt: item.createdAt || Date.now(),
-        updatedAt: item.updatedAt || Date.now(),
-        messages: safeMessages
-    };
+    return messageNode;
 }
 
-function loadHistory() {
-    return historyCache.map(function (item) {
-        return normalizeItem(item);
-    });
+function scrollChatToBottom() {
+    const chatBox = getChatBox();
+    if (!chatBox) return;
+    chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-function saveHistory(historyItems) {
-    historyCache = historyItems.map(function (item) {
-        return normalizeItem(item);
-    });
-    persistHistoryToServer(historyCache);
+function renderWelcomeMessage() {
+    const chatBox = getChatBox();
+    if (!chatBox) return;
+
+    chatBox.innerHTML = "";
+    chatBox.appendChild(
+        createMessageNode({
+            role: "assistant",
+            text: "Xin chào! Mình là trợ lý Toán rời rạc. Bạn cứ chào hỏi bình thường, hoặc hỏi lý thuyết và bài tập mình sẽ hỗ trợ từng bước nhé.",
+        })
+    );
 }
 
-async function loadHistoryFromServer() {
-    try {
-        const response = await fetch(HISTORY_API_URL);
-        if (!response.ok) {
-            throw new Error("Không đọc được dữ liệu lịch sử từ server");
-        }
+function renderConversationMessages(messages) {
+    const chatBox = getChatBox();
+    if (!chatBox) return;
 
-        const data = await response.json();
-        if (!Array.isArray(data)) {
-            historyCache = [];
-            return;
-        }
-
-        historyCache = data.map(function (item) {
-            return normalizeItem(item);
-        });
-    } catch (error) {
-        historyCache = [];
-        if (!hasShownServerWarning) {
-            alert("Chưa kết nối được server lưu lịch sử. Hãy chạy backend trước nhé.");
-            hasShownServerWarning = true;
-        }
+    chatBox.innerHTML = "";
+    if (!Array.isArray(messages) || messages.length === 0) {
+        renderWelcomeMessage();
+        return;
     }
+
+    messages.forEach(message => {
+        chatBox.appendChild(createMessageNode(message));
+    });
+
+    scrollChatToBottom();
 }
 
-async function persistHistoryToServer(historyItems) {
-    try {
-        await fetch(HISTORY_API_URL, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(historyItems)
-        });
-    } catch (error) {
-        if (!hasShownServerWarning) {
-            alert("Không lưu được lịch sử lên server. Kiểm tra backend giúp mình nhé.");
-            hasShownServerWarning = true;
+function sortConversations(items) {
+    return [...items].sort(function (left, right) {
+        if (left.pinned !== right.pinned) {
+            return left.pinned ? -1 : 1;
         }
-    }
-}
-
-function trimHistory(historyItems) {
-    return historyItems.slice(0, MAX_HISTORY_ITEMS);
-}
-
-function sortHistory(historyItems) {
-    return [...historyItems].sort(function (a, b) {
-        if (a.pinned !== b.pinned) {
-            return a.pinned ? -1 : 1;
-        }
-        return b.updatedAt - a.updatedAt;
+        return right.updatedAt - left.updatedAt;
     });
 }
 
-function updateHistoryById(id, updateFn) {
-    const historyItems = loadHistory();
-    const updatedItems = historyItems.map(function (item) {
-        if (item.id !== id) return item;
-
-        const newItem = updateFn({ ...item });
-        return {
-            ...newItem,
-            updatedAt: Date.now()
-        };
-    });
-
-    saveHistory(updatedItems);
-    activeMenuId = null;
+async function loadConversations() {
+    const data = await apiFetch(CONVERSATIONS_API_URL);
+    conversations = Array.isArray(data) ? data : [];
     renderHistory();
+    return conversations;
 }
 
-function removeHistoryById(id) {
-    const historyItems = loadHistory().filter(function (item) {
-        return item.id !== id;
-    });
-
-    saveHistory(historyItems);
-    activeMenuId = null;
-    renderHistory();
-}
-
-async function shareHistory(item) {
-    try {
-        const transcript = item.messages.length > 0
-            ? item.messages
-                .map(function (message) {
-                    const label = message.role === "user" ? "Bạn" : "Trợ lý";
-                    return `${label}: ${message.text}`;
-                })
-                .join("\n")
-            : item.title;
-
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            await navigator.clipboard.writeText(transcript);
-            alert("Đã sao chép nội dung chia sẻ.");
-        } else {
-            alert("Trình duyệt chưa hỗ trợ sao chép tự động.");
-        }
-    } catch (error) {
-        alert("Không thể chia sẻ lúc này, thử lại nhé.");
+async function loadConversation(conversationId) {
+    if (!conversationId) {
+        activeConversationId = null;
+        activeMessages = [];
+        renderWelcomeMessage();
+        renderHistory();
+        return null;
     }
+
+    const payload = await apiFetch(`${CONVERSATIONS_API_URL}/${conversationId}/messages`);
+    activeConversationId = payload.conversation.id;
+    activeMessages = Array.isArray(payload.messages) ? payload.messages : [];
+    renderConversationMessages(activeMessages);
+    renderHistory();
+    return payload;
 }
 
-function applyHistoryAction(action, item) {
-    if (action === "share") {
-        shareHistory(item);
-        activeMenuId = null;
+async function loadInitialConversation() {
+    const sorted = sortConversations(conversations);
+    const preferred = sorted.find(item => !item.archived) || sorted[0] || null;
+
+    if (!preferred) {
+        activeConversationId = null;
+        activeMessages = [];
+        renderWelcomeMessage();
         renderHistory();
         return;
     }
 
-    if (action === "group") {
-        updateHistoryById(item.id, function (current) {
-            return {
-                ...current,
-                group: true,
-                title: current.title.startsWith("[Nhóm]") ? current.title : `[Nhóm] ${current.title}`
-            };
-        });
-        return;
-    }
-
-    if (action === "rename") {
-        const newName = prompt("Nhập tên mới cho đoạn chat:", item.title);
-        if (!newName || !newName.trim()) {
-            activeMenuId = null;
-            renderHistory();
-            return;
-        }
-        updateHistoryById(item.id, function (current) {
-            return {
-                ...current,
-                title: newName.trim()
-            };
-        });
-        return;
-    }
-
-    if (action === "pin") {
-        updateHistoryById(item.id, function (current) {
-            return {
-                ...current,
-                pinned: !current.pinned
-            };
-        });
-        return;
-    }
-
-    if (action === "archive") {
-        updateHistoryById(item.id, function (current) {
-            return {
-                ...current,
-                archived: true
-            };
-        });
-        return;
-    }
-
-    if (action === "unarchive") {
-        updateHistoryById(item.id, function (current) {
-            return {
-                ...current,
-                archived: false
-            };
-        });
-        return;
-    }
-
-    if (action === "delete") {
-        const isConfirmed = confirm("Xóa đoạn chat này khỏi lịch sử?");
-        if (isConfirmed) {
-            removeHistoryById(item.id);
-        } else {
-            activeMenuId = null;
-            renderHistory();
-        }
-    }
-}
-
-function createActionButton(label, action, item, extraClass) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = extraClass ? `history-action ${extraClass}` : "history-action";
-    button.textContent = label;
-    button.addEventListener("click", function (event) {
-        event.stopPropagation();
-        applyHistoryAction(action, item);
-    });
-    return button;
+    await loadConversation(preferred.id);
 }
 
 function renderFloatingMenu(item) {
     const menu = getFloatingMenu();
-
     if (!item || !menuAnchorRect) {
         menu.innerHTML = "";
         menu.style.display = "none";
         return;
     }
 
+    function createActionButton(label, action, extraClass) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = extraClass ? `history-action ${extraClass}` : "history-action";
+        button.textContent = label;
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+            applyHistoryAction(action, item).catch(function (error) {
+                alert(error.message || "Không thể xử lý thao tác lịch sử lúc này.");
+            });
+        });
+        return button;
+    }
+
     menu.innerHTML = "";
-    menu.appendChild(createActionButton("Chia sẻ", "share", item));
-    menu.appendChild(createActionButton("Bắt đầu đoạn chat nhóm", "group", item));
-    menu.appendChild(createActionButton("Đổi tên", "rename", item));
-    menu.appendChild(createActionButton(item.pinned ? "Bỏ ghim" : "Ghim đoạn chat", "pin", item));
-    menu.appendChild(createActionButton(isArchiveView ? "Bỏ lưu trữ" : "Lưu trữ", isArchiveView ? "unarchive" : "archive", item));
-    menu.appendChild(createActionButton("Xóa", "delete", item, "delete"));
+    menu.appendChild(createActionButton("Chia sẻ", "share"));
+    menu.appendChild(createActionButton("Đánh dấu nhóm", "group"));
+    menu.appendChild(createActionButton("Đổi tên", "rename"));
+    menu.appendChild(createActionButton(item.pinned ? "Bỏ ghim" : "Ghim đoạn chat", "pin"));
+    menu.appendChild(createActionButton(isArchiveView ? "Bỏ lưu trữ" : "Lưu trữ", isArchiveView ? "unarchive" : "archive"));
+    menu.appendChild(createActionButton("Xóa", "delete", "delete"));
 
     const menuWidth = 230;
     const menuHeight = 280;
     const left = Math.min(window.innerWidth - menuWidth - 12, menuAnchorRect.right + 10);
     const top = Math.min(window.innerHeight - menuHeight - 12, menuAnchorRect.top - 4);
-
     menu.style.left = `${Math.max(12, left)}px`;
     menu.style.top = `${Math.max(12, top)}px`;
     menu.style.display = "block";
@@ -309,13 +233,11 @@ function renderHistory() {
     const historyList = getHistoryList();
     if (!historyList) return;
 
-    const historyItems = sortHistory(loadHistory());
-    const visibleItems = historyItems.filter(function (item) {
+    const visibleItems = sortConversations(conversations).filter(function (item) {
         return isArchiveView ? item.archived : !item.archived;
     });
 
     historyList.innerHTML = "";
-
     if (visibleItems.length === 0) {
         renderFloatingMenu(null);
         const emptyItem = document.createElement("li");
@@ -336,14 +258,14 @@ function renderHistory() {
         title.className = "history-title";
 
         let prefix = "";
-        if (item.pinned) prefix += "📌 ";
-        if (item.group) prefix += "👥 ";
+        if (item.pinned) prefix += "PIN ";
+        if (item.grouped) prefix += "GROUP ";
         title.textContent = `${prefix}${item.title}`;
 
         const menuBtn = document.createElement("button");
         menuBtn.type = "button";
         menuBtn.className = "history-menu-btn";
-        menuBtn.textContent = "⋯";
+        menuBtn.textContent = "...";
         menuBtn.title = "Tùy chọn";
 
         menuBtn.addEventListener("click", function (event) {
@@ -359,13 +281,11 @@ function renderHistory() {
         });
 
         title.addEventListener("click", function () {
-            activeConversationId = item.id;
             activeMenuId = null;
-            renderHistory();
-            renderConversation(item.id);
-
-            const input = document.getElementById("user-input");
-            if (input) input.focus();
+            menuAnchorRect = null;
+            loadConversation(item.id).catch(function (error) {
+                alert(error.message || "Không tải được cuộc trò chuyện.");
+            });
         });
 
         row.appendChild(title);
@@ -385,119 +305,233 @@ function renderHistory() {
     renderFloatingMenu(activeItem || null);
 }
 
-function createMessageNode(role, text) {
-    const messageNode = document.createElement("div");
-    messageNode.className = `message ${role}`;
-
-    const bubble = document.createElement("div");
-    bubble.className = "bubble";
-    bubble.textContent = text;
-
-    messageNode.appendChild(bubble);
-    return messageNode;
-}
-
-function renderWelcomeMessage() {
-    const chatBox = getChatBox();
-    if (!chatBox) return;
-
-    chatBox.innerHTML = "";
-    chatBox.appendChild(
-        createMessageNode(
-            "bot",
-            "Xin chào 👋 Mình là Trợ lý AI CNTT. Bạn cứ hỏi bất kỳ nội dung Toán Rời Rạc nào nhé!"
-        )
-    );
-}
-
-function renderConversation(conversationId) {
-    const chatBox = getChatBox();
-    if (!chatBox) return;
-
-    const historyItems = loadHistory();
-    const conversation = historyItems.find(function (item) {
-        return item.id === conversationId;
-    });
-
-    chatBox.innerHTML = "";
-
-    if (!conversation || !conversation.messages || conversation.messages.length === 0) {
-        renderWelcomeMessage();
-        return;
-    }
-
-    conversation.messages.forEach(function (message) {
-        chatBox.appendChild(createMessageNode(message.role, message.text));
-    });
-
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
-
-function saveConversationMessage(messageText) {
-    const historyItems = loadHistory();
-    const title = messageText.length > 60 ? `${messageText.slice(0, 60)}...` : messageText;
-    const now = Date.now();
-
-    let currentConversation = historyItems.find(function (item) {
-        return item.id === activeConversationId;
-    });
-
-    if (!currentConversation) {
-        currentConversation = {
-            id: uid(),
-            title,
-            pinned: false,
-            archived: false,
-            group: false,
-            createdAt: now,
-            updatedAt: now,
-            messages: []
-        };
-        activeConversationId = currentConversation.id;
-        historyItems.unshift(currentConversation);
-    }
-
-    if (currentConversation.messages.length === 0) {
-        currentConversation.title = title;
-    }
-
-    currentConversation.messages.push({ role: "user", text: messageText });
-    currentConversation.messages.push({ role: "bot", text: "Đang trả lời..." });
-    currentConversation.updatedAt = now;
-
-    const sorted = sortHistory(historyItems);
-    saveHistory(trimHistory(sorted));
-    renderHistory();
-}
-
 function resetChat() {
     activeConversationId = null;
+    activeMessages = [];
     renderWelcomeMessage();
     renderHistory();
-
-    const input = document.getElementById("user-input");
+    const input = getInput();
     if (input) {
         input.value = "";
         input.focus();
     }
 }
 
-function sendMessage() {
-    const input = document.getElementById("user-input");
-    const message = input.value.trim();
-    const chatBox = getChatBox();
-
-    if (message === "" || !chatBox) return;
-
-    chatBox.appendChild(createMessageNode("user", message));
-    chatBox.appendChild(createMessageNode("bot", "Đang trả lời..."));
-
-    chatBox.scrollTop = chatBox.scrollHeight;
-    saveConversationMessage(message);
-    input.value = "";
+async function requestChatResponse(messageText) {
+    return apiFetch(CHAT_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            conversationId: activeConversationId,
+            message: messageText,
+        }),
+    });
 }
 
-const userInput = document.getElementById("user-input");
+function updatePendingBubble(messageNode, text) {
+    if (!messageNode) return;
+    const bubble = messageNode.querySelector(".bubble");
+    if (bubble) {
+        bubble.textContent = sanitizeDisplayText(text);
+    }
+}
+
+function sleep(ms) {
+    return new Promise(function (resolve) {
+        setTimeout(resolve, ms);
+    });
+}
+
+function startThinkingAnimation(messageNode) {
+    const bubble = messageNode ? messageNode.querySelector(".bubble") : null;
+    if (!bubble) {
+        return function () {};
+    }
+    messageNode.classList.add("thinking");
+
+    const frames = ["Đang suy nghĩ.", "Đang suy nghĩ..", "Đang suy nghĩ..."];
+    let frameIndex = 0;
+    bubble.textContent = frames[frameIndex];
+
+    const timerId = setInterval(function () {
+        frameIndex = (frameIndex + 1) % frames.length;
+        bubble.textContent = frames[frameIndex];
+    }, 250);
+
+    return function stopThinking() {
+        clearInterval(timerId);
+        messageNode.classList.remove("thinking");
+    };
+}
+
+async function sendMessage() {
+    if (sendingInProgress) return;
+
+    const input = getInput();
+    const chatBox = getChatBox();
+    if (!input || !chatBox) return;
+
+    const message = input.value.trim();
+    if (!message) return;
+
+    sendingInProgress = true;
+    input.disabled = true;
+    const sendButton = getSendButton();
+    if (sendButton) sendButton.disabled = true;
+
+    if (!activeConversationId && activeMessages.length === 0) {
+        chatBox.innerHTML = "";
+    }
+
+    const userNode = createMessageNode({ role: "user", text: message });
+    const pendingNode = createMessageNode({ role: "assistant", text: "Đang suy nghĩ..." }, { pending: true });
+
+    chatBox.appendChild(userNode);
+    chatBox.appendChild(pendingNode);
+    scrollChatToBottom();
+    input.value = "";
+
+    const stopThinking = startThinkingAnimation(pendingNode);
+
+    try {
+        const responsePromise = requestChatResponse(message);
+        await Promise.all([responsePromise, sleep(MIN_THINKING_MS)]);
+        const payload = await responsePromise;
+
+        stopThinking();
+        updatePendingBubble(pendingNode, payload.reply);
+        activeConversationId = payload.conversationId;
+        await loadConversations();
+        await loadConversation(payload.conversationId);
+    } catch (error) {
+        stopThinking();
+        const fallbackReply = error.message || "Mình chưa kết nối được server trả lời. Bạn kiểm tra backend rồi thử lại nhé.";
+        updatePendingBubble(pendingNode, fallbackReply);
+        if (!hasShownServerWarning) {
+            alert(fallbackReply);
+            hasShownServerWarning = true;
+        }
+    } finally {
+        sendingInProgress = false;
+        input.disabled = false;
+        if (sendButton) sendButton.disabled = false;
+        input.focus();
+    }
+}
+
+async function updateConversation(itemId, patch) {
+    await apiFetch(`${CONVERSATIONS_API_URL}/${itemId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+    });
+    await loadConversations();
+    if (activeConversationId === itemId) {
+        await loadConversation(itemId);
+    }
+}
+
+async function removeConversation(itemId) {
+    await apiFetch(`${CONVERSATIONS_API_URL}/${itemId}`, {
+        method: "DELETE",
+    });
+
+    const wasActive = activeConversationId === itemId;
+    await loadConversations();
+
+    if (wasActive) {
+        const sorted = sortConversations(conversations);
+        const nextConversation = sorted.find(item => !item.archived) || sorted[0] || null;
+        if (nextConversation) {
+            await loadConversation(nextConversation.id);
+        } else {
+            resetChat();
+        }
+    }
+}
+
+async function shareConversation(item) {
+    const payload = await apiFetch(`${CONVERSATIONS_API_URL}/${item.id}/messages`);
+    const transcript = payload.messages.length > 0
+        ? payload.messages
+            .map(function (message) {
+                const label = message.role === "assistant" ? "Trợ lý" : "Bạn";
+                return `${label}: ${sanitizeDisplayText(message.text)}`;
+            })
+            .join("\n")
+        : item.title;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(transcript);
+        alert("Đã sao chép nội dung chia sẻ.");
+    } else {
+        alert("Trình duyệt chưa hỗ trợ sao chép tự động.");
+    }
+}
+
+async function applyHistoryAction(action, item) {
+    if (action === "share") {
+        await shareConversation(item);
+        activeMenuId = null;
+        renderHistory();
+        return;
+    }
+
+    if (action === "group") {
+        await updateConversation(item.id, { grouped: !item.grouped });
+        activeMenuId = null;
+        renderHistory();
+        return;
+    }
+
+    if (action === "rename") {
+        const newName = prompt("Nhập tên mới cho đoạn chat:", item.title);
+        if (!newName || !newName.trim()) {
+            activeMenuId = null;
+            renderHistory();
+            return;
+        }
+        await updateConversation(item.id, { title: newName.trim() });
+        activeMenuId = null;
+        renderHistory();
+        return;
+    }
+
+    if (action === "pin") {
+        await updateConversation(item.id, { pinned: !item.pinned });
+        activeMenuId = null;
+        renderHistory();
+        return;
+    }
+
+    if (action === "archive") {
+        await updateConversation(item.id, { archived: true });
+        activeMenuId = null;
+        renderHistory();
+        return;
+    }
+
+    if (action === "unarchive") {
+        await updateConversation(item.id, { archived: false });
+        activeMenuId = null;
+        renderHistory();
+        return;
+    }
+
+    if (action === "delete") {
+        const isConfirmed = confirm("Xóa đoạn chat này khỏi lịch sử?");
+        if (!isConfirmed) {
+            activeMenuId = null;
+            renderHistory();
+            return;
+        }
+        await removeConversation(item.id);
+        activeMenuId = null;
+        renderHistory();
+    }
+}
+
+const userInput = getInput();
 if (userInput) {
     userInput.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
@@ -505,6 +539,11 @@ if (userInput) {
             sendMessage();
         }
     });
+}
+
+const sendButton = getSendButton();
+if (sendButton) {
+    sendButton.addEventListener("click", sendMessage);
 }
 
 const newChatBtn = document.querySelector(".new-chat-btn");
@@ -530,7 +569,6 @@ document.addEventListener("click", function (event) {
 
     const clickedMenu = target.closest(".history-floating-menu");
     const clickedMenuButton = target.closest(".history-menu-btn");
-
     if (!clickedMenu && !clickedMenuButton && activeMenuId !== null) {
         activeMenuId = null;
         menuAnchorRect = null;
@@ -547,20 +585,21 @@ window.addEventListener("resize", function () {
 });
 
 async function initApp() {
-    await loadHistoryFromServer();
-
-    const firstConversation = sortHistory(loadHistory()).find(function (item) {
-        return !item.archived;
-    });
-
-    if (firstConversation) {
-        activeConversationId = firstConversation.id;
-        renderConversation(firstConversation.id);
-    } else {
+    try {
+        await loadConversations();
+        await loadInitialConversation();
+    } catch (error) {
+        conversations = [];
+        activeConversationId = null;
+        activeMessages = [];
         renderWelcomeMessage();
+        renderHistory();
+        if (!hasShownServerWarning) {
+            alert("Chưa kết nối được server chat. Hãy chạy backend trước nhé.");
+            hasShownServerWarning = true;
+        }
     }
-
-    renderHistory();
 }
 
 initApp();
+window.sendMessage = sendMessage;
