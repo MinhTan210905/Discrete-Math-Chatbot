@@ -1,6 +1,6 @@
 [
   {
-    "id": "﻿qa_0041",
+    "id": "qa_0041",
     "type": "hoi_dinh_nghia",
     "topic": "dai_so_menh_de",
     "question": "Đại số mệnh đề còn được gọi là gì?",
@@ -196,6 +196,20 @@
     "answer": "Số nguyên dương m có tính chất (i,j)-Ramsey nếu với mọi đồ thị đầy đủ Km mà mỗi cạnh được tô bởi một trong hai màu xanh hoặc đỏ, đồ thị đó luôn chứa đồ thị con Ki toàn cạnh màu đỏ hoặc đồ thị con Kj toàn cạnh màu xanh."
   },
   {
+    "id": "qa_0248",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khái niệm tổng quát hóa số Ramsey cho phép mở rộng những thành phần nào trong ký hiệu R(n1, n2, ..., nk)?",
+    "answer": "Cho phép mở rộng số lượng đồ thị con và số lượng màu (k màu thay vì 2 màu)."
+  },
+  {
+    "id": "qa_0249",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong ký hiệu số Ramsey tổng quát R(n1, n2, ..., nk), chữ k đại diện cho điều gì?",
+    "answer": "Đại diện cho số lượng màu sắc khác nhau được sử dụng để tô các cạnh của đồ thị."
+  },
+  {
     "id": "qa_0250",
     "type": "hoi_dinh_nghia",
     "topic": "ly_thuyet_do_thi",
@@ -203,11 +217,25 @@
     "answer": "Các chỉ số này đại diện cho kích thước của các đồ thị con đầy đủ (Kn) tương ứng với từng loại màu sắc mà ta muốn chắc chắn tìm được ít nhất một cấu hình đồng nhất màu đó."
   },
   {
+    "id": "qa_0251",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa số Ramsey tổng quát R(n1, n2, ..., nk)?",
+    "answer": "Là số nguyên dương m nhỏ nhất sao cho với mọi cách tô màu các cạnh của đồ thị đầy đủ Km bằng k màu, luôn tồn tại một đồ thị con đầy đủ Kni có toàn cạnh được tô bằng màu i (với i từ 1 đến k)."
+  },
+  {
     "id": "qa_0252",
     "type": "hoi_khai_niem",
     "topic": "ly_thuyet_do_thi",
     "question": "Tham số r trong số Ramsey tổng quát có thể nhận những giá trị nào?",
     "answer": "Tham số r có thể là bất kỳ số nguyên dương nào, tùy thuộc vào việc ta tô màu cho đỉnh (r=1), cạnh (r=2), hay các tập con gồm nhiều đỉnh hơn."
+  },
+  {
+    "id": "qa_0253",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa tính chất (i1, i2, ..., in)-Ramsey?",
+    "answer": "Là tính chất mà nếu tô n màu cho các cạnh của đồ thị Km, thì luôn tìm được một đồ thị con Kij toàn màu thứ j."
   },
   {
     "id": "qa_0288",
@@ -270,14 +298,14 @@
     "type": "hoi_khai_niem",
     "topic": "ly_thuyet_do_thi",
     "question": "Cấu trúc chung của thủ tục 'Generate' trong phương pháp sinh được mô tả như thế nào?",
-    "answer": "Bắt đầu bằng việc xây dựng cấu hình ban đầu, đặt biến dừng Stop bằng false"
+    "answer": "Bắt đầu bằng việc xây dựng cấu hình ban đầu, đặt biến dừng Stop bằng false, sau đó lặp lại việc sinh cấu hình tiếp theo cho đến khi Stop bằng true."
   },
   {
     "id": "qa_0318",
     "type": "hoi_khai_niem",
     "topic": "ly_thuyet_do_thi",
     "question": "Cấu trúc đệ quy của thủ tục 'Try(i)' được mô tả như thế nào?",
-    "answer": "Sử dụng vòng lặp duyệt các khả năng j từ 1 đến ni"
+    "answer": "Sử dụng vòng lặp duyệt các khả năng j từ 1 đến ni, thử gán nếu hợp lệ, in kết quả nếu là bước cuối, ngược lại gọi đệ quy Try(i+1)."
   },
   {
     "id": "qa_0351",
@@ -2819,5 +2847,2427 @@
     "topic": "xau_ky_tu",
     "question": "Tại sao trong bài toán Người du lịch, ta chỉ xét (n-1)! hành trình thực sự khác nhau?",
     "answer": "Vì người du lịch có thể xuất phát từ một thành phố bất kỳ, nên ta có thể cố định một thành phố làm điểm xuất phát, dẫn đến số hành trình cần xét giảm từ n! xuống còn (n-1)!."
+  },
+  {
+    "id": "qa_0412",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Mệnh đề logic là gì?",
+    "answer": "Là một câu khẳng định có giá trị chân lý xác định: hoặc đúng (True) hoặc sai (False), không thể vừa đúng vừa sai."
+  },
+  {
+    "id": "qa_0413",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Phép phủ định (NOT) của mệnh đề P là gì?",
+    "answer": "Là mệnh đề đúng khi P sai và sai khi P đúng, ký hiệu là ¬P."
+  },
+  {
+    "id": "qa_0414",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Phép hội (AND) của hai mệnh đề P và Q là gì?",
+    "answer": "Là mệnh đề chỉ đúng khi cả P và Q cùng đúng, ký hiệu là P ∧ Q."
+  },
+  {
+    "id": "qa_0415",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Phép tuyển (OR) của hai mệnh đề P và Q là gì?",
+    "answer": "Là mệnh đề sai khi cả P và Q cùng sai, và đúng trong các trường hợp còn lại. Ký hiệu là P ∨ Q."
+  },
+  {
+    "id": "qa_0416",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Phép kéo theo (IF-THEN) P -> Q có giá trị sai khi nào?",
+    "answer": "Phép kéo theo P -> Q chỉ sai khi P đúng mà Q sai."
+  },
+  {
+    "id": "qa_0417",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Mệnh đề tương đương (IF AND ONLY IF) P <-> Q đúng khi nào?",
+    "answer": "Đúng khi cả P và Q có cùng giá trị chân lý (cùng đúng hoặc cùng sai)."
+  },
+  {
+    "id": "qa_0418",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Luật De Morgan trong logic mệnh đề phát biểu thế nào?",
+    "answer": "Phủ định của một hội là tuyển các phủ định: ¬(P ∧ Q) <=> ¬P ∨ ¬Q. Và phủ định của một tuyển là hội các phủ định: ¬(P ∨ Q) <=> ¬P ∧ ¬Q."
+  },
+  {
+    "id": "qa_0419",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Hằng đúng (Tautology) là gì?",
+    "answer": "Là một biểu thức logic luôn luôn nhận giá trị đúng với mọi giá trị chân lý của các mệnh đề thành phần."
+  },
+  {
+    "id": "qa_0420",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Hằng sai (Contradiction) là gì?",
+    "answer": "Là một biểu thức logic luôn luôn nhận giá trị sai với mọi giá trị chân lý của các mệnh đề thành phần."
+  },
+  {
+    "id": "qa_0421",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Luật hấp thụ (Absorption Law) trong logic là gì?",
+    "answer": "Là quy tắc rút gọn: P ∨ (P ∧ Q) <=> P và P ∧ (P ∨ Q) <=> P."
+  },
+  {
+    "id": "qa_0422",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Tập hợp rỗng là gì?",
+    "answer": "Là tập hợp không chứa phần tử nào, ký hiệu là ∅."
+  },
+  {
+    "id": "qa_0423",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Khi nào tập A được gọi là tập con của tập B?",
+    "answer": "Khi mọi phần tử của A đều là phần tử của B, ký hiệu là A ⊆ B."
+  },
+  {
+    "id": "qa_0424",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Hai tập hợp A và B bằng nhau khi nào?",
+    "answer": "Khi A là tập con của B và B cũng là tập con của A (A ⊆ B và B ⊆ A)."
+  },
+  {
+    "id": "qa_0425",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Hợp của hai tập hợp A và B là gì?",
+    "answer": "Là tập hợp gồm các phần tử thuộc A hoặc thuộc B, ký hiệu A ∪ B."
+  },
+  {
+    "id": "qa_0426",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Giao của hai tập hợp A và B là gì?",
+    "answer": "Là tập hợp gồm các phần tử vừa thuộc A vừa thuộc B, ký hiệu A ∩ B."
+  },
+  {
+    "id": "qa_0427",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Hiệu của tập A và tập B (A \\ B) là gì?",
+    "answer": "Là tập hợp gồm các phần tử thuộc A nhưng không thuộc B."
+  },
+  {
+    "id": "qa_0428",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Phần bù của tập A trong tập vũ trụ U là gì?",
+    "answer": "Là tập hợp các phần tử thuộc U nhưng không thuộc A, ký hiệu là A' hoặc U \\ A."
+  },
+  {
+    "id": "qa_0429",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Tích Đề-các (Cartesian product) của hai tập A và B là gì?",
+    "answer": "Là tập hợp tất cả các cặp có thứ tự (a, b) với a thuộc A và b thuộc B, ký hiệu A × B."
+  },
+  {
+    "id": "qa_0430",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Lực lượng của một tập hợp là gì?",
+    "answer": "Lực lượng của một tập hợp (thường là tập hữu hạn) là số lượng phần tử của tập hợp đó, ký hiệu là |A|."
+  },
+  {
+    "id": "qa_0431",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Tập lũy thừa (Power set) của tập A là gì?",
+    "answer": "Là tập hợp bao gồm tất cả các tập con của A. Nếu |A| = n thì tập lũy thừa của A có 2^n phần tử."
+  },
+  {
+    "id": "qa_0432",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ 2 ngôi từ tập A vào tập B là gì?",
+    "answer": "Là một tập con của tích Đề-các A × B."
+  },
+  {
+    "id": "qa_0433",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính phản xạ (Reflexive) của một quan hệ R trên tập A là gì?",
+    "answer": "Quan hệ R có tính phản xạ nếu với mọi a thuộc A, ta đều có (a, a) thuộc R."
+  },
+  {
+    "id": "qa_0434",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính đối xứng (Symmetric) của một quan hệ là gì?",
+    "answer": "Nếu (a, b) thuộc R thì (b, a) cũng phải thuộc R với mọi a, b."
+  },
+  {
+    "id": "qa_0435",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính phản xứng (Antisymmetric) của một quan hệ là gì?",
+    "answer": "Nếu (a, b) thuộc R và (b, a) thuộc R thì suy ra a = b."
+  },
+  {
+    "id": "qa_0436",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính bắc cầu (Transitive) của một quan hệ là gì?",
+    "answer": "Nếu (a, b) thuộc R và (b, c) thuộc R thì (a, c) cũng thuộc R."
+  },
+  {
+    "id": "qa_0437",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ tương đương (Equivalence relation) là gì?",
+    "answer": "Là quan hệ trên một tập hợp đồng thời có 3 tính chất: phản xạ, đối xứng và bắc cầu."
+  },
+  {
+    "id": "qa_0438",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Lớp tương đương (Equivalence class) của phần tử a là gì?",
+    "answer": "Là tập hợp tất cả các phần tử có quan hệ tương đương với phần tử a."
+  },
+  {
+    "id": "qa_0439",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ thứ tự bộ phận (Partial order) là gì?",
+    "answer": "Là quan hệ đồng thời có 3 tính chất: phản xạ, phản xứng và bắc cầu."
+  },
+  {
+    "id": "qa_0440",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Phân hoạch (Partition) của một tập hợp là gì?",
+    "answer": "Là một họ các tập con khác rỗng, rời nhau từng đôi một và hợp của chúng bằng chính tập hợp ban đầu."
+  },
+  {
+    "id": "qa_0441",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Mối liên hệ giữa quan hệ tương đương và phân hoạch là gì?",
+    "answer": "Một quan hệ tương đương trên tập A sẽ tạo ra một phân hoạch trên tập A (các lớp tương đương), và ngược lại."
+  },
+  {
+    "id": "qa_0442",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm số (Ánh xạ) từ tập A vào tập B là gì?",
+    "answer": "Là một quy tắc gán cho mỗi phần tử x thuộc tập nguồn A đúng một phần tử y thuộc tập đích B."
+  },
+  {
+    "id": "qa_0443",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Đơn ánh (Injective function) là gì?",
+    "answer": "Là hàm số mà các phần tử khác nhau của tập nguồn sẽ có ảnh khác nhau ở tập đích (nếu f(a) = f(b) thì a = b)."
+  },
+  {
+    "id": "qa_0444",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Toàn ánh (Surjective function) là gì?",
+    "answer": "Là hàm số mà mọi phần tử của tập đích đều là ảnh của ít nhất một phần tử thuộc tập nguồn (Tập giá trị bằng tập đích)."
+  },
+  {
+    "id": "qa_0445",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Song ánh (Bijective function) là gì?",
+    "answer": "Là hàm số vừa là đơn ánh vừa là toàn ánh."
+  },
+  {
+    "id": "qa_0446",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Điều kiện để một hàm số có hàm ngược là gì?",
+    "answer": "Hàm số đó phải là một song ánh."
+  },
+  {
+    "id": "qa_0447",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm hợp (Composite function) là gì?",
+    "answer": "Là hàm số được tạo ra bằng cách áp dụng liên tiếp hai hàm số: g(f(x)), trong đó kết quả của hàm f làm đầu vào cho hàm g."
+  },
+  {
+    "id": "qa_0448",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm sàn (Floor function) là gì?",
+    "answer": "Ký hiệu là ⌊x⌋, là số nguyên lớn nhất không vượt quá số thực x."
+  },
+  {
+    "id": "qa_0449",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm trần (Ceiling function) là gì?",
+    "answer": "Ký hiệu là ⌈x⌉, là số nguyên nhỏ nhất lớn hơn hoặc bằng số thực x."
+  },
+  {
+    "id": "qa_0450",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Đại số Boole là gì?",
+    "answer": "Là một cấu trúc đại số làm việc với các biến chỉ nhận giá trị 0 (Sai) và 1 (Đúng) cùng các phép toán AND, OR, NOT."
+  },
+  {
+    "id": "qa_0451",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng logic AND thực hiện phép toán gì?",
+    "answer": "Thực hiện phép nhân Boole, ngõ ra chỉ bằng 1 khi tất cả các ngõ vào đều bằng 1."
+  },
+  {
+    "id": "qa_0452",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng logic OR thực hiện phép toán gì?",
+    "answer": "Thực hiện phép cộng Boole, ngõ ra bằng 1 khi có ít nhất một ngõ vào bằng 1."
+  },
+  {
+    "id": "qa_0453",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng logic NOT thực hiện phép toán gì?",
+    "answer": "Thực hiện phép đảo trạng thái, biến 1 thành 0 và ngược lại."
+  },
+  {
+    "id": "qa_0454",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Hàm Boole là gì?",
+    "answer": "Là hàm nhận các biến đầu vào là giá trị Boole và trả về một giá trị Boole (0 hoặc 1)."
+  },
+  {
+    "id": "qa_0455",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Chuẩn tắc hội (Conjunctive Normal Form - CNF) là gì?",
+    "answer": "Là dạng biểu diễn hàm Boole dưới dạng Tích của các Tổng (AND của các mệnh đề OR)."
+  },
+  {
+    "id": "qa_0456",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Chuẩn tắc tuyển (Disjunctive Normal Form - DNF) là gì?",
+    "answer": "Là dạng biểu diễn hàm Boole dưới dạng Tổng của các Tích (OR của các mệnh đề AND)."
+  },
+  {
+    "id": "qa_0457",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Bìa Karnaugh (K-map) dùng để làm gì?",
+    "answer": "Dùng để tối thiểu hóa (rút gọn) các biểu thức của hàm Boole một cách trực quan, giúp thiết kế mạch logic tối ưu."
+  },
+  {
+    "id": "qa_0458",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Quy tắc cộng trong tổ hợp là gì?",
+    "answer": "Nếu một công việc có thể làm theo phương án A có m cách, hoặc phương án B có n cách (hai phương án không trùng nhau), thì có tổng cộng m + n cách."
+  },
+  {
+    "id": "qa_0459",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Quy tắc nhân trong tổ hợp là gì?",
+    "answer": "Nếu một công việc được chia làm 2 công đoạn liên tiếp, công đoạn 1 có m cách, công đoạn 2 có n cách, thì có tổng cộng m * n cách."
+  },
+  {
+    "id": "qa_0460",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Hoán vị (Permutation) của n phần tử là gì?",
+    "answer": "Là một cách sắp xếp có thứ tự tất cả n phần tử đó. Số hoán vị là P(n) = n!."
+  },
+  {
+    "id": "qa_0461",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Chỉnh hợp (K-Permutation) chập k của n phần tử là gì?",
+    "answer": "Là cách chọn k phần tử từ n phần tử có tính đến thứ tự. Công thức: P(n, k) = n! / (n-k)!."
+  },
+  {
+    "id": "qa_0462",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Tổ hợp (Combination) chập k của n phần tử là gì?",
+    "answer": "Là cách chọn k phần tử từ n phần tử mà không phân biệt thứ tự. Công thức: C(n, k) = n! / (k! * (n-k)!)."
+  },
+  {
+    "id": "qa_0463",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Nguyên lý chuồng bồ câu (Dirichlet) phát biểu như thế nào?",
+    "answer": "Nếu đem n+1 con bồ câu nhốt vào n cái chuồng thì chắc chắn sẽ có ít nhất một chuồng chứa từ 2 con bồ câu trở lên."
+  },
+  {
+    "id": "qa_0464",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Nguyên lý bù trừ (Inclusion-Exclusion) dùng để làm gì?",
+    "answer": "Dùng để đếm số phần tử của hợp nhiều tập hợp bằng cách cộng kích thước từng tập, sau đó trừ đi phần giao của 2 tập, rồi lại cộng phần giao của 3 tập,..."
+  },
+  {
+    "id": "qa_0465",
+    "type": "hoi_khai_niem",
+    "topic": "giai_tich_to_hop",
+    "question": "Tam giác Pascal liên quan gì đến Tổ hợp?",
+    "answer": "Các phần tử trong tam giác Pascal chính là các hệ số tổ hợp C(n, k)."
+  },
+  {
+    "id": "qa_0466",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị (Graph) được định nghĩa như thế nào?",
+    "answer": "Đồ thị G = (V, E), trong đó V là tập các đỉnh (vertices) và E là tập các cạnh (edges) nối các đỉnh với nhau."
+  },
+  {
+    "id": "qa_0467",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị vô hướng là gì?",
+    "answer": "Là đồ thị mà các cạnh trong tập E không có hướng (cạnh nối đỉnh A và đỉnh B được coi là giống cạnh nối B và A)."
+  },
+  {
+    "id": "qa_0468",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị có hướng (Digraph) là gì?",
+    "answer": "Là đồ thị mà mỗi cạnh có một hướng xác định đi từ đỉnh này (gốc) sang đỉnh kia (ngọn)."
+  },
+  {
+    "id": "qa_0469",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đa đồ thị (Multigraph) là gì?",
+    "answer": "Là đồ thị cho phép có nhiều hơn một cạnh nối giữa cùng một cặp đỉnh (cạnh bội)."
+  },
+  {
+    "id": "qa_0470",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khuyên (Loop) trong đồ thị là gì?",
+    "answer": "Là một cạnh nối từ một đỉnh vòng trở về chính đỉnh đó."
+  },
+  {
+    "id": "qa_0471",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bậc (Degree) của một đỉnh trong đồ thị vô hướng là gì?",
+    "answer": "Là số lượng các cạnh liên thuộc (nối) với đỉnh đó. Một khuyên được tính bằng 2 bậc."
+  },
+  {
+    "id": "qa_0472",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bán bậc vào (In-degree) và Bán bậc ra (Out-degree) là gì?",
+    "answer": "Trong đồ thị có hướng, bán bậc vào là số cạnh đi đến đỉnh, bán bậc ra là số cạnh đi ra khỏi đỉnh."
+  },
+  {
+    "id": "qa_0473",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý Bắt tay (Handshaking Lemma) phát biểu gì?",
+    "answer": "Tổng bậc của tất cả các đỉnh trong một đồ thị vô hướng luôn bằng 2 lần số cạnh của đồ thị đó. Hệ quả: Số lượng đỉnh bậc lẻ luôn là một số chẵn."
+  },
+  {
+    "id": "qa_0474",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị đầy đủ (Complete graph) Kn là gì?",
+    "answer": "Là đơn đồ thị vô hướng có n đỉnh, trong đó bất kỳ 2 đỉnh phân biệt nào cũng được nối với nhau bằng đúng một cạnh."
+  },
+  {
+    "id": "qa_0475",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị hai phía (Bipartite graph) là gì?",
+    "answer": "Là đồ thị mà tập đỉnh có thể chia thành hai tập con X và Y rời nhau, sao cho mọi cạnh đều nối một đỉnh trong X với một đỉnh trong Y."
+  },
+  {
+    "id": "qa_0476",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ma trận kề (Adjacency matrix) của đồ thị là gì?",
+    "answer": "Là ma trận vuông cấp n (n là số đỉnh), trong đó phần tử A[i][j] biểu diễn số cạnh nối từ đỉnh i đến đỉnh j."
+  },
+  {
+    "id": "qa_0477",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị liên thông (Connected graph) là gì?",
+    "answer": "Một đồ thị vô hướng được gọi là liên thông nếu có đường đi giữa bất kỳ cặp đỉnh nào trong đồ thị."
+  },
+  {
+    "id": "qa_0478",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Chu trình (Cycle) là gì?",
+    "answer": "Là một đường đi khép kín, tức là đường đi bắt đầu và kết thúc tại cùng một đỉnh, và không đi qua một cạnh nào quá 1 lần."
+  },
+  {
+    "id": "qa_0479",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi Euler là gì?",
+    "answer": "Là đường đi đi qua tất cả các cạnh của đồ thị, mỗi cạnh đi qua đúng một lần."
+  },
+  {
+    "id": "qa_0480",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Chu trình Euler là gì?",
+    "answer": "Là một chu trình đi qua tất cả các cạnh của đồ thị, mỗi cạnh đi qua đúng 1 lần (điểm bắt đầu trùng với điểm kết thúc)."
+  },
+  {
+    "id": "qa_0481",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Điều kiện để đồ thị vô hướng liên thông có chu trình Euler là gì?",
+    "answer": "Đồ thị phải không có bất kỳ đỉnh nào có bậc lẻ (tất cả các đỉnh đều có bậc chẵn)."
+  },
+  {
+    "id": "qa_0482",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Điều kiện để đồ thị vô hướng liên thông có đường đi Euler là gì?",
+    "answer": "Đồ thị phải có chính xác 0 hoặc 2 đỉnh bậc lẻ. Nếu có 2 đỉnh bậc lẻ, đường đi Euler sẽ bắt đầu tại một đỉnh bậc lẻ và kết thúc ở đỉnh bậc lẻ kia."
+  },
+  {
+    "id": "qa_0483",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi Hamilton là gì?",
+    "answer": "Là đường đi đi qua tất cả các đỉnh của đồ thị, mỗi đỉnh đi qua đúng một lần."
+  },
+  {
+    "id": "qa_0484",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Chu trình Hamilton là gì?",
+    "answer": "Là chu trình xuất phát từ 1 đỉnh, đi qua tất cả các đỉnh khác mỗi đỉnh đúng 1 lần rồi quay về đỉnh xuất phát."
+  },
+  {
+    "id": "qa_0485",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây (Tree) trong lý thuyết đồ thị là gì?",
+    "answer": "Cây là một đồ thị vô hướng, liên thông và không có chu trình."
+  },
+  {
+    "id": "qa_0486",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Rừng (Forest) là gì?",
+    "answer": "Là một đồ thị vô hướng không có chu trình (các thành phần liên thông của rừng là các cây)."
+  },
+  {
+    "id": "qa_0487",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tính chất về số cạnh của cây có n đỉnh là gì?",
+    "answer": "Một cây có n đỉnh thì luôn có chính xác n - 1 cạnh."
+  },
+  {
+    "id": "qa_0488",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Lá (Leaf) của cây là gì?",
+    "answer": "Là một đỉnh của cây có bậc đúng bằng 1."
+  },
+  {
+    "id": "qa_0489",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây bao trùm (Spanning tree) của đồ thị là gì?",
+    "answer": "Là một đồ thị con của đồ thị ban đầu, chứa tất cả các đỉnh của đồ thị đó và bản thân nó là một cây."
+  },
+  {
+    "id": "qa_0490",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thuật toán Kruskal dùng để làm gì?",
+    "answer": "Dùng để tìm cây bao trùm nhỏ nhất (MST) trên đồ thị có trọng số bằng cách luôn ưu tiên chọn các cạnh có trọng số nhỏ nhất mà không tạo thành chu trình."
+  },
+  {
+    "id": "qa_0491",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thuật toán Prim dùng để làm gì?",
+    "answer": "Cũng dùng để tìm cây bao trùm nhỏ nhất (MST), nhưng hoạt động bằng cách phát triển dần từ một đỉnh ban đầu, mỗi bước thêm một đỉnh gần nhất vào cây."
+  },
+  {
+    "id": "qa_0492",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thuật toán Dijkstra dùng để giải quyết bài toán nào?",
+    "answer": "Tìm đường đi ngắn nhất từ một đỉnh gốc (đỉnh bắt đầu) đến tất cả các đỉnh khác trong đồ thị có trọng số không âm."
+  },
+  {
+    "id": "qa_0493",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị phẳng (Planar graph) là gì?",
+    "answer": "Là đồ thị có thể vẽ trên một mặt phẳng sao cho không có bất kỳ hai cạnh nào cắt nhau ngoại trừ tại các đỉnh chung."
+  },
+  {
+    "id": "qa_0494",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Công thức Euler cho đồ thị phẳng liên thông là gì?",
+    "answer": "V - E + F = 2, trong đó V là số đỉnh, E là số cạnh và F là số miền (bao gồm cả miền ngoài)."
+  },
+  {
+    "id": "qa_0495",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý Kuratowski về đồ thị phẳng phát biểu thế nào?",
+    "answer": "Một đồ thị là phẳng khi và chỉ khi nó không chứa đồ thị con nào đồng phôi với đồ thị đầy đủ K5 hoặc đồ thị hai phía đầy đủ K3,3."
+  },
+  {
+    "id": "qa_0496",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tô màu đồ thị (Graph coloring) là bài toán gì?",
+    "answer": "Là việc gán màu cho các đỉnh của đồ thị sao cho không có hai đỉnh nào kề nhau (có cạnh nối) lại cùng màu."
+  },
+  {
+    "id": "qa_0497",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Sắc số (Chromatic number) của đồ thị là gì?",
+    "answer": "Là số lượng màu tối thiểu cần thiết để tô màu hợp lệ cho đồ thị đó, thường được ký hiệu là χ(G)."
+  },
+  {
+    "id": "qa_0498",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Duyệt đồ thị theo chiều sâu (DFS) hoạt động như thế nào?",
+    "answer": "Thuật toán đi xa nhất có thể theo từng nhánh trước khi quay lui (backtracking). DFS thường được cài đặt bằng Stack hoặc đệ quy."
+  },
+  {
+    "id": "qa_0499",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Duyệt đồ thị theo chiều rộng (BFS) hoạt động như thế nào?",
+    "answer": "Thuật toán thăm tất cả các đỉnh kề trực tiếp với đỉnh hiện tại trước khi tiến xuống các mức sâu hơn. BFS thường được cài đặt bằng Hàng đợi (Queue)."
+  },
+  {
+    "id": "qa_0500",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị đẳng cấu (Isomorphic graphs) là gì?",
+    "answer": "Hai đồ thị G và H được gọi là đẳng cấu nếu chúng có cùng cấu trúc, tức là có một song ánh giữa tập đỉnh của chúng bảo toàn số lượng cạnh nối giữa mọi cặp đỉnh."
+  },
+  {
+    "id": "qa_0501",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Hoán vị là gì?",
+    "answer": "Hoán vị của một tập hợp có n phần tử là một cách sắp xếp có thứ tự tất cả n phần tử của tập hợp đó. Số hoán vị của tập n phần tử là P(n) = n!."
+  },
+  {
+    "id": "qa_0502",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Định nghĩa chỉnh hợp?",
+    "answer": "Chỉnh hợp chập k của n phần tử là một cách chọn ra k phần tử từ tập hợp n phần tử và sắp xếp chúng theo một thứ tự nhất định. Số chỉnh hợp chập k của n là A(n, k) = n! / (n - k)!."
+  },
+  {
+    "id": "qa_0503",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Tổ hợp là gì?",
+    "answer": "Tổ hợp chập k của n phần tử là một cách chọn ra k phần tử từ tập hợp n phần tử mà không phân biệt thứ tự. Số tổ hợp chập k của n là C(n, k) = n! / (k! * (n - k)!)."
+  },
+  {
+    "id": "qa_0504",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Nguyên lý cộng là gì?",
+    "answer": "Nguyên lý cộng phát biểu rằng nếu một công việc có thể thực hiện theo phương án A có m cách hoặc phương án B có n cách (hai phương án không giao nhau), thì tổng số cách thực hiện công việc là m + n."
+  },
+  {
+    "id": "qa_0505",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Nguyên lý nhân là gì?",
+    "answer": "Nguyên lý nhân phát biểu rằng nếu một công việc gồm 2 bước liên tiếp, bước 1 có m cách thực hiện và ứng với mỗi cách đó bước 2 có n cách thực hiện, thì tổng số cách hoàn thành công việc là m * n."
+  },
+  {
+    "id": "qa_0506",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Nguyên lý chuồng bồ câu (Dirichlet) là gì?",
+    "answer": "Nguyên lý Dirichlet phát biểu rằng nếu ta nhốt n con bồ câu vào m chuồng, với n > m, thì sẽ có ít nhất một chuồng chứa từ hai con bồ câu trở lên."
+  },
+  {
+    "id": "qa_0507",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Chỉnh hợp lặp là gì?",
+    "answer": "Chỉnh hợp lặp chập k của n phần tử là một dãy có thứ tự gồm k phần tử được chọn từ n phần tử, trong đó các phần tử có thể lặp lại. Số lượng là n^k."
+  },
+  {
+    "id": "qa_0508",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Nhị thức Newton là gì?",
+    "answer": "Nhị thức Newton là công thức dùng để khai triển lũy thừa bậc n của một nhị thức (a + b)^n thành tổng của các đơn thức có chứa tổ hợp chập k của n."
+  },
+  {
+    "id": "qa_0509",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop",
+    "question": "Công thức Pascal là gì?",
+    "answer": "Công thức Pascal (hoặc hằng đẳng thức Pascal) là: C(n, k) = C(n-1, k-1) + C(n-1, k). Nó là cơ sở để xây dựng Tam giác Pascal."
+  },
+  {
+    "id": "qa_0510",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Tập con là gì?",
+    "answer": "Tập hợp A được gọi là tập con của tập hợp B nếu mọi phần tử của A đều là phần tử của B. Ký hiệu: A ⊆ B."
+  },
+  {
+    "id": "qa_0511",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Tập lũy thừa là gì?",
+    "answer": "Tập lũy thừa của tập hợp A là tập hợp chứa tất cả các tập con của A (bao gồm cả tập rỗng và chính A). Ký hiệu là P(A) hoặc 2^A. Nếu A có n phần tử thì P(A) có 2^n phần tử."
+  },
+  {
+    "id": "qa_0512",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Hiệu của hai tập hợp là gì?",
+    "answer": "Hiệu của tập A và tập B là tập hợp chứa những phần tử thuộc A nhưng không thuộc B. Ký hiệu là A \\ B hoặc A - B."
+  },
+  {
+    "id": "qa_0513",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Phần bù của một tập hợp là gì?",
+    "answer": "Nếu A là tập con của tập vũ trụ U, phần bù của A là tập hợp chứa tất cả các phần tử thuộc U mà không thuộc A. Ký hiệu là A' hoặc A^c."
+  },
+  {
+    "id": "qa_0514",
+    "type": "hoi_khai_niem",
+    "topic": "tap_hop",
+    "question": "Quy tắc De Morgan cho tập hợp là gì?",
+    "answer": "Là hai luật cho biết: (A ∪ B)' = A' ∩ B' (phần bù của hợp bằng giao các phần bù) và (A ∩ B)' = A' ∪ B' (phần bù của giao bằng hợp các phần bù)."
+  },
+  {
+    "id": "qa_0515",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Mệnh đề là gì?",
+    "answer": "Mệnh đề là một câu khẳng định có giá trị chân lý rõ ràng, hoặc chỉ đúng hoặc chỉ sai, không thể vừa đúng vừa sai."
+  },
+  {
+    "id": "qa_0516",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Phủ định của mệnh đề là gì?",
+    "answer": "Phủ định của mệnh đề P là mệnh đề sai nếu P đúng, và đúng nếu P sai. Ký hiệu là ~P hoặc ¬P."
+  },
+  {
+    "id": "qa_0517",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Phép hội (AND) là gì?",
+    "answer": "Phép hội của hai mệnh đề P và Q (P ∧ Q) là mệnh đề chỉ đúng khi cả P và Q cùng đúng, và sai trong các trường hợp còn lại."
+  },
+  {
+    "id": "qa_0518",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Phép tuyển (OR) là gì?",
+    "answer": "Phép tuyển của hai mệnh đề P và Q (P ∨ Q) là mệnh đề sai khi cả P và Q cùng sai, và đúng trong các trường hợp còn lại (ít nhất một mệnh đề đúng)."
+  },
+  {
+    "id": "qa_0519",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Phép kéo theo (IF-THEN) là gì?",
+    "answer": "Mệnh đề kéo theo P → Q chỉ sai khi P đúng và Q sai, đúng trong tất cả các trường hợp khác."
+  },
+  {
+    "id": "qa_0520",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Phép tương đương (IFF) là gì?",
+    "answer": "Mệnh đề tương đương P ↔ Q đúng khi P và Q có cùng giá trị chân lý (cùng đúng hoặc cùng sai), và sai nếu ngược lại."
+  },
+  {
+    "id": "qa_0521",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Bảng chân trị là gì?",
+    "answer": "Bảng chân trị (bảng sự thật) là bảng liệt kê tất cả các trường hợp có thể xảy ra của các biến mệnh đề và kết quả chân lý tương ứng của biểu thức logic."
+  },
+  {
+    "id": "qa_0522",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Mâu thuẫn (Contradiction) là gì?",
+    "answer": "Mâu thuẫn là một biểu thức logic luôn luôn mang giá trị SAI với mọi trường hợp của các biến mệnh đề cấu thành nên nó."
+  },
+  {
+    "id": "qa_0523",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Luật De Morgan trong logic mệnh đề là gì?",
+    "answer": "Là luật phát biểu rằng: ¬(P ∨ Q) ≡ ¬P ∧ ¬Q và ¬(P ∧ Q) ≡ ¬P ∨ ¬Q."
+  },
+  {
+    "id": "qa_0524",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Lượng từ phổ dụng (Universal Quantifier) là gì?",
+    "answer": "Lượng từ phổ dụng (∀) biểu thị cho cụm từ \"với mọi\", dùng để khẳng định tính chất đúng cho tất cả các phần tử trong miền khảo sát."
+  },
+  {
+    "id": "qa_0525",
+    "type": "hoi_khai_niem",
+    "topic": "logic",
+    "question": "Lượng từ tồn tại (Existential Quantifier) là gì?",
+    "answer": "Lượng từ tồn tại (∃) biểu thị cho cụm từ \"tồn tại ít nhất một\", dùng để khẳng định có ít nhất một phần tử thỏa mãn tính chất nào đó."
+  },
+  {
+    "id": "qa_0526",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ hai ngôi là gì?",
+    "answer": "Quan hệ hai ngôi R từ tập A đến tập B là một tập con của tích Đề-các A × B. Nó biểu diễn sự liên kết giữa các phần tử của A với các phần tử của B."
+  },
+  {
+    "id": "qa_0527",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính chất phản xạ của quan hệ là gì?",
+    "answer": "Một quan hệ R trên tập A có tính phản xạ nếu mọi phần tử a thuộc A đều có quan hệ với chính nó, tức là (a, a) ∈ R với mọi a ∈ A."
+  },
+  {
+    "id": "qa_0528",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính chất đối xứng của quan hệ là gì?",
+    "answer": "Một quan hệ R trên tập A có tính đối xứng nếu (a, b) ∈ R thì luôn kéo theo (b, a) ∈ R."
+  },
+  {
+    "id": "qa_0529",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Tính chất bắc cầu của quan hệ là gì?",
+    "answer": "Một quan hệ R trên tập A có tính bắc cầu nếu (a, b) ∈ R và (b, c) ∈ R thì suy ra (a, c) ∈ R."
+  },
+  {
+    "id": "qa_0530",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ tương đương là gì?",
+    "answer": "Quan hệ tương đương là một quan hệ hai ngôi thỏa mãn cả 3 tính chất: phản xạ, đối xứng và bắc cầu."
+  },
+  {
+    "id": "qa_0531",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Lớp tương đương là gì?",
+    "answer": "Lớp tương đương của một phần tử a theo quan hệ tương đương R là tập hợp chứa tất cả các phần tử có quan hệ R với a. Ký hiệu là [a]."
+  },
+  {
+    "id": "qa_0532",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ thứ tự là gì?",
+    "answer": "Quan hệ thứ tự (hay thứ tự bộ phận) là quan hệ hai ngôi thỏa mãn 3 tính chất: phản xạ, phản xứng và bắc cầu."
+  },
+  {
+    "id": "qa_0533",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Quan hệ thứ tự bộ phận là gì?",
+    "answer": "Quan hệ thứ tự bộ phận là một quan hệ thứ tự trên tập A mà trong đó có thể có một số cặp phần tử không thể so sánh được với nhau."
+  },
+  {
+    "id": "qa_0534",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he",
+    "question": "Biểu đồ Hasse là gì?",
+    "answer": "Biểu đồ Hasse là một biểu đồ thể hiện một tập được sắp thứ tự bộ phận, trong đó bỏ qua các vòng khuyên (phản xạ) và bỏ qua các đường do tính bắc cầu để hình vẽ gọn gàng hơn."
+  },
+  {
+    "id": "qa_0535",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm số (Ánh xạ) là gì?",
+    "answer": "Ánh xạ f từ tập A vào tập B là một quy tắc gán mỗi phần tử của A với duy nhất một phần tử của B."
+  },
+  {
+    "id": "qa_0536",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Miền xác định của hàm số là gì?",
+    "answer": "Miền xác định (tập nguồn) là tập hợp tất cả các giá trị đầu vào hợp lệ mà hàm số có thể nhận để tính ra một kết quả."
+  },
+  {
+    "id": "qa_0537",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Miền giá trị của hàm số là gì?",
+    "answer": "Miền giá trị (tập đích) là tập hợp chứa các giá trị đầu ra được gán tương ứng bởi hàm số từ các giá trị của miền xác định."
+  },
+  {
+    "id": "qa_0538",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Đơn ánh (Injective) là gì?",
+    "answer": "Hàm f là đơn ánh nếu hai phần tử đầu vào khác nhau luôn cho hai kết quả đầu ra khác nhau. (f(x1) = f(x2) thì x1 = x2)."
+  },
+  {
+    "id": "qa_0539",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Toàn ánh (Surjective) là gì?",
+    "answer": "Hàm f là toàn ánh nếu mọi phần tử ở tập đích (B) đều là kết quả của ít nhất một phần tử ở tập nguồn (A). (Ảnh của f bằng đúng B)."
+  },
+  {
+    "id": "qa_0540",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm ngược là gì?",
+    "answer": "Hàm ngược f^(-1) là hàm số đảo ngược ánh xạ của f: nếu f(a) = b thì f^(-1)(b) = a. Hàm ngược chỉ tồn tại khi hàm ban đầu là song ánh."
+  },
+  {
+    "id": "qa_0541",
+    "type": "hoi_khai_niem",
+    "topic": "ham_so",
+    "question": "Hàm hợp là gì?",
+    "answer": "Hàm hợp của f và g (g ∘ f) là hàm số áp dụng f cho đầu vào x, sau đó áp dụng tiếp g cho kết quả vừa thu được: (g ∘ f)(x) = g(f(x))."
+  },
+  {
+    "id": "qa_0542",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đa đồ thị là gì?",
+    "answer": "Đa đồ thị là đồ thị trong đó giữa hai đỉnh có thể tồn tại nhiều hơn một cạnh nối (các cạnh song song)."
+  },
+  {
+    "id": "qa_0543",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Giả đồ thị là gì?",
+    "answer": "Giả đồ thị là một loại đa đồ thị cho phép có các cạnh khuyên (cạnh bắt đầu và kết thúc tại cùng một đỉnh)."
+  },
+  {
+    "id": "qa_0544",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bậc vào và bậc ra của đỉnh trong đồ thị có hướng là gì?",
+    "answer": "Bậc ra là số lượng cạnh đi ra khỏi đỉnh đó. Bậc vào là số lượng cạnh đi tới đỉnh đó."
+  },
+  {
+    "id": "qa_0545",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý bắt tay trong đồ thị là gì?",
+    "answer": "Định lý bắt tay phát biểu rằng: Tổng bậc của tất cả các đỉnh trong một đồ thị vô hướng luôn bằng 2 lần số cạnh của đồ thị đó. Suy ra số đỉnh bậc lẻ luôn là một số chẵn."
+  },
+  {
+    "id": "qa_0546",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đỉnh cô lập là gì?",
+    "answer": "Đỉnh cô lập là đỉnh có bậc bằng 0, tức là không có cạnh nào nối với đỉnh này."
+  },
+  {
+    "id": "qa_0547",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đỉnh treo là gì?",
+    "answer": "Đỉnh treo là đỉnh có bậc bằng đúng 1."
+  },
+  {
+    "id": "qa_0548",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị vòng (Cycle graph) là gì?",
+    "answer": "Đồ thị vòng C_n (n>=3) là đồ thị gồm n đỉnh và n cạnh tạo thành một chu trình duy nhất khép kín."
+  },
+  {
+    "id": "qa_0549",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị bánh xe (Wheel graph) là gì?",
+    "answer": "Đồ thị bánh xe W_n được tạo ra bằng cách lấy một đồ thị vòng C_n và thêm một đỉnh trung tâm kết nối tới mọi đỉnh của C_n."
+  },
+  {
+    "id": "qa_0550",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ma trận kề của đồ thị là gì?",
+    "answer": "Ma trận kề là ma trận vuông dùng để biểu diễn các đỉnh kề nhau. Nếu đỉnh i và đỉnh j nối với nhau bằng k cạnh thì phần tử a_ij = k."
+  },
+  {
+    "id": "qa_0551",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ma trận trọng số của đồ thị là gì?",
+    "answer": "Ma trận trọng số là ma trận mà mỗi phần tử w_ij thể hiện giá trị trọng số của cạnh nối từ đỉnh i đến đỉnh j (hoặc vô cực nếu không có cạnh)."
+  },
+  {
+    "id": "qa_0552",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây là gì?",
+    "answer": "Cây là đồ thị vô hướng, liên thông và không có bất kỳ chu trình nào."
+  },
+  {
+    "id": "qa_0553",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Rừng là gì?",
+    "answer": "Rừng là đồ thị vô hướng không có chu trình. Cây là một thành phần liên thông trong rừng."
+  },
+  {
+    "id": "qa_0554",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây có rễ là gì?",
+    "answer": "Cây có rễ là cây trong đó có một đỉnh đặc biệt được chọn làm gốc (rễ) và các cạnh được định hướng đi xa khỏi rễ hoặc hướng về rễ."
+  },
+  {
+    "id": "qa_0555",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Mức của một đỉnh trong cây có rễ là gì?",
+    "answer": "Mức của một đỉnh v là độ dài của đường đi duy nhất từ rễ đến đỉnh v. Rễ có mức 0."
+  },
+  {
+    "id": "qa_0556",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Chiều cao của cây là gì?",
+    "answer": "Chiều cao của cây có rễ là mức lớn nhất của bất kỳ đỉnh nào trong cây đó."
+  },
+  {
+    "id": "qa_0557",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây nhị phân là gì?",
+    "answer": "Cây nhị phân là cây có rễ mà mỗi đỉnh trong đó có tối đa hai con (thường được gọi là con trái và con phải)."
+  },
+  {
+    "id": "qa_0558",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây m-phân là gì?",
+    "answer": "Cây m-phân là cây có rễ trong đó mỗi đỉnh trong của nó có nhiều nhất m con. Nếu mỗi đỉnh trong có đúng m con thì là cây m-phân đầy đủ."
+  },
+  {
+    "id": "qa_0559",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây bao trùm là gì?",
+    "answer": "Cây bao trùm (spanning tree) của một đồ thị G là đồ thị con của G chứa tất cả các đỉnh của G và nó là một cái cây."
+  },
+  {
+    "id": "qa_0560",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Duyệt đồ thị theo chiều sâu (DFS) là gì?",
+    "answer": "DFS là một thuật toán tìm kiếm trên đồ thị, nó luôn đi sâu nhất có thể dọc theo mỗi nhánh rẽ trước khi quay lui (backtracking)."
+  },
+  {
+    "id": "qa_0561",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi ngắn nhất là gì?",
+    "answer": "Trong đồ thị có trọng số, đường đi ngắn nhất giữa hai đỉnh là đường đi có tổng các trọng số trên các cạnh thuộc đường đi đó là nhỏ nhất."
+  },
+  {
+    "id": "qa_0562",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thuật toán Dijkstra tìm gì?",
+    "answer": "Dijkstra là thuật toán dùng để tìm đường đi ngắn nhất từ một đỉnh gốc tới tất cả các đỉnh còn lại trong đồ thị có trọng số không âm."
+  },
+  {
+    "id": "qa_0563",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Điều kiện có chu trình Euler trong đồ thị vô hướng?",
+    "answer": "Một đa đồ thị vô hướng liên thông có chu trình Euler khi và chỉ khi mọi đỉnh của đồ thị đều có bậc chẵn."
+  },
+  {
+    "id": "qa_0564",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị phẳng là gì?",
+    "answer": "Đồ thị phẳng là đồ thị có thể vẽ được trên mặt phẳng sao cho không có hai cạnh nào cắt nhau tại một điểm không phải là đỉnh."
+  },
+  {
+    "id": "qa_0565",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Sắc số của đồ thị là gì?",
+    "answer": "Sắc số của đồ thị là số lượng màu tối thiểu cần thiết để tô màu tất cả các đỉnh sao cho không có hai đỉnh kề nhau nào cùng màu. Ký hiệu là χ(G)."
+  },
+  {
+    "id": "qa_0566",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bài toán tô màu đồ thị là gì?",
+    "answer": "Bài toán tô màu đồ thị là tìm cách gán màu cho các đỉnh của đồ thị sao cho các đỉnh có cạnh nối với nhau phải khác màu."
+  },
+  {
+    "id": "qa_0567",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý Kuratowski là gì?",
+    "answer": "Định lý phát biểu rằng một đồ thị là đồ thị phẳng khi và chỉ khi nó không chứa một đồ thị con nào đồng phôi với K5 hoặc K3,3."
+  },
+  {
+    "id": "qa_0568",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Dạng chuẩn tắc tuyển (SOP) là gì?",
+    "answer": "SOP (Sum of Products) là cách biểu diễn hàm Boolean dưới dạng tổng của các tích (hợp của các hội), ví dụ: AB + A'C + BC'."
+  },
+  {
+    "id": "qa_0569",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Dạng chuẩn tắc hội (POS) là gì?",
+    "answer": "POS (Product of Sums) là cách biểu diễn hàm Boolean dưới dạng tích của các tổng (hội của các tuyển), ví dụ: (A+B)(A'+C)."
+  },
+  {
+    "id": "qa_0570",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Cổng logic AND hoạt động như thế nào?",
+    "answer": "Cổng AND cho đầu ra là 1 chỉ khi tất cả các đầu vào của nó đều là 1. Mọi trường hợp khác đầu ra là 0."
+  },
+  {
+    "id": "qa_0571",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Cổng logic OR hoạt động ra sao?",
+    "answer": "Cổng OR cho đầu ra là 1 nếu có ít nhất một đầu vào là 1. Đầu ra chỉ bằng 0 khi tất cả đầu vào đều là 0."
+  },
+  {
+    "id": "qa_0572",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Cổng logic NOT làm nhiệm vụ gì?",
+    "answer": "Cổng NOT nhận một đầu vào duy nhất và đảo ngược giá trị đó: 1 thành 0 và 0 thành 1."
+  },
+  {
+    "id": "qa_0573",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Cổng XOR (Exclusive OR) là gì?",
+    "answer": "Cổng XOR cho đầu ra là 1 nếu hai đầu vào có giá trị khác nhau (một cái là 0, một cái là 1), và cho ra 0 nếu hai đầu vào giống nhau."
+  },
+  {
+    "id": "qa_0574",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Biến mệnh đề là gì?",
+    "answer": "Biến mệnh đề là các ký hiệu (thường là p, q, r,...) dùng để đại diện cho các mệnh đề cơ sở trong đại số mệnh đề."
+  },
+  {
+    "id": "qa_0575",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Công thức mệnh đề (Biểu thức logic) là gì?",
+    "answer": "Là một biểu thức được tạo thành từ các biến mệnh đề, hằng mệnh đề (True/False) và các phép toán logic (NOT, AND, OR, kéo theo, tương đương)."
+  },
+  {
+    "id": "qa_0576",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Hai công thức mệnh đề tương đương logic là gì?",
+    "answer": "Hai công thức mệnh đề được gọi là tương đương logic (ký hiệu ≡ hoặc ⇔) nếu chúng luôn có cùng giá trị chân lý với mọi phép gán giá trị cho các biến mệnh đề cấu thành."
+  },
+  {
+    "id": "qa_0577",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Phép hội (Conjunction) là gì?",
+    "answer": "Phép hội của hai mệnh đề p và q (p ∧ q) đúng khi và chỉ khi cả p và q đều đúng."
+  },
+  {
+    "id": "qa_0578",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Phép tuyển (Disjunction) là gì?",
+    "answer": "Phép tuyển của hai mệnh đề p và q (p ∨ q) sai khi và chỉ khi cả p và q đều sai. Nếu có ít nhất 1 mệnh đề đúng thì kết quả là đúng."
+  },
+  {
+    "id": "qa_0579",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Phép tuyển loại trừ (XOR) là gì?",
+    "answer": "Phép tuyển loại trừ của p và q (p ⊕ q) đúng khi p và q có giá trị chân lý khác nhau, và sai khi chúng có cùng giá trị chân lý."
+  },
+  {
+    "id": "qa_0580",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Tính chất giao hoán của phép hội và phép tuyển là gì?",
+    "answer": "Tính chất giao hoán: p ∨ q ≡ q ∨ p và p ∧ q ≡ q ∧ p."
+  },
+  {
+    "id": "qa_0581",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Tính chất kết hợp của logic mệnh đề là gì?",
+    "answer": "Tính chất kết hợp: (p ∨ q) ∨ r ≡ p ∨ (q ∨ r) và (p ∧ q) ∧ r ≡ p ∧ (q ∧ r)."
+  },
+  {
+    "id": "qa_0582",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Tính chất phân phối của logic mệnh đề là gì?",
+    "answer": "Tính chất phân phối: p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r) và p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)."
+  },
+  {
+    "id": "qa_0583",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Luật lũy đẳng (Idempotent laws) là gì?",
+    "answer": "Luật lũy đẳng: p ∨ p ≡ p và p ∧ p ≡ p."
+  },
+  {
+    "id": "qa_0584",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Luật hấp thụ (Absorption laws) là gì?",
+    "answer": "Luật hấp thụ: p ∨ (p ∧ q) ≡ p và p ∧ (p ∨ q) ≡ p."
+  },
+  {
+    "id": "qa_0585",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Luật thống trị (Domination laws) là gì?",
+    "answer": "Luật thống trị: p ∨ True ≡ True và p ∧ False ≡ False."
+  },
+  {
+    "id": "qa_0586",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Luật đồng nhất (Identity laws) là gì?",
+    "answer": "Luật đồng nhất: p ∧ True ≡ p và p ∨ False ≡ p."
+  },
+  {
+    "id": "qa_0587",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Luật phủ định kép (Double negation law) là gì?",
+    "answer": "Phủ định của phủ định một mệnh đề chính là mệnh đề đó: ¬(¬p) ≡ p."
+  },
+  {
+    "id": "qa_0588",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Mệnh đề đảo (Converse) của mệnh đề kéo theo p → q là gì?",
+    "answer": "Mệnh đề đảo của p → q là q → p. (Lưu ý: mệnh đề kéo theo không tương đương với mệnh đề đảo của nó)."
+  },
+  {
+    "id": "qa_0589",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Cách biểu diễn phép kéo theo bằng phép tuyển và phủ định?",
+    "answer": "p → q ≡ ¬p ∨ q (Nếu p thì q tương đương với Không p hoặc q)."
+  },
+  {
+    "id": "qa_0590",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Suy luận hợp logic (Valid argument) là gì?",
+    "answer": "Một suy luận (dãy các tiền đề dẫn đến kết luận) được coi là hợp logic nếu không bao giờ có trường hợp tất cả các tiền đề đều đúng mà kết luận lại sai."
+  },
+  {
+    "id": "qa_0591",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Tam đoạn luận Modus Ponens là gì?",
+    "answer": "Luật suy luận Modus Ponens: Nếu p → q đúng và p đúng, ta suy ra q đúng. (Tiền đề 1: p → q, Tiền đề 2: p ⊢ Kết luận: q)."
+  },
+  {
+    "id": "qa_0592",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Tam đoạn luận giả định (Hypothetical Syllogism) là gì?",
+    "answer": "Luật suy luận bắc cầu: Nếu p → q và q → r, thì ta suy ra p → r."
+  },
+  {
+    "id": "qa_0593",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Phép cộng trong đại số Boole (OR) có tính chất gì?",
+    "answer": "Phép cộng (+) tương đương với cổng logic OR: 0+0=0, 0+1=1, 1+0=1, 1+1=1."
+  },
+  {
+    "id": "qa_0594",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Biến Boole là gì?",
+    "answer": "Biến Boole là biến chỉ có thể nhận một trong hai giá trị thuộc tập B = {0, 1}."
+  },
+  {
+    "id": "qa_0595",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Hàm Boole bậc n là gì?",
+    "answer": "Hàm Boole bậc n là ánh xạ f: B^n → B. Nó nhận n biến đầu vào Boole và trả về một giá trị Boole (0 hoặc 1)."
+  },
+  {
+    "id": "qa_0596",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Có bao nhiêu hàm Boole bậc n khác nhau?",
+    "answer": "Có tất cả 2^(2^n) hàm Boole bậc n khác nhau."
+  },
+  {
+    "id": "qa_0597",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Dạng chuẩn tắc tuyển (SOP) của hàm Boole là gì?",
+    "answer": "Là dạng biểu diễn hàm Boole dưới dạng tổng của các tích (Sum of Products). Ví dụ: f(x, y) = xy' + x'y."
+  },
+  {
+    "id": "qa_0598",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Tích chuẩn (Minterm) là gì?",
+    "answer": "Trong hàm Boole n biến, một minterm là một tích của đúng n biến, trong đó mỗi biến xuất hiện đúng một lần (có thể dạng nguyên hoặc dạng bù)."
+  },
+  {
+    "id": "qa_0599",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Tổng chuẩn (Maxterm) là gì?",
+    "answer": "Trong hàm Boole n biến, một maxterm là một tổng của đúng n biến, trong đó mỗi biến xuất hiện đúng một lần (có thể nguyên hoặc bù)."
+  },
+  {
+    "id": "qa_0600",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Mọi hàm Boole đều có thể biểu diễn dưới dạng nào?",
+    "answer": "Mọi hàm Boole đều có thể biểu diễn duy nhất dưới dạng chuẩn tắc tuyển hoàn toàn (tổng của các minterm) hoặc chuẩn tắc hội hoàn toàn (tích của các maxterm)."
+  },
+  {
+    "id": "qa_0601",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Tính chất phần tử bù (Complement laws) trong đại số Boole?",
+    "answer": "x + x' = 1 và x . x' = 0."
+  },
+  {
+    "id": "qa_0602",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Tính chất phần tử đồng nhất (Identity laws) trong Boole?",
+    "answer": "x + 0 = x và x . 1 = x."
+  },
+  {
+    "id": "qa_0603",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Luật hấp thụ (Absorption laws) trong đại số Boole?",
+    "answer": "x + (x.y) = x và x.(x + y) = x."
+  },
+  {
+    "id": "qa_0604",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Luật De Morgan biểu diễn bằng đại số Boole thế nào?",
+    "answer": "(x + y)' = x' . y' và (x . y)' = x' + y'."
+  },
+  {
+    "id": "qa_0605",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "K-map cho n biến có bao nhiêu ô?",
+    "answer": "Bìa Karnaugh cho n biến sẽ có 2^n ô, mỗi ô tương ứng với một minterm của hàm Boole."
+  },
+  {
+    "id": "qa_0606",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Nguyên tắc ghép ô trong K-map là gì?",
+    "answer": "Các ô chứa số 1 kế cận nhau được ghép lại thành các nhóm có kích thước là lũy thừa của 2 (1, 2, 4, 8...). Mục đích là gom nhóm càng lớn càng tốt để rút gọn biến."
+  },
+  {
+    "id": "qa_0607",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Implicant (Tế bào) trong tối thiểu hóa hàm Boole là gì?",
+    "answer": "Là một tích của các biến (chưa bị rút gọn hết cỡ) biểu diễn một nhóm các ô 1 trong K-map. Nếu nó chứa mọi phần tử 1 của hàm thì được gọi là implicant."
+  },
+  {
+    "id": "qa_0608",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Prime Implicant (Tế bào lớn nhất) là gì?",
+    "answer": "Là tế bào không bị bao hàm bởi bất kỳ một tế bào nào lớn hơn nó trong bảng K-map."
+  },
+  {
+    "id": "qa_0609",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Hệ chức năng đầy đủ (Functionally complete set) là gì?",
+    "answer": "Là tập hợp các phép toán Boole sao cho mọi hàm Boole đều có thể biểu diễn được bằng cách chỉ sử dụng các phép toán trong tập đó. Ví dụ: {AND, OR, NOT} hoặc chỉ {NAND} hoặc chỉ {NOR}."
+  },
+  {
+    "id": "qa_0610",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Cổng NAND là gì?",
+    "answer": "Cổng NAND (NOT AND) là cổng đảo của AND. Kết quả bằng 0 khi tất cả đầu vào bằng 1, và bằng 1 trong các trường hợp còn lại. Cổng NAND là một hệ chức năng đầy đủ."
+  },
+  {
+    "id": "qa_0611",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Cổng NOR là gì?",
+    "answer": "Cổng NOR (NOT OR) là cổng đảo của OR. Kết quả bằng 1 khi tất cả đầu vào bằng 0, và bằng 0 trong các trường hợp còn lại. Cổng NOR cũng là một hệ chức năng đầy đủ."
+  },
+  {
+    "id": "qa_0612",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boolean",
+    "question": "Mạch tổ hợp (Combinational circuit) là gì?",
+    "answer": "Là mạch logic số trong đó giá trị đầu ra ở một thời điểm chỉ phụ thuộc hoàn toàn vào giá trị đầu vào tại thời điểm đó (không có bộ nhớ lưu trạng thái)."
+  },
+  {
+    "id": "qa_0613",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ hai ngôi từ A vào B là gì?",
+    "answer": "Là một tập con của tích Đề-các A × B. Nó tập hợp các cặp (a, b) trong đó a thuộc A có quan hệ với b thuộc B."
+  },
+  {
+    "id": "qa_0614",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ trên một tập hợp A là gì?",
+    "answer": "Quan hệ hai ngôi trên tập hợp A là một tập con của A × A."
+  },
+  {
+    "id": "qa_0615",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Ma trận biểu diễn quan hệ (Boolean matrix) là gì?",
+    "answer": "Là ma trận vuông M trong đó phần tử m_ij = 1 nếu phần tử thứ i có quan hệ với phần tử thứ j, và m_ij = 0 nếu ngược lại."
+  },
+  {
+    "id": "qa_0616",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ ngược (Inverse relation) của R là gì?",
+    "answer": "Quan hệ ngược của R, ký hiệu R^(-1), là tập hợp các cặp (b, a) sao cho (a, b) thuộc R."
+  },
+  {
+    "id": "qa_0617",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Hợp thành của hai quan hệ (Composition) S ∘ R là gì?",
+    "answer": "Nếu R là quan hệ từ A đến B, S là từ B đến C. S ∘ R chứa các cặp (a, c) sao cho tồn tại ít nhất một b thuộc B mà (a, b) ∈ R và (b, c) ∈ S."
+  },
+  {
+    "id": "qa_0618",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Điều kiện ma trận của quan hệ phản xạ?",
+    "answer": "Mọi phần tử trên đường chéo chính của ma trận biểu diễn quan hệ đều bằng 1 (m_ii = 1)."
+  },
+  {
+    "id": "qa_0619",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Bao đóng phản xạ (Reflexive closure) của R là gì?",
+    "answer": "Là quan hệ phản xạ nhỏ nhất chứa R. Có được bằng cách thêm tất cả các cặp (a, a) vào R."
+  },
+  {
+    "id": "qa_0620",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Bao đóng đối xứng (Symmetric closure) của R là gì?",
+    "answer": "Là quan hệ đối xứng nhỏ nhất chứa R. Có được bằng cách thêm các cặp (b, a) nếu có (a, b) thuộc R."
+  },
+  {
+    "id": "qa_0621",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Bao đóng bắc cầu (Transitive closure) của R là gì?",
+    "answer": "Là quan hệ bắc cầu nhỏ nhất chứa R. Thường được tìm bằng thuật toán Warshall."
+  },
+  {
+    "id": "qa_0622",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Thuật toán Warshall dùng làm gì?",
+    "answer": "Thuật toán Warshall dùng để tính bao đóng bắc cầu của một quan hệ (hoặc tìm ma trận đường đi trong đồ thị có hướng)."
+  },
+  {
+    "id": "qa_0623",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Tập thương (Quotient set) là gì?",
+    "answer": "Tập thương của tập A theo quan hệ tương đương R (ký hiệu A/R) là tập hợp tất cả các lớp tương đương rời nhau của A."
+  },
+  {
+    "id": "qa_0624",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Phân hoạch của tập hợp là gì?",
+    "answer": "Phân hoạch của tập A là chia A thành các tập con không rỗng, rời nhau, sao cho hợp của tất cả các tập con này chính bằng A. Mỗi quan hệ tương đương đều tạo ra một phân hoạch và ngược lại."
+  },
+  {
+    "id": "qa_0625",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Hệ thức chia hết (a chia hết cho b) là quan hệ loại gì?",
+    "answer": "Hệ thức chia hết trên tập số nguyên dương là một quan hệ thứ tự bộ phận (vì nó phản xạ, phản xứng và bắc cầu)."
+  },
+  {
+    "id": "qa_0626",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Phần tử tối đại (Maximal element) trong tập sắp thứ tự là gì?",
+    "answer": "Phần tử a là tối đại nếu không có phần tử nào lớn hơn nó (không có x nào sao cho a < x). Có thể có nhiều phần tử tối đại."
+  },
+  {
+    "id": "qa_0627",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Phần tử lớn nhất (Greatest element) trong tập sắp thứ tự là gì?",
+    "answer": "Phần tử a là lớn nhất nếu nó lớn hơn hoặc bằng tất cả các phần tử khác trong tập (a ≥ x với mọi x). Nếu có thì chỉ có duy nhất 1 phần tử lớn nhất."
+  },
+  {
+    "id": "qa_0628",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Phần tử tối tiểu (Minimal element) là gì?",
+    "answer": "Phần tử b là tối tiểu nếu không có phần tử nào nhỏ hơn nó (không có y nào sao cho y < b)."
+  },
+  {
+    "id": "qa_0629",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Phần tử nhỏ nhất (Least element) là gì?",
+    "answer": "Phần tử b là nhỏ nhất nếu nó nhỏ hơn hoặc bằng mọi phần tử khác trong tập. Nếu tồn tại thì chỉ có 1."
+  },
+  {
+    "id": "qa_0630",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Đơn ánh (Injective function) khác gì hàm số thông thường?",
+    "answer": "Hàm số thông thường cho phép nhiều đầu vào ra cùng một đầu ra, nhưng đơn ánh bắt buộc mỗi đầu ra phải tương ứng với nhiều nhất một đầu vào."
+  },
+  {
+    "id": "qa_0631",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Điều kiện để tồn tại đơn ánh từ tập A sang tập B hữu hạn là gì?",
+    "answer": "Số lượng phần tử của A phải nhỏ hơn hoặc bằng số lượng phần tử của B (|A| ≤ |B|)."
+  },
+  {
+    "id": "qa_0632",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Số lượng các hàm số (ánh xạ) từ tập A (m phần tử) sang tập B (n phần tử) là bao nhiêu?",
+    "answer": "Tổng số hàm số là n^m."
+  },
+  {
+    "id": "qa_0633",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Số lượng đơn ánh từ tập A (m phần tử) sang tập B (n phần tử) với m ≤ n là bao nhiêu?",
+    "answer": "Là số chỉnh hợp chập m của n: P(n, m) = n! / (n - m)!."
+  },
+  {
+    "id": "qa_0634",
+    "type": "hoi_khai_niem",
+    "topic": "quan_he_anh_xa",
+    "question": "Số lượng song ánh từ tập A vào chính nó (|A|=n) là bao nhiêu?",
+    "answer": "Số lượng song ánh bằng số hoán vị của n phần tử, tức là n!."
+  },
+  {
+    "id": "qa_0635",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Bảng chữ cái (Alphabet) là gì?",
+    "answer": "Bảng chữ cái (ký hiệu thường là Σ) là một tập hợp hữu hạn, khác rỗng các ký hiệu (character/symbol)."
+  },
+  {
+    "id": "qa_0636",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Xâu ký tự (String/Word) là gì?",
+    "answer": "Xâu ký tự trên một bảng chữ cái Σ là một dãy hữu hạn các ký hiệu được lấy từ Σ."
+  },
+  {
+    "id": "qa_0637",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Độ dài của xâu (String length) là gì?",
+    "answer": "Độ dài của xâu w (ký hiệu |w|) là số lượng các ký hiệu cấu thành nên xâu đó."
+  },
+  {
+    "id": "qa_0638",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Xâu rỗng (Empty string) là gì?",
+    "answer": "Xâu rỗng (thường ký hiệu là λ hoặc ε) là xâu không chứa ký hiệu nào. Độ dài của xâu rỗng là 0 (|ε| = 0)."
+  },
+  {
+    "id": "qa_0639",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Phép ghép xâu (Concatenation) là gì?",
+    "answer": "Là thao tác nối xâu v vào sau xâu u để tạo thành xâu mới uv. Độ dài |uv| = |u| + |v|."
+  },
+  {
+    "id": "qa_0640",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Xâu con (Substring) là gì?",
+    "answer": "Xâu v là xâu con của w nếu w có thể viết thành dạng xvy, trong đó x và y có thể là các xâu rỗng hoặc bất kỳ xâu nào."
+  },
+  {
+    "id": "qa_0641",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Tiền tố (Prefix) của xâu là gì?",
+    "answer": "Tiền tố của xâu w là phần đầu của xâu đó. Nếu w = xy, thì x là một tiền tố của w (x có thể là xâu rỗng hoặc chính w)."
+  },
+  {
+    "id": "qa_0642",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Hậu tố (Suffix) của xâu là gì?",
+    "answer": "Hậu tố của xâu w là phần cuối của xâu đó. Nếu w = xy, thì y là một hậu tố của w."
+  },
+  {
+    "id": "qa_0643",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Xâu đảo ngược (Reversal) là gì?",
+    "answer": "Xâu đảo ngược của w (ký hiệu w^R) là xâu được viết theo thứ tự ngược lại các ký tự của w. Ví dụ: (abc)^R = cba."
+  },
+  {
+    "id": "qa_0644",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Ngôn ngữ hình thức (Formal Language) là gì?",
+    "answer": "Một ngôn ngữ L trên bảng chữ cái Σ là một tập hợp bất kỳ gồm các xâu ký tự được tạo ra từ Σ. (L là tập con của Σ*)."
+  },
+  {
+    "id": "qa_0645",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Bao đóng Kleene (Kleene Star) Σ* là gì?",
+    "answer": "Σ* là tập hợp tất cả các xâu có thể tạo ra từ bảng chữ cái Σ (bao gồm cả xâu rỗng ε)."
+  },
+  {
+    "id": "qa_0646",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Bao đóng dương (Positive Closure) Σ+ là gì?",
+    "answer": "Σ+ là tập hợp tất cả các xâu có thể tạo ra từ bảng chữ cái Σ nhưng KHÔNG bao gồm xâu rỗng ε. (Σ+ = Σ* - {ε})."
+  },
+  {
+    "id": "qa_0647",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Biểu thức chính quy (Regular Expression) là gì?",
+    "answer": "Là một chuỗi ký tự định nghĩa một mẫu tìm kiếm. Trong toán rời rạc, nó dùng để biểu diễn một cách chính xác một ngôn ngữ chính quy."
+  },
+  {
+    "id": "qa_0648",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Các phép toán cơ bản trong Biểu thức chính quy là gì?",
+    "answer": "Bao gồm 3 phép toán: Hợp (Union, ký hiệu + hoặc |), Ghép (Concatenation, ký hiệu . hoặc viết liền), và Bao đóng Kleene (*)."
+  },
+  {
+    "id": "qa_0649",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Ngôn ngữ chính quy (Regular Language) là gì?",
+    "answer": "Là ngôn ngữ có thể được biểu diễn bằng một biểu thức chính quy, và có thể được đoán nhận bởi một Otomat hữu hạn (FSA)."
+  },
+  {
+    "id": "qa_0650",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Otomat hữu hạn đơn định (DFA) là gì?",
+    "answer": "DFA là mô hình máy trạng thái hữu hạn trong đó từ mỗi trạng thái, với mỗi ký hiệu đầu vào chỉ có đúng một sự chuyển đổi duy nhất sang trạng thái tiếp theo."
+  },
+  {
+    "id": "qa_0651",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Định lý Kleene về DFA và Biểu thức chính quy là gì?",
+    "answer": "Định lý phát biểu rằng một ngôn ngữ được đoán nhận bởi một DFA khi và chỉ khi nó có thể được biểu diễn bằng một biểu thức chính quy."
+  },
+  {
+    "id": "qa_0652",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Sự tương đương giữa DFA và NFA?",
+    "answer": "Mọi ngôn ngữ được đoán nhận bởi một NFA đều có thể được đoán nhận bởi một DFA. Nghĩa là DFA và NFA có sức mạnh biểu diễn ngôn ngữ tương đương nhau."
+  },
+  {
+    "id": "qa_0653",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Hợp của hai ngôn ngữ L1 ∪ L2 là gì?",
+    "answer": "Là ngôn ngữ chứa các xâu thuộc L1 hoặc thuộc L2 (hoặc cả hai)."
+  },
+  {
+    "id": "qa_0654",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Bao đóng Kleene L* của ngôn ngữ L là gì?",
+    "answer": "Là hợp của L^0, L^1, L^2... Tức là tập hợp tất cả các xâu tạo bằng cách ghép nối một số lượng hữu hạn bất kỳ (kể cả 0) các xâu từ L."
+  },
+  {
+    "id": "qa_0655",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Ngữ pháp (Grammar) hình thức là gì?",
+    "answer": "Là một tập các quy tắc sản xuất dùng để sinh ra các xâu của một ngôn ngữ. Ký hiệu G = (V, T, S, P) với V là biến, T là kết thúc, S là bắt đầu, P là luật sinh."
+  },
+  {
+    "id": "qa_0656",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Ký hiệu kết thúc (Terminal) và không kết thúc (Non-terminal) là gì?",
+    "answer": "Ký hiệu kết thúc (Terminal) là các ký tự thực sự xuất hiện trong xâu kết quả. Ký hiệu không kết thúc (Biến/Non-terminal) dùng trong quá trình sinh xâu và sẽ bị thay thế dần."
+  },
+  {
+    "id": "qa_0657",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Ngữ pháp phi ngữ cảnh (Context-Free Grammar - CFG) là gì?",
+    "answer": "Là ngữ pháp mà mọi luật sinh đều có dạng A → α, trong đó A là một ký hiệu không kết thúc duy nhất và α là xâu bất kỳ gồm kết thúc và không kết thúc."
+  },
+  {
+    "id": "qa_1001",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị Hamilton có tính chất gì?",
+    "answer": "Có chu trình đi qua mọi đỉnh đúng 1 lần."
+  },
+  {
+    "id": "qa_1002",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Số màu tối đa của đồ thị hai phía là bao nhiêu?",
+    "answer": "Tối đa là 2."
+  },
+  {
+    "id": "qa_1003",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị K_5 có phẳng không?",
+    "answer": "Không, theo định lý Kuratowski."
+  },
+  {
+    "id": "qa_1004",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị K_3,3 có phẳng không?",
+    "answer": "Không, theo định lý Kuratowski."
+  },
+  {
+    "id": "qa_1005",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tổng bậc của các đỉnh trong đồ thị bằng gì?",
+    "answer": "Bằng 2 lần số cạnh."
+  },
+  {
+    "id": "qa_1006",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cây có n đỉnh thì có bao nhiêu cạnh?",
+    "answer": "Có n-1 cạnh."
+  },
+  {
+    "id": "qa_1007",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Rừng là gì trong lý thuyết đồ thị?",
+    "answer": "Là đồ thị không có chu trình."
+  },
+  {
+    "id": "qa_1008",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bậc của đỉnh treo là bao nhiêu?",
+    "answer": "Bậc bằng 1."
+  },
+  {
+    "id": "qa_1009",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đỉnh cô lập có bậc là bao nhiêu?",
+    "answer": "Bậc bằng 0."
+  },
+  {
+    "id": "qa_1010",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị đầy đủ K_n có bao nhiêu cạnh?",
+    "answer": "Có n(n-1)/2 cạnh."
+  },
+  {
+    "id": "qa_1011",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bất đẳng thức tam giác trong đồ thị có trọng số là gì?",
+    "answer": "Trọng số đường đi từ u đến v không lớn hơn tổng trọng số từ u đến w và từ w đến v."
+  },
+  {
+    "id": "qa_1012",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị Euler cần điều kiện gì về bậc của các đỉnh?",
+    "answer": "Mọi đỉnh đều có bậc chẵn."
+  },
+  {
+    "id": "qa_1013",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi Euler cần điều kiện gì?",
+    "answer": "Có đúng 0 hoặc 2 đỉnh bậc lẻ."
+  },
+  {
+    "id": "qa_1014",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Sắc số của đồ thị đầy đủ K_n là bao nhiêu?",
+    "answer": "Là n."
+  },
+  {
+    "id": "qa_1015",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Sắc số của đồ thị chu trình C_n với n chẵn là bao nhiêu?",
+    "answer": "Là 2."
+  },
+  {
+    "id": "qa_1016",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Sắc số của đồ thị chu trình C_n với n lẻ là bao nhiêu?",
+    "answer": "Là 3."
+  },
+  {
+    "id": "qa_1017",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bán bậc ra của một đỉnh trong đồ thị có hướng là gì?",
+    "answer": "Số cung đi ra khỏi đỉnh đó."
+  },
+  {
+    "id": "qa_1018",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị vòng n đỉnh có bao nhiêu cạnh?",
+    "answer": "Có n cạnh."
+  },
+  {
+    "id": "qa_1019",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị lập phương Q_n có bao nhiêu đỉnh?",
+    "answer": "Có 2^n đỉnh."
+  },
+  {
+    "id": "qa_1020",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị lập phương Q_n có bậc mỗi đỉnh là bao nhiêu?",
+    "answer": "Bậc là n."
+  },
+  {
+    "id": "qa_1021",
+    "type": "hoi_dieu_kien",
+    "topic": "nguyen_ly_dem",
+    "question": "Quy tắc cộng trong tổ hợp áp dụng khi nào?",
+    "answer": "Khi các trường hợp độc lập và rời nhau."
+  },
+  {
+    "id": "qa_1022",
+    "type": "hoi_dieu_kien",
+    "topic": "nguyen_ly_dem",
+    "question": "Quy tắc nhân áp dụng khi nào?",
+    "answer": "Khi các bước thực hiện liên tiếp nhau."
+  },
+  {
+    "id": "qa_1023",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Số hoán vị của n phần tử là gì?",
+    "answer": "Là n! (n giai thừa)."
+  },
+  {
+    "id": "qa_1024",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Công thức tổ hợp chập k của n là gì?",
+    "answer": "Là n! / (k!(n-k)!)."
+  },
+  {
+    "id": "qa_1025",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Công thức chỉnh hợp chập k của n là gì?",
+    "answer": "Là n! / (n-k)!."
+  },
+  {
+    "id": "qa_1026",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "nguyen_ly_dem",
+    "question": "Nguyên lý chuồng bồ câu phát biểu như thế nào?",
+    "answer": "Xếp n+1 vật vào n chuồng thì có ít nhất 1 chuồng chứa ít nhất 2 vật."
+  },
+  {
+    "id": "qa_1027",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "nguyen_ly_dem",
+    "question": "Nguyên lý Dirichlet mở rộng là gì?",
+    "answer": "Xếp kn+1 vật vào n chuồng thì có ít nhất 1 chuồng chứa ít nhất k+1 vật."
+  },
+  {
+    "id": "qa_1028",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Tam giác Pascal dùng để làm gì?",
+    "answer": "Dùng để tính các hệ số tổ hợp nhanh chóng."
+  },
+  {
+    "id": "qa_1029",
+    "type": "hoi_cong_thuc",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Khai triển nhị thức Newton cho (a+b)^n có bao nhiêu số hạng?",
+    "answer": "Có n+1 số hạng."
+  },
+  {
+    "id": "qa_1030",
+    "type": "hoi_cong_thuc",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Tổng các hệ số tổ hợp C(n,k) từ k=0 đến n là bao nhiêu?",
+    "answer": "Bằng 2^n."
+  },
+  {
+    "id": "qa_1031",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Số tập con của tập hợp có n phần tử là bao nhiêu?",
+    "answer": "Có 2^n tập con."
+  },
+  {
+    "id": "qa_1032",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Số chỉnh hợp lặp chập k của n phần tử là gì?",
+    "answer": "Là n^k."
+  },
+  {
+    "id": "qa_1033",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Số tổ hợp lặp chập k của n phần tử là gì?",
+    "answer": "Là C(n+k-1, k)."
+  },
+  {
+    "id": "qa_1034",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Bài toán chia kẹo Euler tương đương với việc đếm gì?",
+    "answer": "Đếm số nghiệm nguyên không âm của phương trình x_1 + ... + x_n = k."
+  },
+  {
+    "id": "qa_1035",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Số lượng cách xếp n người vào bàn tròn là bao nhiêu?",
+    "answer": "Là (n-1)! cách."
+  },
+  {
+    "id": "qa_1036",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Đếm số cách chọn k phần tử từ n phần tử không quan tâm thứ tự là phép toán gì?",
+    "answer": "Là phép toán Tổ hợp."
+  },
+  {
+    "id": "qa_1037",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Hàm sinh dùng để làm gì trong tổ hợp?",
+    "answer": "Dùng để giải các bài toán đếm và hệ thức truy hồi."
+  },
+  {
+    "id": "qa_1038",
+    "type": "hoi_cong_thuc",
+    "topic": "nguyen_ly_dem",
+    "question": "Hệ thức truy hồi của dãy Fibonacci là gì?",
+    "answer": "Là F(n) = F(n-1) + F(n-2)."
+  },
+  {
+    "id": "qa_1039",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Số lượng chu trình Hamilton trong K_n là bao nhiêu?",
+    "answer": "Là (n-1)! / 2."
+  },
+  {
+    "id": "qa_1040",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị song phân K_m,n có bao nhiêu cạnh?",
+    "answer": "Có m*n cạnh."
+  },
+  {
+    "id": "qa_1041",
+    "type": "hoi_dinh_nghia",
+    "topic": "logic_menh_de",
+    "question": "Mệnh đề logic là gì?",
+    "answer": "Là một câu khẳng định chỉ có thể đúng hoặc sai."
+  },
+  {
+    "id": "qa_1042",
+    "type": "hoi_ky_hieu",
+    "topic": "logic_menh_de",
+    "question": "Ký hiệu phủ định mệnh đề P là gì?",
+    "answer": "Là ¬P."
+  },
+  {
+    "id": "qa_1043",
+    "type": "hoi_dieu_kien",
+    "topic": "logic_menh_de",
+    "question": "Phép hội (AND) P ∧ Q đúng khi nào?",
+    "answer": "Khi cả P và Q đều đúng."
+  },
+  {
+    "id": "qa_1044",
+    "type": "hoi_dieu_kien",
+    "topic": "logic_menh_de",
+    "question": "Phép tuyển (OR) P ∨ Q sai khi nào?",
+    "answer": "Khi cả P và Q đều sai."
+  },
+  {
+    "id": "qa_1045",
+    "type": "hoi_dieu_kien",
+    "topic": "logic_menh_de",
+    "question": "Phép kéo theo P -> Q sai khi nào?",
+    "answer": "Khi P đúng nhưng Q sai."
+  },
+  {
+    "id": "qa_1046",
+    "type": "hoi_dieu_kien",
+    "topic": "logic_menh_de",
+    "question": "Phép tương đương P <-> Q đúng khi nào?",
+    "answer": "Khi P và Q có cùng giá trị chân lý."
+  },
+  {
+    "id": "qa_1047",
+    "type": "hoi_cong_thuc",
+    "topic": "logic_menh_de",
+    "question": "Luật De Morgan cho phủ định của hội là gì?",
+    "answer": "¬(P ∧ Q) <=> ¬P ∨ ¬Q."
+  },
+  {
+    "id": "qa_1048",
+    "type": "hoi_cong_thuc",
+    "topic": "logic_menh_de",
+    "question": "Luật De Morgan cho phủ định của tuyển là gì?",
+    "answer": "¬(P ∨ Q) <=> ¬P ∧ ¬Q."
+  },
+  {
+    "id": "qa_1049",
+    "type": "hoi_dinh_nghia",
+    "topic": "logic_menh_de",
+    "question": "Hằng đúng (Tautology) là mệnh đề như thế nào?",
+    "answer": "Luôn đúng trong mọi trường hợp."
+  },
+  {
+    "id": "qa_1050",
+    "type": "hoi_dinh_nghia",
+    "topic": "logic_menh_de",
+    "question": "Hằng sai (Contradiction) là mệnh đề như thế nào?",
+    "answer": "Luôn sai trong mọi trường hợp."
+  },
+  {
+    "id": "qa_1051",
+    "type": "hoi_cong_thuc",
+    "topic": "logic_menh_de",
+    "question": "Luật hấp thụ cho phép hội và tuyển là gì?",
+    "answer": "P ∨ (P ∧ Q) <=> P và P ∧ (P ∨ Q) <=> P."
+  },
+  {
+    "id": "qa_1052",
+    "type": "hoi_cong_thuc",
+    "topic": "logic_menh_de",
+    "question": "Luật thống trị trong logic mệnh đề là gì?",
+    "answer": "P ∨ True <=> True, P ∧ False <=> False."
+  },
+  {
+    "id": "qa_1053",
+    "type": "hoi_cong_thuc",
+    "topic": "logic_menh_de",
+    "question": "Luật đồng nhất trong logic mệnh đề là gì?",
+    "answer": "P ∧ True <=> P, P ∨ False <=> P."
+  },
+  {
+    "id": "qa_1054",
+    "type": "hoi_dinh_nghia",
+    "topic": "logic_menh_de",
+    "question": "Modus Ponens là quy tắc suy luận nào?",
+    "answer": "Nếu P và P -> Q thì suy ra Q."
+  },
+  {
+    "id": "qa_1055",
+    "type": "hoi_dinh_nghia",
+    "topic": "logic_menh_de",
+    "question": "Modus Tollens là quy tắc suy luận nào?",
+    "answer": "Nếu ¬Q và P -> Q thì suy ra ¬P."
+  },
+  {
+    "id": "qa_1056",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "logic_menh_de",
+    "question": "Tam đoạn luận (Syllogism) phát biểu gì?",
+    "answer": "Nếu P -> Q và Q -> R thì suy ra P -> R."
+  },
+  {
+    "id": "qa_1057",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Mệnh đề đảo của P -> Q là gì?",
+    "answer": "Là Q -> P."
+  },
+  {
+    "id": "qa_1058",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Mệnh đề phản của P -> Q là gì?",
+    "answer": "Là ¬P -> ¬Q."
+  },
+  {
+    "id": "qa_1059",
+    "type": "hoi_khai_niem",
+    "topic": "logic_menh_de",
+    "question": "Mệnh đề phản đảo của P -> Q là gì?",
+    "answer": "Là ¬Q -> ¬P."
+  },
+  {
+    "id": "qa_1060",
+    "type": "hoi_tinh_chat",
+    "topic": "logic_menh_de",
+    "question": "Tính chất logic của mệnh đề phản đảo là gì?",
+    "answer": "Luôn tương đương logic với mệnh đề gốc P -> Q."
+  },
+  {
+    "id": "qa_1061",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp là gì?",
+    "answer": "Là một nhóm các đối tượng phân biệt."
+  },
+  {
+    "id": "qa_1062",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp rỗng có bao nhiêu phần tử?",
+    "answer": "Không có phần tử nào."
+  },
+  {
+    "id": "qa_1063",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Giao của tập A và tập rỗng là gì?",
+    "answer": "Là tập rỗng."
+  },
+  {
+    "id": "qa_1064",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Hợp của tập A và tập rỗng là gì?",
+    "answer": "Là tập A."
+  },
+  {
+    "id": "qa_1065",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập con của một tập hợp được định nghĩa thế nào?",
+    "answer": "Mọi phần tử của nó đều thuộc tập hợp kia."
+  },
+  {
+    "id": "qa_1066",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập lũy thừa của tập A là gì?",
+    "answer": "Là tập hợp chứa tất cả các tập con của A."
+  },
+  {
+    "id": "qa_1067",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Ký hiệu của tập hợp các số tự nhiên là gì?",
+    "answer": "Là N."
+  },
+  {
+    "id": "qa_1068",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Ký hiệu của tập hợp các số nguyên là gì?",
+    "answer": "Là Z."
+  },
+  {
+    "id": "qa_1069",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Lực lượng của tập hợp A ∪ B được tính bằng công thức nào?",
+    "answer": "|A| + |B| - |A ∩ B|."
+  },
+  {
+    "id": "qa_1070",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tích Đề-các của tập A và B là gì?",
+    "answer": "Tập các cặp có thứ tự (a,b) với a thuộc A, b thuộc B."
+  },
+  {
+    "id": "qa_1071",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ 2 ngôi là gì?",
+    "answer": "Là tập con của tích Đề-các."
+  },
+  {
+    "id": "qa_1072",
+    "type": "hoi_dieu_kien",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ tương đương cần thỏa mãn các tính chất nào?",
+    "answer": "Phản xạ, đối xứng, bắc cầu."
+  },
+  {
+    "id": "qa_1073",
+    "type": "hoi_dieu_kien",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ thứ tự bộ phận cần thỏa mãn các tính chất nào?",
+    "answer": "Phản xạ, phản xứng, bắc cầu."
+  },
+  {
+    "id": "qa_1074",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Tính phản xạ của quan hệ R trên A là gì?",
+    "answer": "Mọi phần tử a thuộc A đều có (a,a) thuộc R."
+  },
+  {
+    "id": "qa_1075",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Lớp tương đương là gì?",
+    "answer": "Tập các phần tử có quan hệ tương đương với nhau."
+  },
+  {
+    "id": "qa_1076",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Phân hoạch của tập hợp là gì?",
+    "answer": "Chia tập hợp thành các tập con khác rỗng và rời nhau."
+  },
+  {
+    "id": "qa_1077",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Đơn ánh là hàm số có tính chất gì?",
+    "answer": "Mọi phần tử khác nhau của tập nguồn đều có ảnh khác nhau."
+  },
+  {
+    "id": "qa_1078",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Toàn ánh là hàm số có tính chất gì?",
+    "answer": "Tập giá trị bằng tập đích."
+  },
+  {
+    "id": "qa_1079",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Song ánh là gì?",
+    "answer": "Vừa là đơn ánh vừa là toàn ánh."
+  },
+  {
+    "id": "qa_1080",
+    "type": "hoi_dieu_kien",
+    "topic": "quan_he_anh_xa",
+    "question": "Hàm số ngược chỉ tồn tại khi nào?",
+    "answer": "Khi hàm số đó là một song ánh."
+  },
+  {
+    "id": "qa_1081",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Hàm hợp g(f(x)) là gì?",
+    "answer": "Áp dụng f lên x trước rồi áp dụng g lên kết quả."
+  },
+  {
+    "id": "qa_1082",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Hàm sàn của số thực x là gì?",
+    "answer": "Số nguyên lớn nhất không vượt quá x."
+  },
+  {
+    "id": "qa_1083",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Hàm trần của số thực x là gì?",
+    "answer": "Số nguyên nhỏ nhất lớn hơn hoặc bằng x."
+  },
+  {
+    "id": "qa_1084",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ đối xứng là gì?",
+    "answer": "Nếu có (a,b) thì cũng có (b,a)."
+  },
+  {
+    "id": "qa_1085",
+    "type": "hoi_dinh_nghia",
+    "topic": "quan_he_anh_xa",
+    "question": "Quan hệ phản xứng là gì?",
+    "answer": "Nếu có (a,b) và (b,a) thì a phải bằng b."
+  },
+  {
+    "id": "qa_1086",
+    "type": "hoi_dinh_nghia",
+    "topic": "dai_so_boole",
+    "question": "Hàm Boole là gì?",
+    "answer": "Hàm nhận giá trị đầu vào và đầu ra thuộc tập {0, 1}."
+  },
+  {
+    "id": "qa_1087",
+    "type": "hoi_dinh_nghia",
+    "topic": "dai_so_boole",
+    "question": "Chuẩn tắc DNF là viết tắt của gì?",
+    "answer": "Dạng chuẩn tắc tuyển (Disjunctive Normal Form)."
+  },
+  {
+    "id": "qa_1088",
+    "type": "hoi_dinh_nghia",
+    "topic": "dai_so_boole",
+    "question": "Chuẩn tắc CNF là viết tắt của gì?",
+    "answer": "Dạng chuẩn tắc hội (Conjunctive Normal Form)."
+  },
+  {
+    "id": "qa_1089",
+    "type": "hoi_ung_dung",
+    "topic": "dai_so_boole",
+    "question": "Bìa Karnaugh dùng làm gì?",
+    "answer": "Dùng để rút gọn biểu thức Boole."
+  },
+  {
+    "id": "qa_1090",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng NAND là gì?",
+    "answer": "Là phủ định của cổng AND."
+  },
+  {
+    "id": "qa_1091",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng NOR là gì?",
+    "answer": "Là phủ định của cổng OR."
+  },
+  {
+    "id": "qa_1092",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng XOR thực hiện phép toán gì?",
+    "answer": "Tuyển loại trừ, chỉ đúng khi hai ngõ vào khác nhau."
+  },
+  {
+    "id": "qa_1093",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_boole",
+    "question": "Cổng XNOR là gì?",
+    "answer": "Phủ định của XOR, đúng khi hai ngõ vào giống nhau."
+  },
+  {
+    "id": "qa_1094",
+    "type": "hoi_tinh_chat",
+    "topic": "dai_so_boole",
+    "question": "Đại số Boole tuân theo luật giao hoán không?",
+    "answer": "Có, cả AND và OR đều giao hoán."
+  },
+  {
+    "id": "qa_1095",
+    "type": "hoi_tinh_chat",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong đồ thị, Ma trận kề của đồ thị vô hướng có tính chất gì?",
+    "answer": "Là ma trận đối xứng."
+  },
+  {
+    "id": "qa_1096",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tổng các phần tử trên một hàng của ma trận kề bằng gì?",
+    "answer": "Bằng bậc của đỉnh tương ứng."
+  },
+  {
+    "id": "qa_1097",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị có hướng gọi là liên thông mạnh khi nào?",
+    "answer": "Có đường đi có hướng giữa mọi cặp đỉnh."
+  },
+  {
+    "id": "qa_1098",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Rừng gồm k cây và n đỉnh thì có bao nhiêu cạnh?",
+    "answer": "Có n-k cạnh."
+  },
+  {
+    "id": "qa_1099",
+    "type": "hoi_tinh_chat",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường chéo chính của ma trận kề trong đơn đồ thị chứa giá trị gì?",
+    "answer": "Chứa toàn số 0."
+  },
+  {
+    "id": "qa_1100",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp các số vô tỉ được ký hiệu là gì?",
+    "answer": "Ký hiệu là I hoặc R \\ Q."
   }
 ]
