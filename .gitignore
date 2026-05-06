@@ -1,4 +1,4 @@
-﻿backend/node_modules/
+backend/node_modules/
 backend/.env
 backend/.env.local
 
@@ -27,3 +27,8 @@ data/eval_set.json
 # Python cache
 data/__pycache__/
 *.pyc
+
+# Embedding cache files (auto-generated, không cần push)
+data/trad_st_cache.npy
+data/trad_gru_cache.npy
+data/traditional_embeddings.npy
