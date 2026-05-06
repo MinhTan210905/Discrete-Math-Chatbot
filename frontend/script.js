@@ -32,14 +32,10 @@ let sendingInProgress = false;
 
 function sanitizeDisplayText(text) {
     let output = String(text || "");
-    DISPLAY_REPLACEMENTS.forEach(([pattern, replacement]) => {
-        output = output.replace(pattern, replacement);
-    });
     return output
         .replace(/\r/g, "")
         .replace(/[ \t]+\n/g, "\n")
         .replace(/\n{3,}/g, "\n\n")
-        .replace(/[ \t]{2,}/g, " ")
         .trim();
 }
 
@@ -90,6 +86,34 @@ function mapRoleToClass(role) {
     return role === "assistant" ? "bot" : "user";
 }
 
+function renderMarkdownWithMath(text) {
+    const cleaned = sanitizeDisplayText(text);
+    // Use marked to render Markdown to HTML
+    if (typeof marked !== "undefined" && marked.parse) {
+        return marked.parse(cleaned, { breaks: true });
+    }
+    // Fallback: escape HTML and convert newlines to <br>
+    return cleaned
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\n/g, "<br>");
+}
+
+function applyKaTeX(element) {
+    if (typeof renderMathInElement === "function") {
+        renderMathInElement(element, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true },
+            ],
+            throwOnError: false,
+        });
+    }
+}
+
 function createMessageNode(message, options) {
     const messageNode = document.createElement("div");
     const roleClass = mapRoleToClass(message.role);
@@ -100,9 +124,17 @@ function createMessageNode(message, options) {
 
     const bubble = document.createElement("div");
     bubble.className = "bubble";
-    bubble.textContent = sanitizeDisplayText(message.text);
-    messageNode.appendChild(bubble);
 
+    if (message.role === "assistant" && !(options && options.pending)) {
+        // Bot messages: render Markdown + LaTeX
+        bubble.innerHTML = renderMarkdownWithMath(message.text);
+        applyKaTeX(bubble);
+    } else {
+        // User messages & pending: plain text
+        bubble.textContent = sanitizeDisplayText(message.text);
+    }
+
+    messageNode.appendChild(bubble);
     return messageNode;
 }
 
@@ -336,7 +368,8 @@ function updatePendingBubble(messageNode, text) {
     if (!messageNode) return;
     const bubble = messageNode.querySelector(".bubble");
     if (bubble) {
-        bubble.textContent = sanitizeDisplayText(text);
+        bubble.innerHTML = renderMarkdownWithMath(text);
+        applyKaTeX(bubble);
     }
 }
 

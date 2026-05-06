@@ -1,0 +1,50 @@
+qa_0500;hoi_dinh_nghia;dai_so_menh_de;Mệnh đề là gì?;Mệnh đề là một câu khẳng định có giá trị đúng hoặc sai, không thể vừa đúng vừa sai.
+qa_0501;hoi_khai_niem;dai_so_menh_de;Phép kéo theo (p → q) có giá trị sai khi nào?;Phép kéo theo p → q chỉ sai khi p đúng và q sai. Tất cả các trường hợp khác đều cho giá trị đúng.
+qa_0502;hoi_dinh_nghia;dai_so_menh_de;Thế nào là một hằng đúng (tautology)?;Hằng đúng là mệnh đề hợp thành luôn có giá trị đúng với mọi giá trị chân lý của các biến mệnh đề thành phần.
+qa_0503;hoi_dinh_nghia;dai_so_menh_de;Thế nào là một hằng sai (contradiction)?;Hằng sai là mệnh đề hợp thành luôn có giá trị sai với mọi giá trị chân lý của các biến mệnh đề thành phần.
+qa_0504;hoi_cong_thuc;dai_so_menh_de;Luật De Morgan cho phép phủ định phép hội được viết như thế nào?;¬(p ∧ q) ≡ ¬p ∨ ¬q. Nghĩa là phủ định của phép hội bằng phép tuyển của các phủ định.
+qa_0505;hoi_cong_thuc;dai_so_menh_de;Luật De Morgan cho phép phủ định phép tuyển được viết như thế nào?;¬(p ∨ q) ≡ ¬p ∧ ¬q. Nghĩa là phủ định của phép tuyển bằng phép hội của các phủ định.
+qa_0506;hoi_khai_niem;dai_so_menh_de;Hai mệnh đề được gọi là tương đương khi nào?;Hai mệnh đề p và q tương đương (p ≡ q) khi chúng có cùng giá trị chân lý trong mọi trường hợp.
+qa_0507;hoi_dinh_nghia;dai_so_menh_de;Lượng từ với mọi (∀) được hiểu như thế nào?;∀x P(x) có nghĩa là mệnh đề P(x) đúng với mọi giá trị x trong miền xác định.
+qa_0508;hoi_dinh_nghia;dai_so_menh_de;Lượng từ tồn tại (∃) được hiểu như thế nào?;∃x P(x) có nghĩa là tồn tại ít nhất một giá trị x trong miền xác định mà P(x) đúng.
+qa_0509;hoi_cong_thuc;dai_so_menh_de;Phủ định của lượng từ với mọi được chuyển đổi như thế nào?;¬(∀x P(x)) ≡ ∃x ¬P(x). Phủ định của "với mọi x, P(x) đúng" là "tồn tại x sao cho P(x) sai".
+qa_0510;hoi_dinh_nghia;ly_thuyet_do_thi;Thế nào là đồ thị đều?;Đồ thị đều là đồ thị mà mọi đỉnh đều có cùng bậc. Đồ thị có mọi đỉnh bậc k được gọi là đồ thị k-đều.
+qa_0511;hoi_dinh_nghia;ly_thuyet_do_thi;Đường đi Euler là gì?;Đường đi Euler là đường đi đi qua mỗi cạnh của đồ thị đúng một lần.
+qa_0512;hoi_dieu_kien;ly_thuyet_do_thi;Điều kiện cần và đủ để đồ thị vô hướng liên thông có chu trình Euler là gì?;Đồ thị vô hướng liên thông có chu trình Euler khi và chỉ khi mọi đỉnh đều có bậc chẵn.
+qa_0513;hoi_dieu_kien;ly_thuyet_do_thi;Điều kiện để đồ thị vô hướng liên thông có đường đi Euler là gì?;Đồ thị vô hướng liên thông có đường đi Euler khi và chỉ khi có đúng 2 đỉnh bậc lẻ.
+qa_0514;hoi_dinh_nghia;ly_thuyet_do_thi;Đường đi Hamilton là gì?;Đường đi Hamilton là đường đi đi qua mỗi đỉnh của đồ thị đúng một lần.
+qa_0515;hoi_dinh_nghia;ly_thuyet_do_thi;Chu trình Hamilton là gì?;Chu trình Hamilton là chu trình đi qua mỗi đỉnh của đồ thị đúng một lần rồi quay về đỉnh xuất phát.
+qa_0516;hoi_noi_dung_dinh_ly;ly_thuyet_do_thi;Nội dung định lý Dirac về chu trình Hamilton là gì?;Nếu G là đơn đồ thị vô hướng có n đỉnh (n ≥ 3) và bậc mỗi đỉnh ≥ n/2, thì G có chu trình Hamilton.
+qa_0517;hoi_dinh_nghia;ly_thuyet_do_thi;Cây (tree) là gì?;Cây là đồ thị vô hướng liên thông không có chu trình.
+qa_0518;hoi_khai_niem;ly_thuyet_do_thi;Cây có n đỉnh thì có bao nhiêu cạnh?;Cây có n đỉnh luôn có đúng n - 1 cạnh.
+qa_0519;hoi_dinh_nghia;ly_thuyet_do_thi;Thế nào là cây khung (spanning tree) của đồ thị?;Cây khung của đồ thị G là cây con chứa tất cả các đỉnh của G và là đồ thị con của G.
+qa_0520;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Kruskal dùng để giải bài toán gì?;Thuật toán Kruskal dùng để tìm cây khung nhỏ nhất của đồ thị có trọng số bằng cách chọn cạnh có trọng số nhỏ nhất mà không tạo chu trình.
+qa_0521;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Prim dùng để giải bài toán gì?;Thuật toán Prim dùng để tìm cây khung nhỏ nhất bằng cách bắt đầu từ một đỉnh và mở rộng cây bằng cạnh có trọng số nhỏ nhất nối đến đỉnh chưa thuộc cây.
+qa_0522;hoi_dinh_nghia;ly_thuyet_do_thi;Đồ thị Euler là gì?;Đồ thị Euler là đồ thị có chu trình Euler, tức là tồn tại một chu trình đi qua mỗi cạnh đúng một lần.
+qa_0523;hoi_dinh_nghia;ly_thuyet_do_thi;Ma trận kề của đồ thị là gì?;Ma trận kề A của đồ thị G có n đỉnh là ma trận vuông n×n, trong đó A[i][j] = 1 nếu có cạnh nối đỉnh i với đỉnh j, bằng 0 nếu ngược lại.
+qa_0524;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Dijkstra giải quyết bài toán gì?;Thuật toán Dijkstra tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh còn lại trong đồ thị có trọng số không âm.
+qa_0525;hoi_dinh_nghia;ly_thuyet_tap_hop;Tập lũy thừa (power set) của tập A là gì?;Tập lũy thừa P(A) là tập hợp chứa tất cả các tập con của A, bao gồm cả tập rỗng và chính A.
+qa_0526;hoi_cong_thuc;ly_thuyet_tap_hop;Số phần tử của tập lũy thừa P(A) khi A có n phần tử là bao nhiêu?;Số phần tử của P(A) là 2^n.
+qa_0527;hoi_dinh_nghia;ly_thuyet_tap_hop;Quan hệ tương đương là gì?;Quan hệ R trên tập A là quan hệ tương đương nếu nó có tính phản xạ, đối xứng và bắc cầu.
+qa_0528;hoi_dinh_nghia;ly_thuyet_tap_hop;Lớp tương đương của phần tử a là gì?;Lớp tương đương của a (ký hiệu [a]) là tập hợp tất cả các phần tử b trong A sao cho a có quan hệ R với b.
+qa_0529;hoi_dinh_nghia;ly_thuyet_tap_hop;Quan hệ thứ tự bộ phận là gì?;Quan hệ R trên tập A là quan hệ thứ tự bộ phận nếu nó có tính phản xạ, phản đối xứng và bắc cầu.
+qa_0530;hoi_dinh_nghia;ly_thuyet_tap_hop;Hàm đơn ánh (injection) là gì?;Hàm f: A → B là đơn ánh nếu với mọi a1, a2 thuộc A mà a1 ≠ a2 thì f(a1) ≠ f(a2).
+qa_0531;hoi_dinh_nghia;ly_thuyet_tap_hop;Hàm toàn ánh (surjection) là gì?;Hàm f: A → B là toàn ánh nếu với mọi b thuộc B, tồn tại ít nhất một a thuộc A sao cho f(a) = b.
+qa_0532;hoi_dinh_nghia;ly_thuyet_tap_hop;Hàm song ánh (bijection) là gì?;Hàm f: A → B là song ánh nếu nó vừa là đơn ánh vừa là toàn ánh.
+qa_0533;hoi_cong_thuc;nguyen_ly_dem;Công thức tính số tổ hợp lặp chập k của n phần tử là gì?;Số tổ hợp lặp chập k của n phần tử bằng C(k, n+k-1) = (n+k-1)! / (k! * (n-1)!).
+qa_0534;hoi_khai_niem;nguyen_ly_dem;Nguyên lý bao hàm - loại trừ cho 2 tập hợp được phát biểu thế nào?;|A ∪ B| = |A| + |B| - |A ∩ B|. Ta cộng hai tập rồi trừ đi phần giao vì phần giao đã bị đếm hai lần.
+qa_0535;hoi_cong_thuc;nguyen_ly_dem;Công thức tính số phần tử không thuộc tập nào trong m tập con của X là gì?;|X| - |A1 ∪ A2 ∪ ... ∪ Am| = |X| - N1 + N2 - N3 + ... + (-1)^m * Nm, theo nguyên lý bù trừ.
+qa_0536;hoi_ung_dung;nguyen_ly_dem;Bài toán xáo trộn (derangement) là gì?;Bài toán xáo trộn đếm số hoán vị mà không phần tử nào ở vị trí ban đầu. Số xáo trộn Dn = n! * (1 - 1/1! + 1/2! - 1/3! + ... + (-1)^n/n!).
+qa_0537;hoi_cong_thuc;nguyen_ly_dem;Công thức nhị thức Newton là gì?;(a + b)^n = tổng C(k,n) * a^(n-k) * b^k với k chạy từ 0 đến n.
+qa_0538;hoi_khai_niem;nguyen_ly_dem;Hệ số nhị thức C(k,n) có tính chất đối xứng gì?;C(k,n) = C(n-k,n). Ví dụ C(2,5) = C(3,5) = 10.
+qa_0539;hoi_cong_thuc;nguyen_ly_dem;Tam giác Pascal là gì và cách xây dựng?;Tam giác Pascal là bảng các hệ số nhị thức, mỗi số bằng tổng hai số phía trên nó: C(k,n) = C(k-1,n-1) + C(k,n-1).
+qa_0540;hoi_dinh_nghia;quan_he_anh_xa;Quan hệ phản xạ là gì?;Quan hệ R trên tập A là phản xạ nếu với mọi a thuộc A, ta có (a, a) thuộc R, tức mọi phần tử đều có quan hệ với chính nó.
+qa_0541;hoi_dinh_nghia;quan_he_anh_xa;Quan hệ phản đối xứng là gì?;Quan hệ R trên tập A là phản đối xứng nếu với mọi a, b: nếu (a,b) thuộc R và (b,a) thuộc R thì a = b.
+qa_0542;hoi_dinh_nghia;quan_he_anh_xa;Bao đóng bắc cầu của quan hệ R là gì?;Bao đóng bắc cầu là quan hệ nhỏ nhất chứa R và có tính bắc cầu. Có thể tính bằng thuật toán Warshall.
+qa_0543;hoi_khai_niem;quan_he_anh_xa;Thuật toán Warshall dùng để làm gì?;Thuật toán Warshall tính bao đóng bắc cầu của quan hệ bằng cách cập nhật ma trận quan hệ qua n bước lặp.
+qa_0544;hoi_dinh_nghia;quan_he_anh_xa;Phân hoạch của tập hợp A là gì?;Phân hoạch là cách chia A thành các tập con không rỗng, đôi một không giao nhau, và hợp lại bằng chính A.
+qa_0545;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Hoán vị lặp của n phần tử với n1 phần tử loại 1, n2 phần tử loại 2, ..., nk phần tử loại k được tính thế nào?;Số hoán vị lặp bằng n! / (n1! * n2! * ... * nk!), trong đó n = n1 + n2 + ... + nk.
+qa_0546;hoi_ung_dung;to_hop_chinh_hop_hoan_vi;Hoán vị lặp có ứng dụng thực tế gì?;Dùng để đếm số cách sắp xếp các đối tượng khi có phần tử lặp, ví dụ số cách sắp xếp các chữ cái trong từ MISSISSIPPI = 11!/(4!*4!*2!*1!).
+qa_0547;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Công thức tính chỉnh hợp không lặp dùng giai thừa là gì?;A(k,n) = n! / (n-k)!.
+qa_0548;hoi_khai_niem;nhi_thuc_to_hop;Tính chất C(k,n) = C(k-1,n-1) + C(k,n-1) được gọi là gì?;Được gọi là hệ thức Pascal, là cơ sở để xây dựng tam giác Pascal.
+qa_0549;hoi_cong_thuc;nhi_thuc_to_hop;Tổng tất cả các hệ số nhị thức C(0,n) + C(1,n) + ... + C(n,n) bằng bao nhiêu?;Tổng bằng 2^n, suy ra từ khai triển nhị thức (1+1)^n.
