@@ -9,20 +9,9 @@ data/chatbot.sqlite-shm
 data/chatbot.sqlite-wal
 data/history-temp.json
 
-# Extracted PDF chunks (often copyrighted / user-provided)
-data/pdf_corpus.json
-
-# Generated datasets / indexes (rebuild via `npm run rebuild:data`)
-data/discrete_math_questions.json
-data/discrete_math_knowledge_base.json
+# Generated datasets (rebuild via prepare scripts)
+data/traditional_corpus.json
 data/retrieval_corpus.json
-data/discrete_math_model.json
-data/train.json
-data/train.jsonl
-data/test.json
-data/test.jsonl
-data/dataset_summary.json
-data/eval_set.json
 
 # Python cache
 data/__pycache__/
@@ -30,5 +19,10 @@ data/__pycache__/
 
 # Embedding cache files (auto-generated, không cần push)
 data/trad_st_cache.npy
-data/trad_gru_cache.npy
-data/traditional_embeddings.npy
+data/rag_embed_cache.npy
+
+# PDF files và corpus sinh ra từ PDF (thường lớn/bản quyền)
+data/pdfs/
+data/pdf_corpus.json
+
+.vs/
