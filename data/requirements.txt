@@ -1,0 +1,17 @@
+# =============================================
+# Thư viện Python cần cài cho chatbot
+# Chạy lệnh: pip install -r requirements.txt
+# =============================================
+
+# --- Layer 1: TF-IDF (brain_traditional.py) ---
+scikit-learn>=1.3.0
+
+# --- Layer 2: Sentence Embeddings + Layer 3: BiGRU (brain_traditional.py) ---
+# sentence-transformers tự kéo theo torch và numpy
+sentence-transformers>=2.2.0
+
+# --- brain_rag.py (RAG + OpenAI/Groq) ---
+openai>=1.0.0
+
+# --- Numpy (dùng bởi cả 2 brain) ---
+numpy>=1.24.0

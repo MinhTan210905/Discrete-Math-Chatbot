@@ -1,11 +1,10 @@
-﻿const http = require("http");
+require("dotenv").config();
+const http = require("http");
 const path = require("path");
 
 const config = require("./config");
 const { ChatService } = require("./chat-service");
 const { ConversationRepository } = require("./conversation-repository");
-const { OpenAIService } = require("./openai-service");
-const { RetrievalEngine } = require("./retrieval-engine");
 
 function getCorsHeaders() {
     return {
@@ -41,20 +40,10 @@ function createServices(options = {}) {
             ? options.legacyHistoryPath
             : path.join(config.DATA_DIR, "history-temp.json"),
     });
-    const retrievalEngine = options.retrievalEngine || new RetrievalEngine({
-        modelPath: options.modelPath || config.MODEL_PATH,
-    });
-    const openAIService = options.openAIService || new OpenAIService({
-        chatModel: options.chatModel || config.OPENAI_CHAT_MODEL,
-        embeddingModel: options.embeddingModel || config.OPENAI_EMBEDDING_MODEL,
-        reasoningEffort: options.reasoningEffort || config.OPENAI_REASONING_EFFORT,
-    });
 
     return {
         repository,
-        retrievalEngine,
-        openAIService,
-        chatService: new ChatService({ repository, retrievalEngine, openAIService }),
+        chatService: new ChatService({ repository }),
     };
 }
 
@@ -150,13 +139,14 @@ function createServer(options = {}) {
                 const payload = JSON.parse(body || "{}");
                 const message = typeof payload.message === "string" ? payload.message.trim() : "";
                 const conversationId = typeof payload.conversationId === "string" ? payload.conversationId : undefined;
+                const mode = typeof payload.mode === "string" ? payload.mode : "traditional";
 
                 if (!message) {
                     sendJson(response, 400, { message: "Trường `message` là bắt buộc." });
                     return;
                 }
 
-                const result = await services.chatService.handleChat({ conversationId, message });
+                const result = await services.chatService.handleChat({ conversationId, message, mode });
                 sendJson(response, 200, result);
                 return;
             }

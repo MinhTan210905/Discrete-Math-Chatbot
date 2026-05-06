@@ -1,4 +1,4 @@
-﻿const CONVERSATIONS_API_URL = "http://localhost:3001/api/conversations";
+const CONVERSATIONS_API_URL = "http://localhost:3001/api/conversations";
 const CHAT_API_URL = "http://localhost:3001/api/chat";
 const MIN_THINKING_MS = 900;
 const DISPLAY_REPLACEMENTS = [
@@ -318,12 +318,16 @@ function resetChat() {
 }
 
 async function requestChatResponse(messageText) {
+    const modelSelect = document.getElementById("model-select");
+    const mode = modelSelect ? modelSelect.value : "traditional";
+
     return apiFetch(CHAT_API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             conversationId: activeConversationId,
             message: messageText,
+            mode: mode,
         }),
     });
 }

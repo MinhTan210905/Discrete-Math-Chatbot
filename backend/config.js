@@ -1,4 +1,4 @@
-﻿const path = require("path");
+const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
@@ -13,4 +13,5 @@ module.exports = {
     MAX_CONTEXT_MESSAGES: Number(process.env.MAX_CONTEXT_MESSAGES || 10),
     MAX_RETRIEVED_DOCS: Number(process.env.MAX_RETRIEVED_DOCS || 5),
     MAX_OUTPUT_TOKENS: Number(process.env.MAX_OUTPUT_TOKENS || 900),
+    CHAT_MODE: process.env.CHAT_MODE || "traditional", // options: "traditional" or "rag"
 };

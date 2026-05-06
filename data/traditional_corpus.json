@@ -1,0 +1,2823 @@
+[
+  {
+    "id": "﻿qa_0041",
+    "type": "hoi_dinh_nghia",
+    "topic": "dai_so_menh_de",
+    "question": "Đại số mệnh đề còn được gọi là gì?",
+    "answer": "Đại số mệnh đề còn được gọi là đại số lôgic."
+  },
+  {
+    "id": "qa_0177",
+    "type": "hoi_dinh_nghia",
+    "topic": "dai_so_menh_de",
+    "question": "Chuỗi lũy thừa của hàm giải tích g(x) hội tụ tại lân cận điểm 0 được gọi là gì?",
+    "answer": "Được gọi là khai triển Maclaurin của hàm g(x)."
+  },
+  {
+    "id": "qa_0180",
+    "type": "hoi_cong_thuc",
+    "topic": "dai_so_menh_de",
+    "question": "Tính chất tương ứng 1-1 nào được sử dụng trong phương pháp hàm sinh?",
+    "answer": "Tương ứng 1-1 giữa một hàm giải tích và một chuỗi hội tụ trong lân cận điểm 0."
+  },
+  {
+    "id": "qa_0210",
+    "type": "hoi_khai_niem",
+    "topic": "dai_so_menh_de",
+    "question": "Sự mâu thuẫn dẫn đến kết luận gì về giả thiết ban đầu?",
+    "answer": "Mâu thuẫn dẫn đến kết luận giả thiết ban đầu (giả thiết phủ định) là sai."
+  },
+  {
+    "id": "qa_0121",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Dạng tổng quát của công thức truy hồi tuyến tính thuần nhất hệ số hằng bậc k là gì?",
+    "answer": "Công thức có dạng an = c1 * an-1 + c2 * an-2 + ... + ck * an-k, với c1, c2, ..., ck là các hằng số và ck khác 0."
+  },
+  {
+    "id": "qa_0122",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Để dãy số {an} thỏa mãn công thức truy hồi bậc k được xác định duy nhất, cần bao nhiêu điều kiện đầu?",
+    "answer": "Cần xác định duy nhất k điều kiện đầu từ a0 đến ak-1."
+  },
+  {
+    "id": "qa_0128",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khi giải công thức truy hồi, trường hợp riêng nào thường được xét trước để rút ra kết quả tổng quát?",
+    "answer": "Trường hợp riêng với bậc k = 2 thường được xét trước."
+  },
+  {
+    "id": "qa_0129",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tại sao hệ số ck trong công thức truy hồi bậc k phải khác 0?",
+    "answer": "Vì nếu ck = 0 thì công thức sẽ trở thành công thức truy hồi có bậc thấp hơn k."
+  },
+  {
+    "id": "qa_0131",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Nội dung của Định lý 1 về nghiệm của công thức truy hồi tuyến tính thuần nhất hệ số hằng bậc 2 là gì?",
+    "answer": "Định lý xác định công thức nghiệm tổng quát dựa trên hai nghiệm phân biệt của phương trình đặc trưng."
+  },
+  {
+    "id": "qa_0133",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong định lý về hệ số hằng bậc 2, nếu phương trình đặc trưng có hai nghiệm phân biệt r1, r2 thì nghiệm tổng quát an có dạng nào?",
+    "answer": "Nghiệm tổng quát có dạng an = α1 * r1^n + α2 * r2^n."
+  },
+  {
+    "id": "qa_0134",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Các hằng số α1 và α2 trong biểu thức nghiệm tổng quát của công thức truy hồi bậc 2 được xác định như thế nào?",
+    "answer": "Được xác định dựa trên các giá trị ban đầu của dãy số (thường là a0 và a1)."
+  },
+  {
+    "id": "qa_0135",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý 1 về nghiệm của hệ thức truy hồi tuyến tính bậc 2 áp dụng cho những giá trị nào của n?",
+    "answer": "Áp dụng cho mọi số nguyên không âm n = 0, 1, 2, ..."
+  },
+  {
+    "id": "qa_0136",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tại sao Định lý 1 về truy hồi tuyến tính bậc 2 lại yêu cầu r1 và r2 phải phân biệt?",
+    "answer": "Để đảm bảo rằng hai hàm mũ r1^n và r2^n là độc lập tuyến tính, tạo nên nghiệm tổng quát đầy đủ."
+  },
+  {
+    "id": "qa_0138",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong định lý giải công thức truy hồi bậc 2, biểu thức an = α1 * r1^n + α2 * r2^n được gọi là gì?",
+    "answer": "Được gọi là công thức nghiệm tổng quát của hệ thức truy hồi."
+  },
+  {
+    "id": "qa_0140",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Hệ số c1 và c2 trong định lý về công thức truy hồi tuyến tính bậc 2 có đặc điểm gì?",
+    "answer": "Chúng là các hằng số thực xác định quy tắc của dãy số."
+  },
+  {
+    "id": "qa_0141",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tại sao Định lý 1 về nghiệm phân biệt không áp dụng được cho mọi trường hợp của phương trình đặc trưng bậc 2?",
+    "answer": "Vì Định lý 1 không áp dụng được khi phương trình đặc trưng có nghiệm kép."
+  },
+  {
+    "id": "qa_0142",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Nội dung chính của Định lý 2 về nghiệm của công thức truy hồi tuyến tính thuần nhất hệ số hằng bậc 2 là gì?",
+    "answer": "Định lý xác định công thức nghiệm tổng quát trong trường hợp phương trình đặc trưng có nghiệm kép."
+  },
+  {
+    "id": "qa_0144",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Điều kiện về hệ số c2 trong Định lý 2 về công thức truy hồi bậc 2 là gì?",
+    "answer": "Hệ số c2 phải khác 0 (c2 ≠ 0)."
+  },
+  {
+    "id": "qa_0150",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tại sao xuất hiện thêm thừa số n trong công thức nghiệm kép của hệ thức truy hồi?",
+    "answer": "Thừa số n xuất hiện để tạo ra một nghiệm độc lập tuyến tính thứ hai khi phương trình đặc trưng chỉ cung cấp một giá trị nghiệm duy nhất."
+  },
+  {
+    "id": "qa_0151",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Nội dung của Định lý 3 về nghiệm của công thức truy hồi tuyến tính thuần nhất hệ số hằng bậc k là gì?",
+    "answer": "Định lý thiết lập công thức nghiệm tổng quát cho hệ thức truy hồi bậc k khi phương trình đặc trưng có k nghiệm phân biệt."
+  },
+  {
+    "id": "qa_0152",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Dạng tổng quát của phương trình đặc trưng bậc k trong Định lý 3 được viết như thế nào?",
+    "answer": "Phương trình có dạng r^k - c1*r^(k-1) - c2*r^(k-2) - ... - ck = 0."
+  },
+  {
+    "id": "qa_0154",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Hệ thức truy hồi bậc k tương ứng với phương trình đặc trưng trong Định lý 3 là gì?",
+    "answer": "Hệ thức là an = c1*an-1 + c2*an-2 + ... + ck*an-k."
+  },
+  {
+    "id": "qa_0157",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Giá trị n trong công thức nghiệm tổng quát bậc k bắt đầu từ đâu?",
+    "answer": "Giá trị n bắt đầu từ n = 0, 1, 2, ..."
+  },
+  {
+    "id": "qa_0158",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý 3 là sự mở rộng của định lý nào đã xét trước đó?",
+    "answer": "Đây là sự mở rộng của Định lý 1 (trường hợp bậc 2 có nghiệm phân biệt) cho trường hợp tổng quát bậc k."
+  },
+  {
+    "id": "qa_0165",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong trường hợp dãy số là hữu hạn, hàm sinh g(x) sẽ trở thành đối tượng toán học nào?",
+    "answer": "Hàm sinh g(x) sẽ là một đa thức bậc m."
+  },
+  {
+    "id": "qa_0169",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Nếu tìm được m sao cho hi = 0 với mọi i > m, bậc của đa thức hàm sinh được xác định như thế nào?",
+    "answer": "Bậc của đa thức hàm sinh chính bằng m."
+  },
+  {
+    "id": "qa_0243",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đồ thị đầy đủ Kn?",
+    "answer": "Đồ thị đầy đủ Kn là một bộ gồm hai tập V, E, trong đó V là tập gồm n điểm (gọi là các đỉnh) và E là tập các đoạn nối giữa tất cả các cặp điểm trong V (gọi là các cạnh)."
+  },
+  {
+    "id": "qa_0244",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là tính chất (i,j)-Ramsey của một số nguyên dương m?",
+    "answer": "Số nguyên dương m có tính chất (i,j)-Ramsey nếu với mọi đồ thị đầy đủ Km mà mỗi cạnh được tô bởi một trong hai màu xanh hoặc đỏ, đồ thị đó luôn chứa đồ thị con Ki toàn cạnh màu đỏ hoặc đồ thị con Kj toàn cạnh màu xanh."
+  },
+  {
+    "id": "qa_0250",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ý nghĩa của các chỉ số n1, n2, ..., nk trong ký hiệu số Ramsey tổng quát là gì?",
+    "answer": "Các chỉ số này đại diện cho kích thước của các đồ thị con đầy đủ (Kn) tương ứng với từng loại màu sắc mà ta muốn chắc chắn tìm được ít nhất một cấu hình đồng nhất màu đó."
+  },
+  {
+    "id": "qa_0252",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tham số r trong số Ramsey tổng quát có thể nhận những giá trị nào?",
+    "answer": "Tham số r có thể là bất kỳ số nguyên dương nào, tùy thuộc vào việc ta tô màu cho đỉnh (r=1), cạnh (r=2), hay các tập con gồm nhiều đỉnh hơn."
+  },
+  {
+    "id": "qa_0288",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa ký hiệu O lớn (O-notation) cho hàm f(n) và g(n)?",
+    "answer": "Ta viết f(n) = O(g(n)) và nói f(n) có bậc không quá g(n) nếu tồn tại hằng số dương C1 và số nguyên dương N1 sao cho trị tuyệt đối của f(n) luôn nhỏ hơn hoặc bằng C1 nhân với trị tuyệt đối của g(n) với mọi n lớn hơn hoặc bằng N1."
+  },
+  {
+    "id": "qa_0289",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa ký hiệu Omega (Omega-notation) cho hàm f(n) và g(n)?",
+    "answer": "Ta viết f(n) = Omega(g(n)) và nói f(n) có bậc ít nhất là g(n) nếu tồn tại hằng số dương C2 và số nguyên dương N2 sao cho trị tuyệt đối của f(n) luôn lớn hơn hoặc bằng C2 nhân với trị tuyệt đối của g(n) với mọi n lớn hơn hoặc bằng N2."
+  },
+  {
+    "id": "qa_0290",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khi nào thì ta nói f(n) có bậc là g(n), ký hiệu là Theta(g(n))?",
+    "answer": "Ta viết f(n) = Theta(g(n)) khi hàm f(n) đồng thời thỏa mãn f(n) = O(g(n)) và f(n) = Omega(g(n))."
+  },
+  {
+    "id": "qa_0295",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khi nào ta nói thời gian tính tốt nhất của thuật toán có bậc không quá g(n) hay là O(g(n))?",
+    "answer": "Khi thuật toán đòi hỏi thời gian tính tốt nhất là t(n) với độ dài đầu vào n và thỏa mãn điều kiện t(n) = O(g(n))."
+  },
+  {
+    "id": "qa_0297",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa thời gian tính trung bình của thuật toán là O(g(n))?",
+    "answer": "Nghĩa là thời gian tính trung bình t(n) của thuật toán ứng với đầu vào n thỏa mãn bậc không quá g(n), tức t(n) = O(g(n))."
+  },
+  {
+    "id": "qa_0298",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Làm thế nào để thu được định nghĩa bậc ít nhất (Omega) của các loại thời gian tính?",
+    "answer": "Bằng cách thay ký hiệu O bởi Omega và cụm từ 'không quá' bởi 'ít nhất' trong các định nghĩa tương ứng về thời gian tính tốt nhất, tồi nhất và trung bình."
+  },
+  {
+    "id": "qa_0299",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khi nào ta nói thời gian tính (tốt nhất/tồi nhất/trung bình) của thuật toán là Theta(g(n))?",
+    "answer": "Khi thời gian tính đó vừa có bậc không quá g(n) (là O(g(n))), vừa có bậc ít nhất là g(n) (là Omega(g(n)))."
+  },
+  {
+    "id": "qa_0308",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Từ Mệnh đề 2, ta có thể kết luận gì về độ phức tạp thời gian tính của thuật toán Euclide?",
+    "answer": "Ta có thể kết luận rằng thời gian tính của thuật toán Euclide có bậc logarit đối với giá trị của các số đầu vào, tức là thuật toán này cực kỳ hiệu quả ngay cả với các số rất lớn."
+  },
+  {
+    "id": "qa_0312",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cấu trúc chung của thủ tục 'Generate' trong phương pháp sinh được mô tả như thế nào?",
+    "answer": "Bắt đầu bằng việc xây dựng cấu hình ban đầu, đặt biến dừng Stop bằng false"
+  },
+  {
+    "id": "qa_0318",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Cấu trúc đệ quy của thủ tục 'Try(i)' được mô tả như thế nào?",
+    "answer": "Sử dụng vòng lặp duyệt các khả năng j từ 1 đến ni"
+  },
+  {
+    "id": "qa_0351",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ai là người đặt những nền móng đầu tiên cho lý thuyết đồ thị và vào thời gian nào?",
+    "answer": "Nhà toán học lỗi lạc người Thụy Sỹ Leonhard Euler đã đề xuất những tư tưởng cơ bản của lý thuyết đồ thị vào những năm đầu của thế kỷ 18."
+  },
+  {
+    "id": "qa_0352",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bài toán nổi tiếng nào đã đánh dấu sự ra đời của lý thuyết đồ thị?",
+    "answer": "Đó là bài toán về các cái cầu ở thành phố Konigsberg, được Euler sử dụng mô hình đồ thị để giải quyết."
+  },
+  {
+    "id": "qa_0353",
+    "type": "hoi_ung_dung",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong lĩnh vực điện tử, đồ thị được ứng dụng để làm gì?",
+    "answer": "Đồ thị được sử dụng để xác định các mạch vòng trong vấn đề giải tích mạch điện."
+  },
+  {
+    "id": "qa_0354",
+    "type": "hoi_ung_dung",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ứng dụng của đồ thị trong hóa học hữu cơ là gì?",
+    "answer": "Giúp phân biệt các hợp chất hóa học hữu cơ khác nhau có cùng công thức phân tử nhưng khác nhau về cấu trúc phân tử."
+  },
+  {
+    "id": "qa_0355",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong mạng máy tính, mô hình đồ thị giúp xác định điều gì?",
+    "answer": "Giúp xác định xem hai máy tính trong mạng có thể trao đổi thông tin được với nhau hay không."
+  },
+  {
+    "id": "qa_0356",
+    "type": "hoi_ung_dung",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị có trọng số trên các cạnh thường được dùng để giải quyết bài toán giao thông nào?",
+    "answer": "Dùng để tìm đường đi ngắn nhất giữa hai thành phố trong một mạng giao thông."
+  },
+  {
+    "id": "qa_0357",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Liệt kê một số bài toán khác có sử dụng đồ thị để giải quyết?",
+    "answer": "Các bài toán về lập lịch, thời khóa biểu, và phân bổ tần số cho các trạm phát thanh và truyền hình."
+  },
+  {
+    "id": "qa_0358",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa tổng quát về đồ thị?",
+    "answer": "Đồ thị là một cấu trúc rời rạc bao gồm các đỉnh và các cạnh nối các đỉnh này. Các loại đồ thị khác nhau được phân biệt bởi kiểu và số lượng cạnh nối giữa các cặp đỉnh."
+  },
+  {
+    "id": "qa_0359",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là một đơn đồ thị vô hướng?",
+    "answer": "Là đồ thị G = (V, E) trong đó V là tập các đỉnh, và E là tập các cặp không có thứ tự gồm hai phần tử khác nhau của V gọi là các cạnh. Trong đơn đồ thị, giữa hai đỉnh bất kỳ chỉ có tối đa một cạnh nối và không có cạnh nối một đỉnh với chính nó."
+  },
+  {
+    "id": "qa_0360",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đa đồ thị vô hướng và cạnh lặp?",
+    "answer": "Đa đồ thị vô hướng G = (V, E) bao gồm tập đỉnh V và họ các cặp không có thứ tự gồm hai phần tử khác nhau của V gọi là các cạnh. Hai cạnh được gọi là cạnh lặp nếu chúng cùng tương ứng với một cặp đỉnh (tức là có nhiều hơn một cạnh nối giữa hai đỉnh)."
+  },
+  {
+    "id": "qa_0361",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là khuyên trong đồ thị vô hướng?",
+    "answer": "Khuyên là một cạnh nối một đỉnh với chính nó, có dạng e = (u, u). Đồ thị vô hướng cho phép có khuyên được định nghĩa là họ các cặp không có thứ tự mà hai phần tử không nhất thiết phải khác nhau."
+  },
+  {
+    "id": "qa_0362",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đơn đồ thị có hướng và khái niệm cung?",
+    "answer": "Đơn đồ thị có hướng G = (V, E) gồm tập đỉnh V và tập E là các cặp có thứ tự gồm hai phần tử khác nhau của V. Các phần tử của E được gọi là các cung (thể hiện hướng đi từ đỉnh này đến đỉnh kia)."
+  },
+  {
+    "id": "qa_0363",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là đa đồ thị có hướng và cung lặp?",
+    "answer": "Đa đồ thị có hướng G = (V, E) gồm tập đỉnh V và họ E là các cặp có thứ tự gồm hai phần tử khác nhau của V. Hai cung được gọi là cung lặp nếu chúng cùng tương ứng với cùng một cặp đỉnh theo cùng một hướng."
+  },
+  {
+    "id": "qa_0364",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong thực tế nghiên cứu, khi nhắc đến 'đồ thị' mà không có tính từ đi kèm, ta thường hiểu đó là loại đồ thị nào?",
+    "answer": "Thường được hiểu ngầm là đơn đồ thị vô hướng hoặc đơn đồ thị có hướng để cho ngắn gọn."
+  },
+  {
+    "id": "qa_0365",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong đồ thị vô hướng, thế nào là hai đỉnh kề nhau?",
+    "answer": "Hai đỉnh u và v được gọi là kề nhau nếu có một cạnh e = (u, v) nối giữa chúng. Khi đó, cạnh e được gọi là liên thuộc với hai đỉnh u và v."
+  },
+  {
+    "id": "qa_0366",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa bậc của một đỉnh trong đồ thị vô hướng?",
+    "answer": "Bậc của đỉnh v, ký hiệu là deg(v), là số cạnh liên thuộc với đỉnh đó. Riêng đối với khuyên, nó được tính hai lần cho bậc của đỉnh."
+  },
+  {
+    "id": "qa_0367",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là đỉnh cô lập và đỉnh treo trong đồ thị vô hướng?",
+    "answer": "Đỉnh có bậc bằng 0 gọi là đỉnh cô lập. Đỉnh có bậc bằng 1 gọi là đỉnh treo."
+  },
+  {
+    "id": "qa_0368",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Nội dung của Định lý bắt tay (Handshaking Theorem) trong đồ thị vô hướng là gì?",
+    "answer": "Tổng bậc của tất cả các đỉnh trong đồ thị vô hướng bằng hai lần số cạnh của đồ thị đó (tổng deg(v) = 2m)."
+  },
+  {
+    "id": "qa_0369",
+    "type": "hoi_he_qua",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Hệ quả của Định lý bắt tay về số lượng đỉnh bậc lẻ là gì?",
+    "answer": "Trong mọi đồ thị vô hướng, số lượng các đỉnh có bậc là số lẻ luôn là một số chẵn."
+  },
+  {
+    "id": "qa_0370",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong đồ thị có hướng, thế nào là quan hệ kề giữa hai đỉnh u và v qua cung e = (u, v)?",
+    "answer": "Ta nói u kề với v, và v kề từ u. Cung (u, v) đi ra khỏi đỉnh u và đi vào đỉnh v. Đỉnh u gọi là đỉnh đầu (nguồn), đỉnh v gọi là đỉnh cuối (đích)."
+  },
+  {
+    "id": "qa_0371",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa bán bậc ra và bán bậc vào của một đỉnh trong đồ thị có hướng?",
+    "answer": "Bán bậc ra của v, ký hiệu là deg+(v), là số cung đi ra khỏi nó. Bán bậc vào của v, ký hiệu là deg-(v), là số cung đi vào nó."
+  },
+  {
+    "id": "qa_0372",
+    "type": "hoi_moi_quan_he",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Mối quan hệ giữa tổng bán bậc ra, tổng bán bậc vào và số cung trong đồ thị có hướng (Định lý 2) là gì?",
+    "answer": "Tổng tất cả bán bậc ra bằng tổng tất cả bán bậc vào và bằng đúng số lượng cung của đồ thị đó (tổng deg+(v) = tổng deg-(v) = |E|)."
+  },
+  {
+    "id": "qa_0373",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là đồ thị vô hướng tương ứng của một đồ thị có hướng?",
+    "answer": "Là đồ thị vô hướng thu được bằng cách bỏ qua hướng trên các cung của đồ thị có hướng đã cho."
+  },
+  {
+    "id": "qa_0374",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đồ thị vòng Cn (n >= 3)?",
+    "answer": "Gồm n đỉnh v1, v2, ..., vn và các cạnh (v1, v2), (v2, v3), ..., (vn-1, vn) và (vn, v1)."
+  },
+  {
+    "id": "qa_0375",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị bánh xe Wn được tạo ra như thế nào?",
+    "answer": "Lấy một đồ thị vòng Cn-1 và thêm vào một đỉnh mới nối với tất cả các đỉnh của Cn-1 đó."
+  },
+  {
+    "id": "qa_0376",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị lập phương Qn (n-cube) có bao nhiêu đỉnh?",
+    "answer": "Có 2 mũ n đỉnh, mỗi đỉnh biểu diễn cho một xâu nhị phân độ dài n."
+  },
+  {
+    "id": "qa_0377",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Điều kiện để hai đỉnh trong đồ thị lập phương Qn kề nhau?",
+    "answer": "Hai đỉnh kề nhau nếu và chỉ nếu hai xâu nhị phân tương ứng của chúng chỉ khác nhau đúng một bit."
+  },
+  {
+    "id": "qa_0378",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đơn đồ thị phân đôi (Bipartite Graph)?",
+    "answer": "Là đồ thị mà tập đỉnh V có thể phân hoạch thành hai tập con không giao nhau V1 và V2 sao cho mỗi cạnh luôn nối một đỉnh thuộc V1 với một đỉnh thuộc V2."
+  },
+  {
+    "id": "qa_0379",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định lý về chu trình để nhận biết đồ thị phân đôi là gì?",
+    "answer": "Một đơn đồ thị là đồ thị phân đôi nếu và chỉ nếu nó không chứa chu trình độ dài lẻ."
+  },
+  {
+    "id": "qa_0380",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đồ thị phân đôi đầy đủ Km,n?",
+    "answer": "Là đồ thị phân đôi có tập đỉnh chia thành V1 (m đỉnh) và V2 (n đỉnh), sao cho có đúng một cạnh nối giữa mỗi đỉnh của V1 với mỗi đỉnh của V2."
+  },
+  {
+    "id": "qa_0381",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Công thức tính số cạnh của đồ thị phân đôi đầy đủ Km,n?",
+    "answer": "Số cạnh bằng tích m * n."
+  },
+  {
+    "id": "qa_0382",
+    "type": "hoi_ung_dung",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Mô hình đồ thị phân đôi ứng dụng thế nào trong bài toán phân công?",
+    "answer": "V1 đại diện tập thợ, V2 đại diện tập việc"
+  },
+  {
+    "id": "qa_0383",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đường đi độ dài n từ u đến v trong đồ thị vô hướng?",
+    "answer": "Là dãy các cạnh e1, e2, ..., en sao cho e1=(x0, x1), e2=(x1, x2), ..., en=(xn-1, xn) với x0=u và xn=v."
+  },
+  {
+    "id": "qa_0384",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là đường đi đơn (simple path)?",
+    "answer": "Là đường đi không đi qua bất kỳ cạnh nào quá một lần."
+  },
+  {
+    "id": "qa_0385",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa chu trình (circuit/cycle)?",
+    "answer": "Là đường đi có đỉnh đầu trùng với đỉnh cuối (u = v) và có độ dài lớn hơn 0."
+  },
+  {
+    "id": "qa_0386",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Chu trình đơn được định nghĩa như thế nào?",
+    "answer": "Là chu trình không đi qua bất kỳ cạnh nào quá một lần."
+  },
+  {
+    "id": "qa_0387",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Ký hiệu chu trình độ dài k đi qua k đỉnh phân biệt là gì?",
+    "answer": "Ký hiệu là Ck."
+  },
+  {
+    "id": "qa_0388",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đồ thị vô hướng liên thông?",
+    "answer": "Là đồ thị mà luôn tìm được đường đi giữa mọi cặp đỉnh phân biệt của nó."
+  },
+  {
+    "id": "qa_0389",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là thành phần liên thông của đồ thị vô hướng?",
+    "answer": "Là các đồ thị con liên thông tối đại (không thể thêm đỉnh/cạnh nào vào mà vẫn giữ được tính liên thông)."
+  },
+  {
+    "id": "qa_0390",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa đỉnh cắt (cut vertex) hay điểm khớp (articulation point)?",
+    "answer": "Là đỉnh mà nếu xóa nó cùng các cạnh liên thuộc sẽ làm tăng số thành phần liên thông của đồ thị."
+  },
+  {
+    "id": "qa_0391",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Định nghĩa cạnh cắt (cut edge) hay cầu (bridge)?",
+    "answer": "Là cạnh mà nếu xóa nó đi sẽ làm tăng số thành phần liên thông của đồ thị."
+  },
+  {
+    "id": "qa_0392",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị có hướng liên thông mạnh (strongly connected) là gì?",
+    "answer": "Là đồ thị có hướng mà luôn có đường đi từ u đến v và ngược lại cho mọi cặp đỉnh u, v."
+  },
+  {
+    "id": "qa_0393",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị có hướng liên thông yếu (weakly connected) là gì?",
+    "answer": "Là đồ thị có hướng mà đồ thị vô hướng tương ứng của nó là liên thông."
+  },
+  {
+    "id": "qa_0394",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thành phần liên thông mạnh của đồ thị có hướng được hiểu thế nào?",
+    "answer": "Là các đồ thị con liên thông mạnh tối đại của đồ thị đó."
+  },
+  {
+    "id": "qa_0395",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Tại sao đồ thị vòng C3 không phải là đồ thị phân đôi?",
+    "answer": "Vì C3 là một chu trình độ dài lẻ (bằng 3), vi phạm định lý về đồ thị phân đôi."
+  },
+  {
+    "id": "qa_0396",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Bậc của mọi đỉnh trong đồ thị vòng Cn là bao nhiêu?",
+    "answer": "Mọi đỉnh trong Cn đều có bậc bằng 2."
+  },
+  {
+    "id": "qa_0397",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong đồ thị bánh xe Wn, đỉnh trung tâm có bậc là bao nhiêu?",
+    "answer": "Đỉnh trung tâm có bậc bằng n-1."
+  },
+  {
+    "id": "qa_0398",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Số lượng cạnh trong đồ thị lập phương Qn là bao nhiêu?",
+    "answer": "Số cạnh của Qn là n * (2 mũ n-1)."
+  },
+  {
+    "id": "qa_0399",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Một đồ thị không liên thông có đặc điểm gì về các thành phần liên thông?",
+    "answer": "Nó là hợp của hai hay nhiều thành phần liên thông rời nhau."
+  },
+  {
+    "id": "qa_0400",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi từ u đến v có thể biểu diễn ngắn gọn qua dãy đỉnh như thế nào?",
+    "answer": "Có thể viết là x0, x1, ..., xn (trong đó xi-1 kề với xi)."
+  },
+  {
+    "id": "qa_0401",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong đồ thị có hướng, đường đi có bắt buộc phải tuân theo hướng cung không?",
+    "answer": "Có, đường đi từ u đến v phải là một dãy các cung (xi-1, xi) theo đúng chiều."
+  },
+  {
+    "id": "qa_0402",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Việc xóa một đỉnh cô lập có làm thay đổi số thành phần liên thông không?",
+    "answer": "Có, số thành phần liên thông sẽ giảm đi 1."
+  },
+  {
+    "id": "qa_0403",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đồ thị phân đôi Km,n có bao nhiêu đỉnh?",
+    "answer": "Có m + n đỉnh."
+  },
+  {
+    "id": "qa_0404",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Chu trình C4 có phải là đồ thị phân đôi không?",
+    "answer": "Có, vì 4 là số chẵn, nó không chứa chu trình độ dài lẻ."
+  },
+  {
+    "id": "qa_0405",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Thế nào là một lát cắt (cut) trong lý thuyết liên thông?",
+    "answer": "Là một tập các cạnh mà nếu xóa chúng đi sẽ làm đồ thị mất tính liên thông."
+  },
+  {
+    "id": "qa_0406",
+    "type": "hoi_moi_quan_he",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Mối quan hệ giữa liên thông mạnh và liên thông yếu?",
+    "answer": "Mọi đồ thị liên thông mạnh đều là liên thông yếu, nhưng ngược lại thì không chắc đúng."
+  },
+  {
+    "id": "qa_0407",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi đơn khác đường đi thường ở chỗ nào?",
+    "answer": "Đường đi đơn không lặp lại cạnh, còn đường đi thường có thể đi qua một cạnh nhiều lần."
+  },
+  {
+    "id": "qa_0408",
+    "type": "hoi_ung_dung",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Khái niệm 'đồ thị con liên thông tối đại' dùng để định nghĩa đại lượng nào?",
+    "answer": "Dùng để định nghĩa Thành phần liên thông."
+  },
+  {
+    "id": "qa_0409",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Trong đồ thị phân đôi, tập V1 và V2 có được phép có cạnh nối nội bộ không?",
+    "answer": "Không, mọi cạnh chỉ được nối giữa một đỉnh của V1 và một đỉnh của V2."
+  },
+  {
+    "id": "qa_0410",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Đường đi độ dài 0 được hiểu là gì?",
+    "answer": "Là đường đi chỉ gồm một đỉnh duy nhất (u = v)."
+  },
+  {
+    "id": "qa_0411",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_do_thi",
+    "question": "Nếu đồ thị có hướng liên thông mạnh thì số thành phần liên thông mạnh là bao nhiêu?",
+    "answer": "Số thành phần liên thông mạnh bằng 1."
+  },
+  {
+    "id": "qa_0001",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Lý thuyết tổ hợp gắn liền với việc nghiên cứu điều gì?",
+    "answer": "Lý thuyết tổ hợp gắn liền với việc nghiên cứu phân bố các phần tử vào các tập hợp."
+  },
+  {
+    "id": "qa_0015",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp thường được ký hiệu bằng loại chữ cái nào?",
+    "answer": "Tập hợp được ký hiệu bằng những chữ cái lớn như A, B, X, Y."
+  },
+  {
+    "id": "qa_0016",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Phần tử của tập hợp được ký hiệu bằng loại chữ cái nào?",
+    "answer": "Phần tử được ký hiệu bằng các chữ cái nhỏ như a, b, x, y."
+  },
+  {
+    "id": "qa_0017",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Ký hiệu x ∈ X có nghĩa là gì?",
+    "answer": "Ký hiệu này có nghĩa x là phần tử của tập hợp X."
+  },
+  {
+    "id": "qa_0018",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Ký hiệu x ∉ X có nghĩa là gì?",
+    "answer": "Ký hiệu này có nghĩa x không phải là phần tử của tập hợp X."
+  },
+  {
+    "id": "qa_0019",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Thế nào là tập hợp con?",
+    "answer": "A là tập con của B nếu mỗi phần tử của A cũng là những phần tử của B."
+  },
+  {
+    "id": "qa_0020",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Ký hiệu A ⊆ B có nghĩa là gì?",
+    "answer": "Ký hiệu này có nghĩa A là tập con của B."
+  },
+  {
+    "id": "qa_0021",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Điều kiện để hai tập hợp A và B bằng nhau là gì?",
+    "answer": "Hai tập hợp bằng nhau khi A ⊆ B và B ⊆ A."
+  },
+  {
+    "id": "qa_0022",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Số các phần tử của tập hợp A được ký hiệu như thế nào?",
+    "answer": "Được ký hiệu là N(A) hoặc |A|."
+  },
+  {
+    "id": "qa_0023",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Một n-tập được hiểu là gì?",
+    "answer": "Một n-tập là một tập hợp gồm đúng n phần tử."
+  },
+  {
+    "id": "qa_0024",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp vũ trụ thường được ký hiệu là gì?",
+    "answer": "Tập hợp vũ trụ thường được ký hiệu là X."
+  },
+  {
+    "id": "qa_0025",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập rỗng là gì?",
+    "answer": "Tập rỗng là tập hợp không có phần tử nào."
+  },
+  {
+    "id": "qa_0026",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập rỗng có quan hệ gì với mọi tập hợp khác?",
+    "answer": "Tập rỗng được xem như tập con của mọi tập hợp."
+  },
+  {
+    "id": "qa_0027",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Phần bù của A trong X được ký hiệu là gì?",
+    "answer": "Phần bù của A trong X được ký hiệu là Ā (A gạch đầu)."
+  },
+  {
+    "id": "qa_0028",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Định nghĩa phần bù của A trong X là gì?",
+    "answer": "Là tập các phần tử của X không thuộc vào A."
+  },
+  {
+    "id": "qa_0029",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Hợp của A và B (A ∪ B) là tập hợp như thế nào?",
+    "answer": "Là tập các phần tử thuộc A hoặc thuộc B hoặc thuộc cả hai tập."
+  },
+  {
+    "id": "qa_0030",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Giao của A và B (A ∩ B) là tập hợp như thế nào?",
+    "answer": "Là tập các phần tử đồng thời thuộc vào cả hai tập A và B."
+  },
+  {
+    "id": "qa_0031",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Hiệu của A và B (A \\ B) là tập hợp như thế nào?",
+    "answer": "Là tập các phần tử thuộc A nhưng không thuộc B."
+  },
+  {
+    "id": "qa_0032",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Đại số tập hợp được hình thành từ đâu?",
+    "answer": "Hình thành từ các tập hợp cùng với các phép toán trên nó."
+  },
+  {
+    "id": "qa_0033",
+    "type": "hoi_cong_thuc",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tính chất kết hợp của phép hợp được viết như thế nào?",
+    "answer": "(A ∪ B) ∪ C = A ∪ (B ∪ C)."
+  },
+  {
+    "id": "qa_0036",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Luật đối ngẫu De Morgan cho phần bù của một hợp là gì?",
+    "answer": "Phần bù của (A ∪ B) bằng (Phần bù của A) giao (Phần bù của B)."
+  },
+  {
+    "id": "qa_0037",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Mỗi tập con tương ứng với khái niệm nào trong logic?",
+    "answer": "Mỗi tập con tương ứng với một tính chất hay còn gọi là mệnh đề."
+  },
+  {
+    "id": "qa_0038",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Phủ định mệnh đề Ā tương ứng với khái niệm nào trong tập hợp?",
+    "answer": "Phủ định mệnh đề Ā tương ứng với phần bù Ā trong tập hợp."
+  },
+  {
+    "id": "qa_0039",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tuyển của hai mệnh đề (A ∨ B) tương ứng với phép toán tập hợp nào?",
+    "answer": "Tương ứng với phép hợp A ∪ B."
+  },
+  {
+    "id": "qa_0040",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Hội của hai mệnh đề (A & B) tương ứng với phép toán tập hợp nào?",
+    "answer": "Tương ứng với phép giao A ∩ B."
+  },
+  {
+    "id": "qa_0042",
+    "type": "hoi_moi_quan_he",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Mối quan hệ giữa đại số mệnh đề và đại số tập hợp là gì?",
+    "answer": "Đây là hai đại số đẳng cấu với nhau."
+  },
+  {
+    "id": "qa_0043",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tích Đề-các A x B được định nghĩa là gì?",
+    "answer": "Là tập hợp các cặp (a, b) sao cho a thuộc A và b thuộc B."
+  },
+  {
+    "id": "qa_0044",
+    "type": "hoi_ky_hieu",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Ký hiệu lũy thừa Ak trong tích Đề-các nghĩa là gì?",
+    "answer": "Nghĩa là tích Đề-các của tập hợp A lặp lại k lần."
+  },
+  {
+    "id": "qa_0045",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp R² biểu diễn đối tượng nào trong hình học?",
+    "answer": "R² biểu diễn các điểm trên mặt phẳng."
+  },
+  {
+    "id": "qa_0046",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Một quan hệ hai ngôi R trên tập X được định nghĩa là gì?",
+    "answer": "Là một tập con R(X) của tích Đề-các X x X."
+  },
+  {
+    "id": "qa_0076",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Một song ánh từ một tập hợp lên chính nó trong ngữ cảnh này còn được gọi là gì?",
+    "answer": "Một song ánh như vậy còn được gọi là một phép thế."
+  },
+  {
+    "id": "qa_0148",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Trong định lý về nghiệm kép, biểu thức an = (α1 + α2*n) * r0^n có ý nghĩa gì?",
+    "answer": "Đây là cách viết khác của nghiệm tổng quát, cho thấy nghiệm là tổ hợp của r0^n và n*r0^n."
+  },
+  {
+    "id": "qa_0225",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Định nghĩa một hệ đại diện phân biệt của một họ các tập con là gì?",
+    "answer": "Là một bộ có thứ tự (a1, a2, ..., am) sao cho mỗi ai thuộc tập Si tương ứng và các ai đôi một khác nhau."
+  },
+  {
+    "id": "qa_0227",
+    "type": "hoi_dinh_nghia",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Thành phần ai trong hệ đại diện phân biệt được gọi là gì?",
+    "answer": "Được gọi là đại diện của tập con Si."
+  },
+  {
+    "id": "qa_0228",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Trong định nghĩa hệ đại diện phân biệt, các tập con Si có bắt buộc phải khác nhau không?",
+    "answer": "Không, các tập Si không nhất thiết phải khác nhau."
+  },
+  {
+    "id": "qa_0229",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Điều kiện quan trọng nhất để một bộ các phần tử trở thành hệ đại diện phân biệt là gì?",
+    "answer": "Mỗi phần tử phải đại diện cho một tập con khác nhau và tất cả các phần tử đại diện phải khác nhau hoàn toàn (ai khác aj với i khác j)."
+  },
+  {
+    "id": "qa_0230",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tại sao bài toán hệ đại diện phân biệt lại quan trọng trong lý thuyết tổ hợp?",
+    "answer": "Vì nó giải quyết vấn đề chọn lựa phần tử từ các nhóm tập hợp sao cho không có sự trùng lặp, một tình huống xuất hiện rất nhiều trong lập lịch và phân phối nguồn lực."
+  },
+  {
+    "id": "qa_0231",
+    "type": "hoi_moi_quan_he",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Mối quan hệ giữa chỉ số i và phần tử ai trong hệ TRAN là gì?",
+    "answer": "Phần tử ai phải thuộc vào tập hợp Si tương ứng với chỉ số của nó trong bộ có thứ tự."
+  },
+  {
+    "id": "qa_0232",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Nếu hai tập con Si và Sj (i khác j) có cùng một phần tử x, liệu x có thể đồng thời là đại diện cho cả hai tập trong một hệ đại diện phân biệt không?",
+    "answer": "Không, vì điều kiện của hệ đại diện phân biệt yêu cầu các đại diện ai và aj phải khác nhau."
+  },
+  {
+    "id": "qa_0233",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Nội dung chính của Định lý Hall là gì?",
+    "answer": "Định lý Hall đưa ra điều kiện cần và đủ để một họ các tập con hữu hạn có một hệ đại diện phân biệt."
+  },
+  {
+    "id": "qa_0234",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Điều kiện Hall (Hall's Condition) được phát biểu như thế nào?",
+    "answer": "Với mọi tập chỉ số J là tập con của {1, 2, ..., m}, số phần tử của hợp các tập Sj với j thuộc J phải lớn hơn hoặc bằng số lượng chỉ số trong J."
+  },
+  {
+    "id": "qa_0236",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tại sao điều kiện |∪ Sj| ≥ |J| là điều kiện cần để tồn tại hệ đại diện phân biệt?",
+    "answer": "Vì để chọn ra |J| phần tử khác nhau từ các tập Sj, thì tổng số phần tử hiện có trong hợp của các tập đó ít nhất phải bằng |J|."
+  },
+  {
+    "id": "qa_0239",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Trong định lý Hall, tập hợp các chỉ số J đại diện cho điều gì?",
+    "answer": "Đại diện cho một nhóm các tập con bất kỳ được chọn ra từ họ tập hợp ban đầu."
+  },
+  {
+    "id": "qa_0240",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Điều gì xảy ra nếu tồn tại một tập chỉ số J mà |∪ Sj| < |J|?",
+    "answer": "Khi đó, theo định lý Hall, không tồn tại hệ đại diện phân biệt cho họ tập hợp đó."
+  },
+  {
+    "id": "qa_0241",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Định lý Hall giải quyết bài toán tồn tại cho đối tượng nào?",
+    "answer": "Giải quyết cho họ các tập con hữu hạn S1, S2, ..., Sm."
+  },
+  {
+    "id": "qa_0242",
+    "type": "hoi_ly_do",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tại sao định lý Hall được coi là công cụ mạnh mẽ trong lý thuyết ghép đôi (matching theory)?",
+    "answer": "Vì nó chuyển bài toán kiểm tra sự tồn tại của một hệ đại diện sang việc kiểm tra kích thước của các hợp tập hợp, giúp dễ dàng bác bỏ sự tồn tại bằng cách chỉ ra một 'phản ví dụ' vi phạm điều kiện số lượng."
+  },
+  {
+    "id": "qa_0330",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Tập hợp D trong bài toán tối ưu tổ hợp đại diện cho điều gì?",
+    "answer": "Tập D gọi là tập các phương án của bài toán, thường được mô tả là tập các cấu hình tổ hợp thỏa mãn một số tính chất cho trước."
+  },
+  {
+    "id": "qa_0339",
+    "type": "hoi_khai_niem",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Trong thuật toán nhánh cận, tập các phương án D được mô tả như thế nào?",
+    "answer": "Tập D bao gồm các bộ n thành phần (x1, x2, ..., xn) thuộc tích Đề-các của các tập hữu hạn Ai và thỏa mãn tính chất P cho trước."
+  },
+  {
+    "id": "qa_0341",
+    "type": "hoi_dieu_kien",
+    "topic": "ly_thuyet_tap_hop",
+    "question": "Điều kiện cần thiết về hàm đánh giá g để có thể áp dụng thuật toán nhánh cận là gì?",
+    "answer": "Cần tìm được một hàm g xác định trên tập tất cả các phương án bộ phận sao cho giá trị của g tại mỗi phương án bộ phận (a1, ..., ak) luôn nhỏ hơn hoặc bằng giá trị nhỏ nhất của hàm mục tiêu f trên tập con các phương án bắt đầu bằng bộ đó."
+  },
+  {
+    "id": "qa_0004",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Mục tiêu của bài toán đếm là gì?",
+    "answer": "Bài toán đếm nhằm xác định có bao nhiêu cấu hình thỏa mãn điều kiện đã nêu."
+  },
+  {
+    "id": "qa_0005",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Phương pháp đếm thường dựa trên cơ sở nào?",
+    "answer": "Phương pháp đếm dựa vào các nguyên lý cơ bản và kết quả đếm các cấu hình đơn giản."
+  },
+  {
+    "id": "qa_0006",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Bài toán đếm giúp đánh giá yếu tố nào của một sự kiện?",
+    "answer": "Bài toán đếm giúp đánh giá tính xác suất của một sự kiện."
+  },
+  {
+    "id": "qa_0007",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Bài toán đếm giúp đánh giá yếu tố nào của một thuật toán?",
+    "answer": "Bài toán đếm giúp đánh giá tính độ phức tạp của một thuật toán."
+  },
+  {
+    "id": "qa_0050",
+    "type": "hoi_dieu_kien",
+    "topic": "nguyen_ly_dem",
+    "question": "Điều kiện áp dụng nguyên lý cộng N(A ∪ B) = N(A) + N(B) là gì?",
+    "answer": "Điều kiện là A và B phải là hai tập hợp rời nhau."
+  },
+  {
+    "id": "qa_0051",
+    "type": "hoi_cong_thuc",
+    "topic": "nguyen_ly_dem",
+    "question": "Công thức nguyên lý cộng cho một phân hoạch của X là gì?",
+    "answer": "N(X) = N(A1) + N(A2) + ... + N(Ak)."
+  },
+  {
+    "id": "qa_0053",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Nguyên lý nhân được phát biểu như thế nào cho một bộ có thứ tự gồm k thành phần?",
+    "answer": "Nếu mỗi thành phần ai có ni khả năng chọn thì số bộ tạo ra là tích các khả năng n1 * n2 * ... * nk."
+  },
+  {
+    "id": "qa_0054",
+    "type": "hoi_he_qua",
+    "topic": "nguyen_ly_dem",
+    "question": "Hệ quả trực tiếp của nguyên lý nhân đối với tích Đề-các của k tập hợp là gì?",
+    "answer": "Số phần tử của tích Đề-các bằng tích số phần tử của từng tập hợp thành phần: N(A1 x A2 x ... x Ak) = N(A1) * N(A2) * ... * N(Ak)."
+  },
+  {
+    "id": "qa_0055",
+    "type": "hoi_cong_thuc",
+    "topic": "nguyen_ly_dem",
+    "question": "Công thức tính số phần tử của lũy thừa tập hợp Ak theo nguyên lý nhân là gì?",
+    "answer": "Số phần tử của lũy thừa tập hợp Ak được tính bằng công thức N(Ak) = N(A) lũy thừa k."
+  },
+  {
+    "id": "qa_0056",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Trong nguyên lý nhân, các thành phần (a1, a2, ..., ak) có đặc điểm gì về thứ tự?",
+    "answer": "Các thành phần này tạo thành một bộ có thứ tự."
+  },
+  {
+    "id": "qa_0058",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Nguyên lý nhân dùng phép tính nào để xác định tổng số bộ có thể tạo ra?",
+    "answer": "Nguyên lý nhân dùng phép tính nhân các khả năng chọn của từng thành phần lại với nhau."
+  },
+  {
+    "id": "qa_0088",
+    "type": "hoi_dinh_nghia",
+    "topic": "nguyen_ly_dem",
+    "question": "Bài toán đếm tổ hợp là gì?",
+    "answer": "Là bài toán xác định có bao nhiêu cấu hình tổ hợp có thể được tạo ra với những quy tắc đã nêu."
+  },
+  {
+    "id": "qa_0089",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Lời giải của bài toán đếm thường phụ thuộc vào yếu tố nào?",
+    "answer": "Lời giải thường phụ thuộc vào một số giá trị tham số ban đầu."
+  },
+  {
+    "id": "qa_0090",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Người ta thường cố gắng biểu diễn sự phụ thuộc trong bài toán đếm bằng cách nào?",
+    "answer": "Người ta cố gắng biểu diễn sự phụ thuộc này bằng những công thức toán học."
+  },
+  {
+    "id": "qa_0091",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Kỹ thuật đưa về các cấu hình quen thuộc để đếm được thực hiện như thế nào?",
+    "answer": "Kỹ thuật này thực hiện bằng cách thiết lập một tương quan 1-1 giữa các cấu hình."
+  },
+  {
+    "id": "qa_0092",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Làm thế nào để phân chia một bài toán đếm lớn thành những bài toán đếm nhỏ hơn?",
+    "answer": "Người ta chia việc đếm thành từng lớp để áp dụng nguyên lý cộng."
+  },
+  {
+    "id": "qa_0093",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Việc phân tích cấu hình cần đếm như là việc ghép một số cấu hình khác nhằm mục đích gì?",
+    "answer": "Mục đích là để áp dụng nguyên lý nhân trong quá trình đếm cấu hình đó."
+  },
+  {
+    "id": "qa_0094",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Nguyên lý bù trừ được sử dụng cho những bài toán đếm như thế nào?",
+    "answer": "Nguyên lý bù trừ được dựa vào nguyên lý tổng quát của nguyên lý cộng để giải các bài toán đếm phức tạp hơn."
+  },
+  {
+    "id": "qa_0096",
+    "type": "hoi_cong_thuc",
+    "topic": "nguyen_ly_dem",
+    "question": "Công thức tổng quát của nguyên lý bù trừ cho m tập hợp hữu hạn được viết như thế nào?",
+    "answer": "N(A1 ∪ A2 ∪ ... ∪ Am) = N1 - N2 + ... + (-1)^(m-1) * Nm."
+  },
+  {
+    "id": "qa_0097",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Trong công thức nguyên lý bù trừ, ký hiệu Nk đại diện cho điều gì?",
+    "answer": "Nk là tổng phần tử của tất cả các giao của k tập lấy từ m tập đã cho."
+  },
+  {
+    "id": "qa_0098",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Giá trị của N1 trong nguyên lý bù trừ được tính như thế nào?",
+    "answer": "N1 = N(A1) + N(A2) + ... + N(Am)."
+  },
+  {
+    "id": "qa_0099",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Giá trị của Nm trong nguyên lý bù trừ được tính như thế nào?",
+    "answer": "Nm = N(A1 ∩ A2 ∩ ... ∩ Am)."
+  },
+  {
+    "id": "qa_0100",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao phải trừ đi N(A ∩ B) trong công thức tính hợp của hai tập hợp?",
+    "answer": "Vì các phần tử thuộc giao của hai tập hợp đã được đếm hai lần (một lần trong A và một lần trong B)."
+  },
+  {
+    "id": "qa_0102",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao việc quy về các bài toán đơn giản không phải lúc nào cũng dễ thực hiện?",
+    "answer": "Vì nó thường đòi hỏi một sự phân tích sâu sắc về cấu hình cần đếm."
+  },
+  {
+    "id": "qa_0103",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Một thí dụ nổi tiếng nào được nhắc đến để minh họa cho nghệ thuật đếm?",
+    "answer": "Thí dụ về bài toán của Lucas (năm 1891)."
+  },
+  {
+    "id": "qa_0104",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Mục đích của việc nghiên cứu các bài toán kinh điển như bài toán Lucas là gì?",
+    "answer": "Để rút ra được nhiều điều bổ ích và kỹ thuật trong nghệ thuật đếm."
+  },
+  {
+    "id": "qa_0107",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao việc thiết lập tương quan 1-1 lại quan trọng trong đếm tổ hợp?",
+    "answer": "Vì nếu có tương quan 1-1, ta có thể đếm cấu hình quen thuộc thay vì đếm cấu hình phức tạp ban đầu."
+  },
+  {
+    "id": "qa_0108",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Khi nào một bài toán đếm được coi là phức tạp theo nội dung ảnh?",
+    "answer": "Khi cấu hình của nó khó nhận diện trực tiếp và cần phải phân tích để đưa về các dạng đơn giản hơn."
+  },
+  {
+    "id": "qa_0109",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Việc ghép các cấu hình nhỏ để tạo thành cấu hình lớn thường áp dụng nguyên lý nào?",
+    "answer": "Thường áp dụng nguyên lý nhân."
+  },
+  {
+    "id": "qa_0110",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Việc chia một tập hợp các cấu hình thành các lớp không giao nhau áp dụng nguyên lý nào?",
+    "answer": "Áp dụng nguyên lý cộng."
+  },
+  {
+    "id": "qa_0111",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Trong các bài toán đếm, kết quả đếm thường phụ thuộc vào yếu tố nào?",
+    "answer": "Kết quả đếm thường phụ thuộc vào một tham số tại đầu vào, ký hiệu là n."
+  },
+  {
+    "id": "qa_0112",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Việc biểu diễn kết quả đếm như một hàm của n bằng một số hữu hạn các phép toán có dễ dàng không?",
+    "answer": "Việc biểu diễn này thường không đơn giản và trong nhiều trường hợp là rất khó khăn hoặc không thể thực hiện được."
+  },
+  {
+    "id": "qa_0113",
+    "type": "hoi_cong_thuc",
+    "topic": "nguyen_ly_dem",
+    "question": "Công thức truy hồi (hay công thức đệ quy) là gì?",
+    "answer": "Là công thức thiết lập mối liên hệ giữa kết quả đếm ứng với n và các kết quả đếm ứng với các giá trị n bé hơn."
+  },
+  {
+    "id": "qa_0166",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao người ta coi mọi dãy số trong phương pháp hàm sinh đều là dãy vô hạn phần tử?",
+    "answer": "Để tạo ra một công thức toán học thống nhất dưới dạng chuỗi lũy thừa vô hạn cho mọi bài toán đếm."
+  },
+  {
+    "id": "qa_0167",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Số hạng tổng quát hi trong hàm sinh g(x) đóng vai trò gì trong bài toán tổ hợp?",
+    "answer": "hi thường đại diện cho kết quả đếm (số cách chọn hoặc số cấu hình) ứng với tham số i."
+  },
+  {
+    "id": "qa_0170",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Ứng dụng cơ bản của hàm sinh trong bài toán đếm là gì?",
+    "answer": "Dùng để mã hóa một dãy các kết quả đếm vào một hàm số nhằm tận dụng các phép toán đại số để tìm kết quả."
+  },
+  {
+    "id": "qa_0181",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao việc tìm công thức giải tích cho g(x) lại quan trọng?",
+    "answer": "Vì từ công thức giải tích, ta có thể áp dụng các kỹ thuật khai triển chuỗi chuẩn để tìm ra hệ số hk nhanh hơn đếm trực tiếp."
+  },
+  {
+    "id": "qa_0183",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao phương pháp liệt kê vẫn được sử dụng dù không chỉ ra được một công thức cụ thể?",
+    "answer": "Vì còn rất nhiều bài toán đếm chưa có lời giải dưới dạng công thức, và phương pháp liệt kê giúp lập trình cho máy tính 'đếm hộ'."
+  },
+  {
+    "id": "qa_0184",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Mục tiêu chính của phương pháp liệt kê trong tổ hợp là gì?",
+    "answer": "Là chỉ ra một phương pháp để đi qua tất cả các cấu hình cần đếm."
+  },
+  {
+    "id": "qa_0191",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao hình chữ nhật La-tinh lại là một vấn đề khó trong toán học tổ hợp?",
+    "answer": "Vì cho đến nay vẫn còn nhiều vấn đề liên quan đến việc liệt kê và đếm chúng chưa được giải quyết triệt để."
+  },
+  {
+    "id": "qa_0192",
+    "type": "hoi_dinh_nghia",
+    "topic": "nguyen_ly_dem",
+    "question": "Lợi ích của việc lập trình phương pháp liệt kê trên máy tính điện tử là gì?",
+    "answer": "Giúp tìm ra kết quả đếm cụ thể cho các bài toán mà con người chưa tìm ra công thức tổng quát."
+  },
+  {
+    "id": "qa_0201",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Yếu tố nào khiến bài toán tồn tại trở thành vấn đề quan trọng thứ hai trong lý thuyết tổ hợp?",
+    "answer": "Vì sau khi biết cách đếm, ta cần biết liệu đối tượng đó có tồn tại để mà đếm hoặc sử dụng hay không."
+  },
+  {
+    "id": "qa_0259",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "nguyen_ly_dem",
+    "question": "Nội dung của Định lý Schur liên quan đến việc phân hoạch tập số nguyên là gì?",
+    "answer": "Với mọi số nguyên dương k, tồn tại một số nguyên dương S(k) sao cho với mọi cách phân hoạch tập các số nguyên {1, 2, ..., S(k)} thành k tập con, luôn tồn tại ít nhất một tập con chứa hai số nguyên x, y và tổng của chúng là z = x + y."
+  },
+  {
+    "id": "qa_0260",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Số Schur S(k) được định nghĩa như thế nào?",
+    "answer": "Số Schur S(k) là số nguyên dương nhỏ nhất thỏa mãn tính chất: khi phân hoạch tập các số nguyên từ 1 đến S(k) thành k tập con, có ít nhất một tập con chứa hai phần tử và tổng của chúng."
+  },
+  {
+    "id": "qa_0262",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Định lý Schur khẳng định điều gì về sự tồn tại của cấu hình x + y = z trong các tập con?",
+    "answer": "Khẳng định rằng dù phân hoạch tập số nguyên thành bao nhiêu phần đi nữa, nếu tập số nguyên đủ lớn, ta luôn tìm được một phần chứa cả hai số hạng và tổng của chúng."
+  },
+  {
+    "id": "qa_0263",
+    "type": "hoi_ly_do",
+    "topic": "nguyen_ly_dem",
+    "question": "Tại sao định lý Schur được xếp vào nhóm các bài toán kiểu Ramsey?",
+    "answer": "Vì nó chứng minh rằng trong một cấu trúc đủ lớn (tập số nguyên), dù có chia nhỏ hay làm mất trật tự (phân hoạch) thì vẫn luôn tồn tại một cấu trúc con có tính trật tự xác định (x + y = z)."
+  },
+  {
+    "id": "qa_0267",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Bài toán liệt kê tổ hợp khác bài toán đếm tổ hợp ở điểm cốt lõi nào?",
+    "answer": "Bài toán đếm chỉ hỏi có bao nhiêu cấu hình, trong khi bài toán liệt kê yêu cầu chỉ rõ danh sách tất cả các cấu hình đó và xây dựng thuật toán để tạo ra chúng."
+  },
+  {
+    "id": "qa_0286",
+    "type": "hoi_khai_niem",
+    "topic": "nguyen_ly_dem",
+    "question": "Để tính toán thời gian tính một cách khách quan, người ta thường đếm các đại lượng nào thay vì đo thời gian thực tế?",
+    "answer": "Người ta đếm số câu lệnh mà thuật toán phải thực hiện, hoặc đếm cụ thể số phép tính số học, so sánh, gán... mà thuật toán đòi hỏi."
+  },
+  {
+    "id": "qa_0322",
+    "type": "hoi_ung_dung",
+    "topic": "nguyen_ly_dem",
+    "question": "Vai trò của thủ tục 'Init' trong chương trình quay lui là gì?",
+    "answer": "Dùng để khởi tạo các giá trị ban đầu như nhập tham số bài toán, khởi gán các biến trạng thái và các biến đếm cần thiết cho quá trình liệt kê."
+  },
+  {
+    "id": "qa_0156",
+    "type": "hoi_khai_niem",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Các hệ số α1, α2, ..., αk trong Định lý 3 đại diện cho điều gì?",
+    "answer": "Đây là các hằng số được xác định dựa trên các điều kiện đầu của bài toán."
+  },
+  {
+    "id": "qa_0159",
+    "type": "hoi_ly_do",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Tại sao Định lý 3 yêu cầu các số c1, c2, ..., ck phải là các số thực?",
+    "answer": "Để đảm bảo các hệ số của hệ thức truy hồi và phương trình đặc trưng là các hằng số thực xác định."
+  },
+  {
+    "id": "qa_0168",
+    "type": "hoi_khai_niem",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Biến số x trong hàm sinh g(x) có ý nghĩa như thế nào đối với dãy số hệ số?",
+    "answer": "Biến x đóng vai trò là vật mang (placeholder) để giữ vị trí và phân tách các giá trị của dãy số theo lũy thừa tương ứng."
+  },
+  {
+    "id": "qa_0172",
+    "type": "hoi_dinh_nghia",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Các bước cơ bản để tìm công thức hn từ hàm sinh là gì?",
+    "answer": "Xây dựng hàm sinh g(x), tìm công thức giải tích cho g(x), sau đó khai triển g(x) thành chuỗi lũy thừa để tìm hệ số hn."
+  },
+  {
+    "id": "qa_0173",
+    "type": "hoi_he_qua",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Kết quả của phép cộng hai hàm sinh f(x) và g(x) được xác định như thế nào?",
+    "answer": "Là một hàm sinh mới có hệ số là tổng các hệ số tương ứng: tổng của (ai + bi) * x^i."
+  },
+  {
+    "id": "qa_0174",
+    "type": "hoi_dinh_nghia",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Phép nhân một hàm sinh f(x) với một số thực alpha cho kết quả là gì?",
+    "answer": "Cho một hàm sinh có các hệ số được nhân với alpha: tổng của (alpha * ai) * x^i."
+  },
+  {
+    "id": "qa_0175",
+    "type": "hoi_khai_niem",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Tích Cô-si (Cauchy) của hai hàm sinh f(x) và g(x) được định nghĩa với hệ số ck như thế nào?",
+    "answer": "Hệ số ck là tổng của ai * bk-i với i chạy từ 0 đến k."
+  },
+  {
+    "id": "qa_0176",
+    "type": "hoi_dinh_nghia",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Mối liên hệ giữa hệ số hk và đạo hàm của hàm giải tích g(x) tại điểm 0 là gì?",
+    "answer": "hk = g^(k)(0) / k!, với g^(k)(0) là đạo hàm cấp k của g(x) tại 0."
+  },
+  {
+    "id": "qa_0178",
+    "type": "hoi_cong_thuc",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Công thức khai triển của 1 / (1 - rx)^n dưới dạng tổng tổ hợp là gì?",
+    "answer": "Bằng tổng của C(k, n+k-1) * r^k * x^k với k chạy từ 0 đến vô cùng."
+  },
+  {
+    "id": "qa_0179",
+    "type": "hoi_dinh_nghia",
+    "topic": "nhi_thuc_to_hop",
+    "question": "Trường hợp riêng đơn giản nhất của khai triển 1 / (1 - rx) là gì?",
+    "answer": "1 / (1 - rx) = 1 + rx + r^2*x^2 + r^3*x^3 + ..."
+  },
+  {
+    "id": "qa_0047",
+    "type": "hoi_cong_thuc",
+    "topic": "quan_he_anh_xa",
+    "question": "Tính chất phản xạ của quan hệ yêu cầu điều gì?",
+    "answer": "Mọi phần tử đều có quan hệ với chính nó."
+  },
+  {
+    "id": "qa_0048",
+    "type": "hoi_cong_thuc",
+    "topic": "quan_he_anh_xa",
+    "question": "Tính chất đối xứng của quan hệ yêu cầu điều gì?",
+    "answer": "Nếu a có quan hệ với b thì b cũng có quan hệ với a."
+  },
+  {
+    "id": "qa_0049",
+    "type": "hoi_cong_thuc",
+    "topic": "quan_he_anh_xa",
+    "question": "Tính chất truyền ứng của quan hệ yêu cầu điều gì?",
+    "answer": "Nếu a quan hệ với b và b quan hệ với c thì a quan hệ với c."
+  },
+  {
+    "id": "qa_0149",
+    "type": "hoi_moi_quan_he",
+    "topic": "quan_he_anh_xa",
+    "question": "Mối quan hệ giữa dãy số {an} và công thức đệ quy an = c1*an-1 + c2*an-2 trong Định lý 2 là gì?",
+    "answer": "Dãy số {an} là nghiệm của công thức đệ quy khi và chỉ khi nó thỏa mãn cấu trúc nghiệm tổng quát với nghiệm kép r0."
+  },
+  {
+    "id": "qa_0160",
+    "type": "hoi_moi_quan_he",
+    "topic": "quan_he_anh_xa",
+    "question": "Mối quan hệ 'khi và chỉ khi' trong Định lý 3 khẳng định tính chất gì của nghiệm?",
+    "answer": "Khẳng định tính tương đương giữa việc dãy số thỏa mãn hệ thức truy hồi và việc nó có cấu trúc dạng tổ hợp tuyến tính của các nghiệm đặc trưng."
+  },
+  {
+    "id": "qa_0164",
+    "type": "hoi_moi_quan_he",
+    "topic": "quan_he_anh_xa",
+    "question": "Mối quan hệ giữa hàm g(x) và dãy số {hn} được diễn đạt như thế nào?",
+    "answer": "Hàm g(x) sinh ra dãy số đã cho dưới dạng các hệ số của các lũy thừa của x trong chuỗi đó."
+  },
+  {
+    "id": "qa_0059",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Một chỉnh hợp lặp chập k của n phần tử được định nghĩa là gì?",
+    "answer": "Là một bộ có thứ tự gồm k thành phần lấy từ n phần tử đã cho."
+  },
+  {
+    "id": "qa_0060",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Trong chỉnh hợp lặp, các thành phần có thể xuất hiện như thế nào?",
+    "answer": "Trong chỉnh hợp lặp, các thành phần có thể được lặp lại."
+  },
+  {
+    "id": "qa_0061",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Một chỉnh hợp lặp chập k của n có thể xem như là phần tử của đối tượng nào?",
+    "answer": "Có thể xem như một phần tử của tích Đề-các Ak với A là tập đã cho."
+  },
+  {
+    "id": "qa_0062",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Dựa trên nguyên lý nhân, số tất cả các chỉnh hợp lặp chập k của n là bao nhiêu?",
+    "answer": "Số tất cả các chỉnh hợp lặp chập k của n là n lũy thừa k."
+  },
+  {
+    "id": "qa_0063",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Yếu tố nào quyết định sự khác biệt giữa các chỉnh hợp lặp?",
+    "answer": "Sự khác biệt được quyết định bởi thứ tự của các thành phần và các giá trị được chọn trong bộ."
+  },
+  {
+    "id": "qa_0064",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Chỉnh hợp lặp chập k của n phần tử lấy các thành phần từ đâu?",
+    "answer": "Lấy từ n phần tử đã cho của một tập hợp ban đầu."
+  },
+  {
+    "id": "qa_0065",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Một chỉnh hợp không lặp chập k của n phần tử là gì?",
+    "answer": "Là một bộ có thứ tự gồm k thành phần lấy từ n phần tử đã cho, trong đó các thành phần không được lặp lại."
+  },
+  {
+    "id": "qa_0066",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Để xây dựng một chỉnh hợp không lặp, ta bắt đầu từ đâu?",
+    "answer": "Ta xây dựng dần từ thành phần đầu tiên."
+  },
+  {
+    "id": "qa_0067",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Thành phần đầu tiên trong chỉnh hợp không lặp có bao nhiêu khả năng chọn?",
+    "answer": "Thành phần đầu tiên có n khả năng chọn."
+  },
+  {
+    "id": "qa_0068",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Số khả năng chọn của mỗi thành phần tiếp theo trong chỉnh hợp không lặp thay đổi như thế nào?",
+    "answer": "Số khả năng chọn của mỗi thành phần tiếp theo giảm đi 1 so với thành phần đứng trước."
+  },
+  {
+    "id": "qa_0069",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Công thức tính số chỉnh hợp không lặp chập k của n phần tử là gì?",
+    "answer": "Số chỉnh hợp không lặp chập k của n là n(n-1)...(n-k+1)."
+  },
+  {
+    "id": "qa_0070",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Để tồn tại cấu hình chỉnh hợp không lặp, điều kiện giữa k và n là gì?",
+    "answer": "Điều kiện cần thỏa mãn là k nhỏ hơn hoặc bằng n."
+  },
+  {
+    "id": "qa_0071",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Tại sao số khả năng chọn lại giảm dần trong chỉnh hợp không lặp?",
+    "answer": "Vì các thành phần không được phép lặp lại, nên mỗi phần tử đã chọn sẽ không được chọn cho các vị trí tiếp theo."
+  },
+  {
+    "id": "qa_0072",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Hoán vị của n phần tử được định nghĩa như thế nào?",
+    "answer": "Hoán vị của n phần tử là một cách xếp thứ tự các phần tử đó."
+  },
+  {
+    "id": "qa_0073",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Hoán vị của n phần tử được xem là trường hợp riêng của đối tượng nào?",
+    "answer": "Được xem như một trường hợp riêng của chỉnh hợp không lặp khi k = n."
+  },
+  {
+    "id": "qa_0074",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Công thức tính số hoán vị của n phần tử là gì?",
+    "answer": "Số hoán vị của n phần tử là n! (n giai thừa), tính bằng tích 1 * 2 * ... * n."
+  },
+  {
+    "id": "qa_0075",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Có thể đồng nhất hoán vị của n phần tử với loại ánh xạ nào?",
+    "answer": "Có thể đồng nhất với một song ánh của một tập n phần tử lên chính nó."
+  },
+  {
+    "id": "qa_0078",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Một tổ hợp chập k của n phần tử là gì?",
+    "answer": "Là một bộ không kể thứ tự gồm k thành phần khác nhau lấy từ n phần tử đã cho."
+  },
+  {
+    "id": "qa_0079",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Có thể coi một tổ hợp chập k của n phần tử là đối tượng nào?",
+    "answer": "Có thể coi một tổ hợp chập k của n phần tử là một tập con k phần tử của nó."
+  },
+  {
+    "id": "qa_0080",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Điểm khác biệt chính giữa tổ hợp và chỉnh hợp là gì?",
+    "answer": "Tổ hợp không kể đến thứ tự của các thành phần trong bộ, còn chỉnh hợp thì có."
+  },
+  {
+    "id": "qa_0081",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Để đếm số tổ hợp, người ta chia tập hợp các chỉnh hợp không lặp thành các lớp dựa trên tiêu chí nào?",
+    "answer": "Người ta chia thành các lớp sao cho hai chỉnh hợp thuộc cùng một lớp chỉ khác nhau về thứ tự."
+  },
+  {
+    "id": "qa_0082",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Mỗi lớp tương ứng với các chỉnh hợp không lặp khác nhau về thứ tự có bao nhiêu phần tử?",
+    "answer": "Mỗi lớp có k! (k giai thừa) phần tử, tương ứng với số hoán vị của k phần tử."
+  },
+  {
+    "id": "qa_0083",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Công thức tính số tổ hợp chập k của n là gì?",
+    "answer": "Số tổ hợp là n(n-1)...(n-k+1) chia cho k! hoặc n! / (k!(n-k)!)."
+  },
+  {
+    "id": "qa_0084",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Số tổ hợp chập k của n thường được ký hiệu là gì?",
+    "answer": "Số tổ hợp thường được ký hiệu là Ck của n."
+  },
+  {
+    "id": "qa_0085",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Tên gọi khác của số tổ hợp là gì?",
+    "answer": "Số tổ hợp còn được gọi là hệ số tổ hợp."
+  },
+  {
+    "id": "qa_0087",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Tại sao số chỉnh hợp trong mỗi lớp lại bằng nhau và bằng k!?",
+    "answer": "Vì mỗi tổ hợp gồm k phần tử có thể tạo ra đúng k! cách sắp xếp thứ tự khác nhau (hoán vị) để tạo thành các chỉnh hợp tương ứng."
+  },
+  {
+    "id": "qa_0186",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Định nghĩa một hình chữ nhật La-tinh trên n-tập S là gì?",
+    "answer": "Là một bảng p dòng, q cột sao cho mỗi dòng là một chỉnh hợp không lặp chập q của S và mỗi cột là một chỉnh hợp không lặp chập p của S."
+  },
+  {
+    "id": "qa_0188",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Trong trường hợp q = n, mỗi dòng của hình chữ nhật La-tinh trở thành đối tượng nào?",
+    "answer": "Mỗi dòng của hình chữ nhật La-tinh khi đó là một hoán vị của tập S."
+  },
+  {
+    "id": "qa_0190",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Một hình chữ nhật La-tinh được gọi là 'chuẩn' khi nào?",
+    "answer": "Khi dòng đầu tiên của nó là hoán vị (1, 2, ..., n)."
+  },
+  {
+    "id": "qa_0193",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Sự khác biệt giữa các bài toán đếm (tổ hợp, chỉnh hợp, hoán vị) và bài toán tồn tại tổ hợp là gì?",
+    "answer": "Trong bài toán đếm, sự tồn tại của cấu hình là hiển nhiên"
+  },
+  {
+    "id": "qa_0326",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Ba cấu hình cơ bản thường được liệt kê bằng thuật toán quay lui là gì?",
+    "answer": "Đó là dãy nhị phân, hoán vị và tổ hợp."
+  },
+  {
+    "id": "qa_0334",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Tại sao phương pháp duyệt toàn bộ lại khó thực hiện trên thực tế đối với các bài toán lớn?",
+    "answer": "Vì số lượng cấu hình cần liệt kê thường bùng nổ quá nhanh, vượt quá tốc độ xử lý của cả những máy tính hiện đại nhất (ví dụ để liệt kê 15 giai thừa hoán vị có thể mất hơn 36 tiếng đồng hồ)."
+  },
+  {
+    "id": "qa_0345",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Phát biểu bài toán Người du lịch (Traveling Salesman Problem - TSP)?",
+    "answer": "Một người du lịch phải đi qua n thành phố, mỗi thành phố đúng một lần rồi quay về điểm xuất phát. Biết chi phí đi lại giữa các thành phố là cij. Tìm hành trình (biểu diễn bằng một hoán vị của n số tự nhiên) sao cho tổng chi phí là nhỏ nhất (min)."
+  },
+  {
+    "id": "qa_0348",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chinh_hop_hoan_vi",
+    "question": "Phát biểu bài toán Phân công (Assignment Problem)?",
+    "answer": "Có n công việc và n thợ, với cij là chi phí thợ i thực hiện việc j. Mỗi thợ chỉ làm một việc và mỗi việc chỉ do một thợ làm. Tìm cách phân công (tương ứng với một hoán vị) sao cho tổng chi phí thuê thợ là nhỏ nhất (min)."
+  },
+  {
+    "id": "qa_0002",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Các phần tử trong bài toán tổ hợp thường có tính chất gì?",
+    "answer": "Các phần tử trong bài toán tổ hợp thường là hữu hạn."
+  },
+  {
+    "id": "qa_0011",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Yếu tố nào giúp cách giải liệt kê ngày càng trở nên khả thi?",
+    "answer": "Sự phát triển nhanh chóng của máy tính điện tử giúp cách giải liệt kê khả thi hơn."
+  },
+  {
+    "id": "qa_0034",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Tính chất giao hoán của phép giao được viết như thế nào?",
+    "answer": "A ∩ B = B ∩ A."
+  },
+  {
+    "id": "qa_0035",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Phép hợp phân bố đối với phép giao như thế nào?",
+    "answer": "A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)."
+  },
+  {
+    "id": "qa_0052",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Công thức tính số phần tử có tính chất A dựa trên tập vũ trụ X là gì?",
+    "answer": "N(A) = N(X) - N(Ā)."
+  },
+  {
+    "id": "qa_0057",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Số khả năng chọn của thành phần thứ i trong bộ được ký hiệu là gì?",
+    "answer": "Số khả năng chọn của thành phần thứ i được ký hiệu là ni."
+  },
+  {
+    "id": "qa_0077",
+    "type": "hoi_ung_dung",
+    "topic": "to_hop_chung",
+    "question": "Việc nghiên cứu các phép thế có vai trò như thế nào?",
+    "answer": "Nghiên cứu phép thế đóng góp một phần quan trọng trong toán học nhờ các tính chất thú vị của nó."
+  },
+  {
+    "id": "qa_0095",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Nếu không có giả thiết về sự rời nhau giữa hai tập A và B, công thức tính N(A ∪ B) là gì?",
+    "answer": "Công thức là N(A ∪ B) = N(A) + N(B) - N(A ∩ B)."
+  },
+  {
+    "id": "qa_0101",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Nguyên lý cơ bản của phương pháp quy về các bài toán đơn giản là gì?",
+    "answer": "Phương pháp này quy bài toán đang xét về những bài toán đơn giản hơn để giải quyết."
+  },
+  {
+    "id": "qa_0105",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Kỹ thuật phân tích sâu sắc cấu hình giúp ích gì trong bài toán tổ hợp?",
+    "answer": "Giúp tìm ra mối liên hệ giữa bài toán phức tạp và các bài toán cơ bản đã biết lời giải."
+  },
+  {
+    "id": "qa_0106",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Để thiết lập một tương quan 1-1 giữa hai cấu hình, ta cần làm gì?",
+    "answer": "Ta cần chứng minh mỗi phần tử của cấu hình này tương ứng duy nhất với một phần tử của cấu hình kia."
+  },
+  {
+    "id": "qa_0114",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Làm thế nào để tính mọi giá trị khác dựa trên công thức truy hồi?",
+    "answer": "Ta có thể tính mọi giá trị dựa vào công thức truy hồi và một vài giá trị ban đầu."
+  },
+  {
+    "id": "qa_0115",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chung",
+    "question": "Tại sao công thức truy hồi lại rất thích hợp với việc lập trình trên máy tính?",
+    "answer": "Vì công thức truy hồi có tính kế thừa, cho phép máy tính lặp lại các bước tính toán dựa trên kết quả trước đó."
+  },
+  {
+    "id": "qa_0116",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Việc sử dụng công thức truy hồi mang lại lợi ích gì cho quá trình tính toán?",
+    "answer": "Nó giúp giảm đáng kể độ phức tạp và gia tăng độ ổn định của quá trình tính toán."
+  },
+  {
+    "id": "qa_0119",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Để một công thức truy hồi có thể hoạt động và tính toán được, ta cần điều kiện tiên quyết nào?",
+    "answer": "Cần phải có một vài giá trị ban đầu (điều kiện dừng hoặc giá trị cơ sở)."
+  },
+  {
+    "id": "qa_0120",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Tính kế thừa trong công thức truy hồi được hiểu như thế nào?",
+    "answer": "Kết quả của bước sau được xây dựng dựa trên nền tảng kết quả của các bước trước đó."
+  },
+  {
+    "id": "qa_0123",
+    "type": "hoi_ky_hieu",
+    "topic": "to_hop_chung",
+    "question": "Ký hiệu các điều kiện đầu của dãy số thường được viết như thế nào?",
+    "answer": "Các điều kiện đầu được viết là a0 = C0, a1 = C1, ..., ak-1 = Ck-1, với C0, C1, ..., Ck-1 là các hằng số."
+  },
+  {
+    "id": "qa_0124",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Người ta thường tìm nghiệm của công thức truy hồi tuyến tính dưới dạng hàm nào?",
+    "answer": "Người ta tìm nghiệm dưới dạng hàm mũ an = r^n, với r là hằng số."
+  },
+  {
+    "id": "qa_0125",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Phương trình đặc trưng của công thức truy hồi tuyến tính thuần nhất được thiết lập như thế nào?",
+    "answer": "Phương trình có dạng r^k - c1 * r^(k-1) - c2 * r^(k-2) - ... - ck = 0."
+  },
+  {
+    "id": "qa_0126",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Nghiệm của phương trình đặc trưng được gọi là gì?",
+    "answer": "Nghiệm của phương trình này được gọi là nghiệm đặc trưng."
+  },
+  {
+    "id": "qa_0127",
+    "type": "hoi_ung_dung",
+    "topic": "to_hop_chung",
+    "question": "Mục đích của việc tìm nghiệm đặc trưng là gì?",
+    "answer": "Để sử dụng các nghiệm đó xây dựng công thức nghiệm dưới dạng hiện (công thức trực tiếp) cho an."
+  },
+  {
+    "id": "qa_0130",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Một dãy số thỏa mãn công thức truy hồi được gọi là gì đối với công thức đó?",
+    "answer": "Dãy số đó được gọi là nghiệm của công thức truy hồi đã cho."
+  },
+  {
+    "id": "qa_0132",
+    "type": "hoi_dieu_kien",
+    "topic": "to_hop_chung",
+    "question": "Điều kiện cần thiết về nghiệm của phương trình đặc trưng r² - c1*r - c2 = 0 trong Định lý 1 là gì?",
+    "answer": "Phương trình đặc trưng phải có hai nghiệm thực phân biệt r1 và r2."
+  },
+  {
+    "id": "qa_0137",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Mối liên hệ giữa dãy số {an} và phương trình đặc trưng r² - c1*r - c2 = 0 theo Định lý 1 là gì?",
+    "answer": "Dãy số {an} là nghiệm của công thức truy hồi an = c1*an-1 + c2*an-2 khi và chỉ khi nó có dạng tổ hợp tuyến tính của các nghiệm đặc trưng r1, r2."
+  },
+  {
+    "id": "qa_0139",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Nếu một dãy số thỏa mãn an = c1*an-1 + c2*an-2, theo định lý về nghiệm phân biệt, cấu trúc của nó phụ thuộc vào yếu tố nào?",
+    "answer": "Phụ thuộc vào các nghiệm của phương trình đặc trưng r² - c1*r - c2 = 0 và các điều kiện biên."
+  },
+  {
+    "id": "qa_0143",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Trong Định lý 2, giả sử phương trình đặc trưng r² - c1*r - c2 = 0 có nghiệm kép r0, công thức nghiệm của dãy số {an} là gì?",
+    "answer": "Nghiệm của dãy số có dạng an = α1 * r0^n + α2 * n * r0^n."
+  },
+  {
+    "id": "qa_0145",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Sự khác biệt về cấu trúc nghiệm giữa trường hợp nghiệm phân biệt (Định lý 1) và nghiệm kép (Định lý 2) là gì?",
+    "answer": "Trong trường hợp nghiệm kép r0, số hạng thứ hai của nghiệm tổng quát được nhân thêm tham số n (α2 * n * r0^n)."
+  },
+  {
+    "id": "qa_0146",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Các hằng số α1 và α2 trong Định lý 2 về nghiệm kép được xác định dựa trên yếu tố nào?",
+    "answer": "Được xác định dựa trên các giá trị ban đầu của dãy số (điều kiện đầu)."
+  },
+  {
+    "id": "qa_0153",
+    "type": "hoi_dieu_kien",
+    "topic": "to_hop_chung",
+    "question": "Điều kiện cần thiết về các nghiệm r1, r2, ..., rk của phương trình đặc trưng trong Định lý 3 là gì?",
+    "answer": "Các nghiệm r1, r2, ..., rk phải là k nghiệm phân biệt."
+  },
+  {
+    "id": "qa_0155",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Công thức nghiệm tổng quát của dãy số {an} khi có k nghiệm đặc trưng phân biệt là gì?",
+    "answer": "Công thức là an = α1*r1^n + α2*r2^n + ... + αk*rk^n."
+  },
+  {
+    "id": "qa_0161",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Trong phương pháp hàm sinh, một dãy số hữu hạn được biến đổi thành dãy vô hạn bằng cách nào?",
+    "answer": "Bằng cách đặt các giá trị hi = 0 với mọi i lớn hơn m (trong đó m là chỉ số cuối cùng của dãy hữu hạn)."
+  },
+  {
+    "id": "qa_0171",
+    "type": "hoi_ung_dung",
+    "topic": "to_hop_chung",
+    "question": "Mục đích chính của việc sử dụng phương pháp hàm sinh cho công thức đệ quy là gì?",
+    "answer": "Để tìm công thức dưới dạng hiện (công thức trực tiếp theo n) cho số hạng tổng quát của dãy số xác định bởi công thức đệ quy."
+  },
+  {
+    "id": "qa_0187",
+    "type": "hoi_dieu_kien",
+    "topic": "to_hop_chung",
+    "question": "Điều kiện về số dòng p và số cột q so với số phần tử n của tập S trong hình chữ nhật La-tinh là gì?",
+    "answer": "Điều kiện là p nhỏ hơn hoặc bằng n và q nhỏ hơn hoặc bằng n."
+  },
+  {
+    "id": "qa_0189",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Đặc điểm của các cột trong hình chữ nhật La-tinh trường hợp q = n là gì?",
+    "answer": "Mỗi cột không được chứa phần tử lặp lại."
+  },
+  {
+    "id": "qa_0209",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Nếu sau khi giả thiết phản chứng mà không dẫn đến mâu thuẫn thì điều đó có nghĩa là gì?",
+    "answer": "Có thể giả thiết đó không sai (điều cần chứng minh là sai), hoặc phương pháp phản chứng chưa đủ mạnh để tìm ra mâu thuẫn trong trường hợp này."
+  },
+  {
+    "id": "qa_0211",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Trong tổ hợp, phương pháp phản chứng thường được kết hợp với nguyên lý nào?",
+    "answer": "Thường được kết hợp với nguyên lý Dirichlet (nguyên lý lồng chim) để chỉ ra mâu thuẫn về số lượng."
+  },
+  {
+    "id": "qa_0212",
+    "type": "hoi_ung_dung",
+    "topic": "to_hop_chung",
+    "question": "Mục tiêu của việc 'giả thiết điều định chứng minh là sai' là để làm gì?",
+    "answer": "Để tạo ra một môi trường logic giả định, qua đó bộc lộ các tính chất không thể xảy ra trên thực tế."
+  },
+  {
+    "id": "qa_0213",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Nguyên lý Dirichlet được sử dụng để giải quyết vấn đề gì trong toán học tổ hợp?",
+    "answer": "Được sử dụng để chứng minh sự tồn tại của một cấu hình với những tính chất cho trước."
+  },
+  {
+    "id": "qa_0214",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Phát biểu cơ bản của Nguyên lý Dirichlet là gì?",
+    "answer": "Nếu đem xếp nhiều hơn n đối tượng vào n cái hộp, thì luôn tìm được một cái hộp chứa không ít hơn 2 đối tượng."
+  },
+  {
+    "id": "qa_0215",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Phát biểu của Nguyên lý Dirichlet tổng quát là gì?",
+    "answer": "Nếu đem xếp n đối tượng vào k cái hộp, thì luôn tìm được một cái hộp chứa không ít hơn n/k đối tượng."
+  },
+  {
+    "id": "qa_0216",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Tên gọi khác phổ biến của nguyên lý Dirichlet là gì?",
+    "answer": "Thường được gọi là nguyên lý lồng chim (Pigeonhole Principle)."
+  },
+  {
+    "id": "qa_0217",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Nhà toán học Dirichlet đề xuất nguyên lý này vào thời gian nào?",
+    "answer": "Ông đề xuất nguyên lý này vào thế kỷ 19."
+  },
+  {
+    "id": "qa_0218",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Trong nguyên lý Dirichlet tổng quát, giá trị n/k được hiểu như thế nào khi n không chia hết cho k?",
+    "answer": "Được hiểu là ít nhất có một hộp chứa số lượng đối tượng bằng trần của phép chia n/k (số nguyên nhỏ nhất không bé hơn n/k)."
+  },
+  {
+    "id": "qa_0220",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Yếu tố quyết định để áp dụng thành công nguyên lý Dirichlet là gì?",
+    "answer": "Là kỹ năng xác định đâu là 'đối tượng' và đâu là 'cái hộp' trong ngữ cảnh cụ thể của bài toán."
+  },
+  {
+    "id": "qa_0221",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Nguyên lý Dirichlet giúp khẳng định điều gì về sự phân bố của các đối tượng?",
+    "answer": "Khẳng định rằng sự phân bố không thể quá loãng, chắc chắn sẽ có sự tập trung tại ít nhất một vị trí (hộp)."
+  },
+  {
+    "id": "qa_0226",
+    "type": "hoi_ky_hieu",
+    "topic": "to_hop_chung",
+    "question": "Ký hiệu viết tắt và tên tiếng Anh của hệ đại diện phân biệt là gì?",
+    "answer": "Viết tắt là TRAN, tên tiếng Anh là transversal."
+  },
+  {
+    "id": "qa_0235",
+    "type": "hoi_ky_hieu",
+    "topic": "to_hop_chung",
+    "question": "Ký hiệu toán học của điều kiện Hall là gì?",
+    "answer": "Ký hiệu là |∪ Sj| ≥ |J| với mọi J ⊆ {1, 2, ..., m}."
+  },
+  {
+    "id": "qa_0237",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Ý nghĩa của việc Định lý Hall là 'điều kiện cần và đủ' là gì?",
+    "answer": "Nghĩa là nếu thỏa mãn điều kiện Hall thì chắc chắn tồn tại hệ đại diện phân biệt, và ngược lại, nếu tồn tại hệ đại diện phân biệt thì chắc chắn thỏa mãn điều kiện Hall."
+  },
+  {
+    "id": "qa_0238",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Định lý Hall còn được biết đến với tên gọi thú vị nào trong tiếng Anh?",
+    "answer": "Được gọi là Marriage Theorem (Định lý kết hôn)."
+  },
+  {
+    "id": "qa_0245",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Định nghĩa số Ramsey R(i,j)?",
+    "answer": "Số Ramsey R(i,j) là số nguyên dương nhỏ nhất có tính chất (i,j)-Ramsey."
+  },
+  {
+    "id": "qa_0247",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Bổ đề 1 về chặn trên của số Ramsey R(i,j) phát biểu như thế nào?",
+    "answer": "Nếu i >= 3 và j >= 3 thì ta luôn có bất đẳng thức: R(i,j) <= R(i, j-1) + R(i-1, j)."
+  },
+  {
+    "id": "qa_0255",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Mối liên hệ giữa số Ramsey tổng quát và số Ramsey cơ bản khi số lượng màu n = 2 là gì?",
+    "answer": "Khi n = 2, số Ramsey tổng quát R(i1, i2"
+  },
+  {
+    "id": "qa_0256",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Phương pháp nào thường được sử dụng để chứng minh sự tồn tại của các số Ramsey tổng quát?",
+    "answer": "Người ta thường sử dụng phương pháp chứng minh bằng quy nạp để khẳng định sự tồn tại của chúng."
+  },
+  {
+    "id": "qa_0257",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Tính chất đặc biệt của số Ramsey tổng quát khi tất cả các chỉ số ij đều bằng 2 là gì?",
+    "answer": "Khi ij = 2 với mọi j, giá trị của số Ramsey tổng quát R(2, ..., 2"
+  },
+  {
+    "id": "qa_0258",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Tình trạng nghiên cứu hiện tại về giá trị cụ thể của các số Ramsey tổng quát khi số màu n >= 3 và các chỉ số ij >= 3 như thế nào?",
+    "answer": "Hiện tại con người biết rất ít về các giá trị này"
+  },
+  {
+    "id": "qa_0265",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Định lý Ramsey (1930) khẳng định điều gì về sự tồn tại của số Ramsey tổng quát?",
+    "answer": "Khẳng định rằng với mọi số nguyên dương n >= 2 và ij >= r, số Ramsey R(i1, i2, ..., in"
+  },
+  {
+    "id": "qa_0268",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Hai nguyên tắc bắt buộc phải đảm bảo khi thực hiện phương pháp liệt kê là gì?",
+    "answer": "Một là không được lặp lại một cấu hình, hai là không được bỏ sót một cấu hình nào."
+  },
+  {
+    "id": "qa_0269",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Khó khăn chính của phương pháp liệt kê thủ công trong tổ hợp là gì?",
+    "answer": "Là hiện tượng bùng nổ tổ hợp, khi số lượng cấu hình quá lớn khiến thời gian xây dựng vượt quá khả năng thực hiện của con người."
+  },
+  {
+    "id": "qa_0270",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Hai phương pháp liệt kê phổ biến nhất thường được sử dụng trong lập trình máy tính là gì?",
+    "answer": "Đó là Thuật toán sinh và Thuật toán quay lui (backtracking)."
+  },
+  {
+    "id": "qa_0272",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Định nghĩa thuật toán giải bài toán một cách trực quan là gì?",
+    "answer": "Là một thủ tục xác định bao gồm một dãy hữu hạn các bước cần thực hiện để thu được lời giải của bài toán."
+  },
+  {
+    "id": "qa_0274",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Đặc trưng 'Đầu ra' (Output) của thuật toán có ý nghĩa gì?",
+    "answer": "Với mỗi tập dữ liệu đầu vào, thuật toán đưa ra các dữ liệu tương ứng chính là lời giải của bài toán."
+  },
+  {
+    "id": "qa_0275",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Tính 'Chính xác' (Precision) của thuật toán đòi hỏi điều gì?",
+    "answer": "Đòi hỏi các bước của thuật toán phải được mô tả một cách chính xác, rõ ràng."
+  },
+  {
+    "id": "qa_0276",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chung",
+    "question": "Tại sao thuật toán cần có tính 'Hữu hạn' (Finiteness)?",
+    "answer": "Vì thuật toán cần phải đưa ra được kết quả cuối cùng sau một số hữu hạn bước thực hiện với mọi dữ liệu đầu vào."
+  },
+  {
+    "id": "qa_0278",
+    "type": "hoi_cong_thuc",
+    "topic": "to_hop_chung",
+    "question": "Tính 'Tổng quát' (Generality) của thuật toán được thể hiện như thế nào?",
+    "answer": "Thể hiện ở việc thuật toán có thể áp dụng để giải mọi bài toán có cùng dạng đã cho, chứ không chỉ giải một trường hợp riêng lẻ."
+  },
+  {
+    "id": "qa_0279",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chung",
+    "question": "Tại sao một thuật toán đúng vẫn có thể không cho kết quả mong muốn khi cài đặt trên máy tính?",
+    "answer": "Vì thuật toán đó có thể đòi hỏi quá nhiều thời gian thực hiện hoặc không có đủ bộ nhớ để lưu trữ dữ liệu và các biến của chương trình."
+  },
+  {
+    "id": "qa_0280",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Định nghĩa quá trình phân tích thuật toán?",
+    "answer": "Là quá trình tìm ra những đánh giá về thời gian tính cũng như dung lượng bộ nhớ cần thiết để thực hiện thuật toán."
+  },
+  {
+    "id": "qa_0281",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Độ phức tạp tính toán của một thuật toán được hiểu là gì?",
+    "answer": "Là lượng thời gian và bộ nhớ cần thiết để thực hiện thuật toán đó."
+  },
+  {
+    "id": "qa_0282",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Thời gian tính của một thuật toán phụ thuộc vào yếu tố nào?",
+    "answer": "Thời gian tính là một hàm của dữ liệu đầu vào, thường được xét dựa trên đặc trưng quan trọng nhất là kích thước của dữ liệu đầu vào (n)."
+  },
+  {
+    "id": "qa_0283",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Thế nào là thời gian tính tốt nhất của thuật toán với đầu vào kích thước n?",
+    "answer": "Là thời gian tối thiểu cần thiết để thực hiện thuật toán với mọi bộ dữ liệu đầu vào có kích thước n."
+  },
+  {
+    "id": "qa_0284",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Thế nào là thời gian tính tồi nhất của thuật toán với đầu vào kích thước n?",
+    "answer": "Là thời gian nhiều nhất cần thiết để thực hiện thuật toán với mọi bộ dữ liệu đầu vào có kích thước n."
+  },
+  {
+    "id": "qa_0285",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Định nghĩa thời gian tính trung bình của thuật toán?",
+    "answer": "Là thời gian trung bình cần thiết để thực hiện thuật toán trên tập hữu hạn các đầu vào có kích thước n."
+  },
+  {
+    "id": "qa_0287",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chung",
+    "question": "Tại sao số câu lệnh thực hiện lại là tiêu chuẩn khách quan để đánh giá hiệu quả thuật toán?",
+    "answer": "Vì thông số này không phụ thuộc vào người lập trình, ngôn ngữ lập trình hay cấu hình máy tính cụ thể mà thuật toán được chạy trên đó."
+  },
+  {
+    "id": "qa_0291",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Cách phát biểu bằng lời đơn giản cho ký hiệu f(n) = O(g(n)) là gì?",
+    "answer": "Nghĩa là ngoại trừ hằng số và một số hữu hạn ngoại lệ, f bị chặn trên bởi g."
+  },
+  {
+    "id": "qa_0292",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Cách phát biểu bằng lời đơn giản cho ký hiệu f(n) = Omega(g(n)) là gì?",
+    "answer": "Nghĩa là ngoại trừ hằng số và một số hữu hạn ngoại lệ, f bị chặn dưới bởi g."
+  },
+  {
+    "id": "qa_0293",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Cách phát biểu bằng lời đơn giản cho ký hiệu f(n) = Theta(g(n)) là gì?",
+    "answer": "Nghĩa là ngoại trừ hằng số và một số hữu hạn ngoại lệ, f bị chặn cả dưới và chặn cả trên bởi g."
+  },
+  {
+    "id": "qa_0294",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Ba ký hiệu O lớn, Omega và Theta thường được gọi chung là gì?",
+    "answer": "Thường được gọi là các ký hiệu ô lớn, ômêga, têta đối với hàm f."
+  },
+  {
+    "id": "qa_0296",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Khi nào ta nói thời gian tính tồi nhất của thuật toán là O(g(n))?",
+    "answer": "Khi thuật toán đòi hỏi thời gian tính tồi nhất là t(n) với độ dài đầu vào n và thỏa mãn điều kiện t(n) = O(g(n))."
+  },
+  {
+    "id": "qa_0300",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Nội dung của Mệnh đề 1 về mối liên hệ giữa cặp số (a, b) và số phép chia trong thuật toán Euclide là gì?",
+    "answer": "Giả sử cặp số a, b (với a > b) đòi hỏi n >= 1 phép chia trong thuật toán Euclide, khi đó giá trị của a >= f_{n+1} và b >= f_n, trong đó {f_n} là dãy số Fibonacci."
+  },
+  {
+    "id": "qa_0301",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Dãy số Fibonacci trong Mệnh đề 1 được xác định bởi công thức truy hồi nào?",
+    "answer": "Dãy số Fibonacci được xác định bởi f_n = f_{n-1} + f_{n-2} với n >= 2, và các giá trị khởi đầu là f_0 = f_1 = 1."
+  },
+  {
+    "id": "qa_0303",
+    "type": "hoi_dieu_kien",
+    "topic": "to_hop_chung",
+    "question": "Điều kiện về số lượng phép chia n trong thuật toán Euclide theo mệnh đề này là gì?",
+    "answer": "Số phép chia n phải lớn hơn hoặc bằng 1."
+  },
+  {
+    "id": "qa_0304",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Nếu biết số phép chia là n, ta có thể khẳng định điều gì về giá trị của số nhỏ hơn (b)?",
+    "answer": "Ta khẳng định được b không thể nhỏ hơn số Fibonacci thứ n (f_n)."
+  },
+  {
+    "id": "qa_0305",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Nội dung của Mệnh đề 2 về số lượng phép chia tối đa trong thuật toán Euclide là gì?",
+    "answer": "Giả sử các số nguyên ở đầu vào của thuật toán Euclide không vượt quá m (với m >= 8), khi đó thuật toán đòi hỏi không quá log cơ số 3/2 của (2m/3) phép chia."
+  },
+  {
+    "id": "qa_0306",
+    "type": "hoi_dieu_kien",
+    "topic": "to_hop_chung",
+    "question": "Điều kiện về giá trị đầu vào m trong Mệnh đề 2 là gì?",
+    "answer": "Giá trị m phải lớn hơn hoặc bằng 8."
+  },
+  {
+    "id": "qa_0307",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Biểu thức logarit trong Mệnh đề 2 giúp xác định đại lượng nào của thuật toán?",
+    "answer": "Giúp xác định chặn trên (giới hạn tối đa) của số lượng phép chia cần thực hiện để tìm ước chung lớn nhất của hai số không vượt quá m."
+  },
+  {
+    "id": "qa_0309",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Tham số bên trong logarit của công thức này là gì?",
+    "answer": "Tham số là biểu thức (2m/3)."
+  },
+  {
+    "id": "qa_0313",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Thứ tự trên tập các cấu hình trong phương pháp sinh cần được lựa chọn theo tiêu chí nào?",
+    "answer": "Cần được lựa chọn sao cho có thể dễ dàng xây dựng được thuật toán sinh kế tiếp dựa trên thứ tự đó."
+  },
+  {
+    "id": "qa_0314",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Điểm kết thúc của thuật toán sinh được xác định khi nào?",
+    "answer": "Khi thuật toán sinh kế tiếp không thể tạo ra thêm cấu hình mới, tức là đã đạt đến cấu hình cuối cùng trong thứ tự đã xác định."
+  },
+  {
+    "id": "qa_0315",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Nội dung chính của thuật toán quay lui là gì?",
+    "answer": "Là việc xây dựng dần các thành phần của cấu hình bằng cách thử tất cả các khả năng. Tại mỗi bước, ta xác định một thành phần dựa trên các thành phần đã chọn trước đó (lời giải bộ phận)."
+  },
+  {
+    "id": "qa_0316",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Quy trình thử khả năng j cho thành phần xi trong thuật toán quay lui diễn ra như thế nào?",
+    "answer": "Với mỗi khả năng j, ta kiểm tra xem j có chấp nhận được không. Nếu chấp nhận và đã đạt đến thành phần cuối cùng (i = n), ta thu được một cấu hình"
+  },
+  {
+    "id": "qa_0317",
+    "type": "hoi_ly_do",
+    "topic": "to_hop_chung",
+    "question": "Tại sao thuật toán quay lui lại phù hợp với việc lập trình bằng ngôn ngữ cho phép gọi đệ quy?",
+    "answer": "Vì thuật toán cần ghi nhớ trạng thái tại mỗi bước đã đi qua theo cơ cấu ngăn xếp (stack - vào sau ra trước), điều này tương ứng tự nhiên với cách hoạt động của các lời gọi hàm đệ quy."
+  },
+  {
+    "id": "qa_0320",
+    "type": "hoi_ung_dung",
+    "topic": "to_hop_chung",
+    "question": "Vai trò của các 'biến trạng thái' (global) trong thuật toán quay lui là gì?",
+    "answer": "Dùng để ghi nhớ trạng thái mới của quá trình tìm kiếm sau khi xác định xi và trả lại trạng thái cũ sau khi kết thúc lời gọi đệ quy để chuẩn bị thử khả năng tiếp theo."
+  },
+  {
+    "id": "qa_0323",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Quá trình tìm kiếm lời giải theo thuật toán quay lui được mô tả trực quan bằng đối tượng nào?",
+    "answer": "Được mô tả bởi 'Cây tìm kiếm lời giải' (Search Tree)."
+  },
+  {
+    "id": "qa_0324",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Trong cây tìm kiếm lời giải, các tầng của cây đại diện cho điều gì?",
+    "answer": "Mỗi tầng của cây đại diện cho việc chọn một thành phần trong cấu hình (ví dụ tầng 1 chọn x1, tầng 2 chọn x2 khi đã biết x1, tầng 3 chọn x3 khi đã biết x1 và x2)."
+  },
+  {
+    "id": "qa_0325",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Các nút và nhánh trên cây tìm kiếm lời giải thể hiện điều gì?",
+    "answer": "Các nút thể hiện trạng thái của lời giải bộ phận, và các nhánh thể hiện các khả năng (lựa chọn) có thể chấp nhận được để xây dựng thành phần tiếp theo."
+  },
+  {
+    "id": "qa_0331",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Định nghĩa phương án tối ưu x* và giá trị tối ưu f*?",
+    "answer": "Phương án x* thuộc D đem lại giá trị nhỏ nhất (hoặc lớn nhất) cho hàm mục tiêu được gọi là phương án tối ưu"
+  },
+  {
+    "id": "qa_0332",
+    "type": "hoi_ung_dung",
+    "topic": "to_hop_chung",
+    "question": "Vai trò của các mô hình tối ưu hóa tổ hợp truyền thống là gì?",
+    "answer": "Chúng là những mô hình có nhiều ứng dụng thực tế và giữ vai trò quan trọng trong việc nghiên cứu, phát triển lý thuyết tối ưu hóa tổ hợp."
+  },
+  {
+    "id": "qa_0336",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Trong những trường hợp chưa thể xây dựng được phương án hiệu quả (như bài toán người du lịch, bài toán cái túi), phương pháp nào thường là lựa chọn cuối cùng?",
+    "answer": "Phương pháp duyệt toàn bộ vẫn là phương án hữu hiệu duy nhất khi chưa có giải pháp chuyên biệt nào khác."
+  },
+  {
+    "id": "qa_0337",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Ý tưởng cải tiến việc liệt kê bằng cách loại bỏ các phương án chắc chắn không tối ưu được gọi là gì?",
+    "answer": "Đó là thuật toán nhánh cận (Branch and Bound), dựa trên việc tận dụng các thông tin đã tìm được trong quá trình liệt kê để cắt tỉa những nhánh không triển vọng."
+  },
+  {
+    "id": "qa_0340",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Thế nào là một 'phương án bộ phận cấp k' trong quá trình thực hiện thuật toán?",
+    "answer": "Là một bộ gồm k thành phần đầu tiên (a1, a2, ..., ak) được xây dựng dần trong quá trình liệt kê theo thuật toán quay lui."
+  },
+  {
+    "id": "qa_0342",
+    "type": "hoi_dinh_nghia",
+    "topic": "to_hop_chung",
+    "question": "Ý nghĩa của bất đẳng thức hàm đánh giá g trong thuật toán nhánh cận là gì?",
+    "answer": "Nghĩa là giá trị của hàm g tại một phương án bộ phận đại diện cho một 'cận dưới', đảm bảo không vượt quá giá trị tốt nhất có thể đạt được nếu ta tiếp tục phát triển phương án bộ phận đó thành phương án hoàn chỉnh."
+  },
+  {
+    "id": "qa_0343",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Phát biểu bài toán Cái túi (Knapsack Problem)?",
+    "answer": "Một nhà thám hiểm cần chọn n đồ vật mang theo trong cái túi có trọng lượng tối đa b. Mỗi đồ vật j có trọng lượng aj và giá trị sử dụng cj. Tìm phương án chọn (biểu diễn bằng vecto nhị phân x) sao cho tổng trọng lượng không vượt quá b và tổng giá trị sử dụng là lớn nhất (max)."
+  },
+  {
+    "id": "qa_0344",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Phát biểu bài toán Đóng thùng (Bin Packing Problem)?",
+    "answer": "Có n đồ vật với trọng lượng w1, w2, ..., wn cần xếp vào các thùng có cùng dung lượng b. Bài toán yêu cầu tìm cách xếp sao cho số lượng thùng cần sử dụng là ít nhất (min)."
+  },
+  {
+    "id": "qa_0347",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Phát biểu bài toán Cho thuê máy (Job Scheduling on Single Machine)?",
+    "answer": "Một ông chủ có 1 cái máy cho m khách hàng thuê, mỗi khách hàng i yêu cầu một tập các ngày Ni. Ông chủ cần chọn các yêu cầu sao cho các tập ngày của những người được chọn không giao nhau và tổng số ngày sử dụng máy là lớn nhất (max)."
+  },
+  {
+    "id": "qa_0349",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "to_hop_chung",
+    "question": "Phát biểu bài toán Lập lịch (Flow Shop Scheduling)?",
+    "answer": "Cần gia công n chi tiết trên m máy theo thứ tự nhất định. Biết thời gian gia công chi tiết Di trên máy Mj là tij. Tìm lịch trình (trình tự gia công) sao cho thời gian hoàn thành tất cả các chi tiết là sớm nhất (min)."
+  },
+  {
+    "id": "qa_0350",
+    "type": "hoi_khai_niem",
+    "topic": "to_hop_chung",
+    "question": "Lý thuyết lập lịch (Scheduling Theory) nghiên cứu về điều gì?",
+    "answer": "Là một lĩnh vực riêng của tối ưu hóa tổ hợp, nghiên cứu cách sắp xếp các công việc trên các tài nguyên (máy móc) thỏa mãn các ràng buộc về thời gian, trình tự và tài nguyên để tối ưu hóa một mục tiêu nào đó."
+  },
+  {
+    "id": "qa_0003",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Thế nào được gọi là một cấu hình tổ hợp?",
+    "answer": "Mỗi cách phân bố các phần tử thỏa mãn những điều kiện nhất định được gọi là một cấu hình tổ hợp."
+  },
+  {
+    "id": "qa_0008",
+    "type": "hoi_ung_dung",
+    "topic": "tong_quan_to_hop",
+    "question": "Mục tiêu của bài toán liệt kê là gì?",
+    "answer": "Bài toán liệt kê quan tâm đến việc đưa ra tất cả các cấu hình có thể có được."
+  },
+  {
+    "id": "qa_0009",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Lời giải của bài toán liệt kê thường được biểu diễn dưới dạng nào?",
+    "answer": "Lời giải được biểu diễn dưới dạng thuật toán vét cạn tất cả các cấu hình."
+  },
+  {
+    "id": "qa_0010",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Dạng bài toán nào làm nền cho nhiều bài toán khác trong tổ hợp?",
+    "answer": "Bài toán liệt kê được dùng làm nền cho nhiều bài toán khác."
+  },
+  {
+    "id": "qa_0012",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Bài toán tối ưu quan tâm đến điều gì?",
+    "answer": "Bài toán tối ưu chỉ quan tâm đến một cấu hình tốt nhất theo một nghĩa nào đó."
+  },
+  {
+    "id": "qa_0013",
+    "type": "hoi_ung_dung",
+    "topic": "tong_quan_to_hop",
+    "question": "Bài toán tồn tại nhằm mục đích gì?",
+    "answer": "Bài toán tồn tại nhằm xác định có hay không có một cấu hình thỏa mãn điều kiện."
+  },
+  {
+    "id": "qa_0014",
+    "type": "hoi_ly_do",
+    "topic": "tong_quan_to_hop",
+    "question": "Tại sao bài toán tồn tại thường gây khó khăn trong lịch sử toán học?",
+    "answer": "Vì đôi khi không chỉ ra được cấu hình cụ thể nhưng cũng không khẳng định được chúng không tồn tại."
+  },
+  {
+    "id": "qa_0118",
+    "type": "hoi_ky_hieu",
+    "topic": "tong_quan_to_hop",
+    "question": "Ký hiệu Dn, Un trong ảnh thường đại diện cho điều gì?",
+    "answer": "Đây là các ký hiệu thường dùng để chỉ kết quả của một dãy số hoặc một cấu hình tổ hợp phụ thuộc vào tham số n."
+  },
+  {
+    "id": "qa_0185",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Một cấu hình tổ hợp nổi tiếng nào được dùng làm thí dụ cho phương pháp liệt kê?",
+    "answer": "Đó là các hình chữ nhật La-tinh."
+  },
+  {
+    "id": "qa_0194",
+    "type": "hoi_ly_do",
+    "topic": "tong_quan_to_hop",
+    "question": "Tại sao việc chỉ ra sự tồn tại của một cấu hình tổ hợp lại khó khăn?",
+    "answer": "Vì trong nhiều trường hợp, việc tính toán mọi khả năng để khẳng định sự tồn tại là cực kỳ phức tạp hoặc không thể thực hiện trực tiếp."
+  },
+  {
+    "id": "qa_0195",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Một ví dụ thực tế về bài toán tồn tại trong trò chơi trí tuệ là gì?",
+    "answer": "Ví dụ về một kỳ thủ cần tính toán các nước đi để xem liệu có khả năng thắng (tồn tại nước đi thắng) hay không."
+  },
+  {
+    "id": "qa_0196",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Trong lĩnh vực mật mã, bài toán tồn tại xuất hiện như thế nào?",
+    "answer": "Xuất hiện khi người giải mật mã cần tìm chìa khóa để xác định liệu bức điện có thực sự được mã hóa hay chỉ là giả mạo."
+  },
+  {
+    "id": "qa_0197",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Các bài toán xét sự tồn tại của các cấu hình tổ hợp với tính chất cho trước được gọi là gì?",
+    "answer": "Được gọi là các bài toán tồn tại tổ hợp."
+  },
+  {
+    "id": "qa_0198",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Một bài toán tồn tại tổ hợp được xem là giải xong khi nào?",
+    "answer": "Khi hoặc chỉ ra được một cách xây dựng cấu hình, hoặc chứng minh được rằng chúng không tồn tại."
+  },
+  {
+    "id": "qa_0199",
+    "type": "hoi_ly_do",
+    "topic": "tong_quan_to_hop",
+    "question": "Tại sao việc giải bài toán tồn tại tổ hợp thường không dễ dàng?",
+    "answer": "Vì cả hai khả năng (xây dựng cấu hình hoặc chứng minh không tồn tại) đều đòi hỏi những phương pháp tư duy và chứng minh phức tạp."
+  },
+  {
+    "id": "qa_0200",
+    "type": "hoi_ung_dung",
+    "topic": "tong_quan_to_hop",
+    "question": "Mục tiêu của việc xét các bài toán tồn tại tổ hợp cổ điển là gì?",
+    "answer": "Để thấy rõ sự phức tạp của vấn đề và học hỏi các kỹ thuật chứng minh sự tồn tại."
+  },
+  {
+    "id": "qa_0202",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Trong bài toán tồn tại, nếu không xây dựng được cấu hình cụ thể, ta có thể làm gì?",
+    "answer": "Ta phải sử dụng các phương pháp chứng minh gián tiếp để khẳng định sự tồn tại hoặc không tồn tại của nó."
+  },
+  {
+    "id": "qa_0203",
+    "type": "hoi_ung_dung",
+    "topic": "tong_quan_to_hop",
+    "question": "Phương pháp phản chứng thường được dùng để giải quyết loại bài toán nào trong tổ hợp?",
+    "answer": "Phương pháp phản chứng là một trong những cách dùng để giải quyết các bài toán tồn tại tổ hợp."
+  },
+  {
+    "id": "qa_0205",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Trong bài toán tồn tại, việc giả thiết điều định chứng minh là sai có nghĩa là gì?",
+    "answer": "Nghĩa là giả thiết rằng không tồn tại bất kỳ cấu hình nào thỏa mãn tính chất cho trước."
+  },
+  {
+    "id": "qa_0207",
+    "type": "hoi_ly_do",
+    "topic": "tong_quan_to_hop",
+    "question": "Tại sao phương pháp phản chứng lại hiệu quả trong bài toán tồn tại tổ hợp?",
+    "answer": "Vì việc chứng minh trực tiếp sự tồn tại đôi khi rất khó, trong khi việc giả thiết 'không tồn tại' giúp tận dụng được nhiều tính chất toán học để chỉ ra sự vô lý."
+  },
+  {
+    "id": "qa_0219",
+    "type": "hoi_ly_do",
+    "topic": "tong_quan_to_hop",
+    "question": "Tại sao nguyên lý Dirichlet được coi là nguyên lý 'đơn giản'?",
+    "answer": "Vì phát biểu của nó mang tính hiển nhiên về mặt số lượng, nhưng lại có sức mạnh rất lớn trong việc chứng minh các bài toán tồn tại phức tạp."
+  },
+  {
+    "id": "qa_0223",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Sự tồn tại của các cấu hình tổ hợp thường phụ thuộc vào yếu tố nào?",
+    "answer": "Thường phụ thuộc vào một số điều kiện ràng buộc các tham số ban đầu."
+  },
+  {
+    "id": "qa_0224",
+    "type": "hoi_ung_dung",
+    "topic": "tong_quan_to_hop",
+    "question": "Mục tiêu của bài toán hệ đại diện phân biệt là gì?",
+    "answer": "Là minh họa cho hướng giải quyết tìm kiếm các điều kiện ràng buộc để khẳng định sự tồn tại của cấu hình tổ hợp."
+  },
+  {
+    "id": "qa_0310",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Hai điều kiện cần thiết để áp dụng phương pháp sinh giải bài toán liệt kê tổ hợp là gì?",
+    "answer": "Một là có thể xác định được một thứ tự trên tập các cấu hình cần liệt kê (từ đó xác định được cấu hình đầu tiên và cuối cùng). Hai là xây dựng được thuật toán sinh kế tiếp để từ một cấu hình chưa phải cuối cùng đưa ra được cấu hình ngay sau nó."
+  },
+  {
+    "id": "qa_0321",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Cấu trúc của đoạn chương trình chính để giải bài toán liệt kê bằng thuật toán quay lui bao gồm những gì?",
+    "answer": "Bao gồm một khối lệnh chính thực hiện hai bước: gọi thủ tục khởi tạo Init và sau đó bắt đầu lời gọi đệ quy đầu tiên Try(1)."
+  },
+  {
+    "id": "qa_0327",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Bài toán tối ưu tổ hợp xuất hiện trong tình huống thực tế nào?",
+    "answer": "Xuất hiện khi các cấu hình tổ hợp được gán cho một giá trị (giá trị sử dụng), và ta cần lựa chọn cấu hình có giá trị sử dụng tốt nhất trong số các cấu hình chấp nhận được."
+  },
+  {
+    "id": "qa_0328",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "tong_quan_to_hop",
+    "question": "Phát biểu tổng quát của bài toán tối ưu tổ hợp là gì?",
+    "answer": "Tìm cực tiểu (hay cực đại) của phiếm hàm f(x) tiến tới min (hoặc max), với điều kiện x thuộc tập D (trong đó D là tập hữu hạn phần tử)."
+  },
+  {
+    "id": "qa_0329",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Trong bài toán tối ưu, hàm f(x) và các phần tử x được gọi là gì?",
+    "answer": "Hàm f(x) được gọi là hàm mục tiêu của bài toán, mỗi phần tử x thuộc D được gọi là một phương án."
+  },
+  {
+    "id": "qa_0333",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Nguyên tắc cơ bản của phương pháp duyệt toàn bộ để giải bài toán tối ưu tổ hợp là gì?",
+    "answer": "Dựa trên các thuật toán liệt kê để duyệt qua từng phương án của bài toán, tính giá trị hàm mục tiêu tại mỗi phương án, sau đó so sánh tất cả để tìm ra phương án tối ưu."
+  },
+  {
+    "id": "qa_0335",
+    "type": "hoi_khai_niem",
+    "topic": "tong_quan_to_hop",
+    "question": "Làm thế nào để hy vọng giải được các bài toán tối ưu tổ hợp thực tế thay vì dùng duyệt toàn bộ?",
+    "answer": "Cần phải nghiên cứu kỹ tính chất của bài toán tối ưu cụ thể để xây dựng những thuật toán hiệu quả hơn nhằm hạn chế phạm vi tìm kiếm."
+  },
+  {
+    "id": "qa_0338",
+    "type": "hoi_dinh_nghia",
+    "topic": "tong_quan_to_hop",
+    "question": "Mô hình tổng quát của bài toán tối ưu tổ hợp mà thuật toán nhánh cận áp dụng là gì?",
+    "answer": "Là bài toán tìm giá trị nhỏ nhất (min) của hàm f(x) với x thuộc tập hữu hạn D."
+  },
+  {
+    "id": "qa_0086",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Một kết quả thú vị trong số học rút ra từ công thức tổ hợp là gì?",
+    "answer": "Tích của k số tự nhiên liên tiếp bao giờ cũng chia hết cho k!."
+  },
+  {
+    "id": "qa_0117",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Sự khác biệt giữa công thức trực tiếp và công thức truy hồi là gì?",
+    "answer": "Công thức trực tiếp tính ngay kết quả từ n, còn công thức truy hồi tính kết quả của n thông qua kết quả của các số nhỏ hơn (n-1, n-2,...)."
+  },
+  {
+    "id": "qa_0147",
+    "type": "hoi_cong_thuc",
+    "topic": "xau_ky_tu",
+    "question": "Công thức nghiệm tổng quát an = α1 * r0^n + α2 * n * r0^n áp dụng cho n bắt đầu từ đâu?",
+    "answer": "Áp dụng cho n = 0, 1, 2, ..."
+  },
+  {
+    "id": "qa_0162",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Định nghĩa hàm sinh g(x) của dãy số {hn} là gì?",
+    "answer": "Hàm sinh g(x) là chuỗi vô hạn có dạng g(x) = h0 + h1*x + h2*x^2 + ..."
+  },
+  {
+    "id": "qa_0163",
+    "type": "hoi_cong_thuc",
+    "topic": "xau_ky_tu",
+    "question": "Công thức tổng quát của hàm sinh g(x) sử dụng ký hiệu tổng (sigma) là gì?",
+    "answer": "g(x) bằng tổng của hi * x^i với i chạy từ 0 đến vô cùng."
+  },
+  {
+    "id": "qa_0182",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Trong công thức tích Cô-si, giới hạn của chỉ số i trong tổng tính ck là gì?",
+    "answer": "Chỉ số i chạy từ 0 đến k."
+  },
+  {
+    "id": "qa_0204",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Nguyên lý cơ bản của lập luận phản chứng là gì?",
+    "answer": "Giả thiết điều định chứng minh là sai, từ đó dẫn đến mâu thuẫn."
+  },
+  {
+    "id": "qa_0206",
+    "type": "hoi_he_qua",
+    "topic": "xau_ky_tu",
+    "question": "Kết quả cuối cùng của một lập luận phản chứng đúng là gì?",
+    "answer": "Phát hiện ra một sự mâu thuẫn logic, từ đó khẳng định giả thiết ban đầu là sai và điều cần chứng minh là đúng."
+  },
+  {
+    "id": "qa_0208",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Mâu thuẫn trong phương pháp phản chứng thường xuất hiện ở đâu?",
+    "answer": "Thường xuất hiện giữa kết quả suy luận từ giả thiết sai và một định lý, nguyên lý hoặc một giả thiết đề bài đã cho trước."
+  },
+  {
+    "id": "qa_0222",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Mối liên hệ giữa số lượng đối tượng và số lượng hộp trong nguyên lý cơ bản là gì?",
+    "answer": "Số đối tượng phải lớn hơn số hộp (n + 1 đối tượng cho n hộp) để đảm bảo có ít nhất một hộp chứa từ 2 đối tượng trở lên."
+  },
+  {
+    "id": "qa_0246",
+    "type": "hoi_noi_dung_dinh_ly",
+    "topic": "xau_ky_tu",
+    "question": "Nội dung của Định lý Ramsey (Định lý 1)?",
+    "answer": "Với mọi cặp số nguyên dương i >= 2, j >= 2, luôn luôn tìm được một số nguyên dương có tính chất (i,j)-Ramsey (từ đó khẳng định số R(i,j) luôn tồn tại)."
+  },
+  {
+    "id": "qa_0271",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Nguồn gốc tên gọi 'Thuật toán' (Algorithm) bắt nguồn từ đâu?",
+    "answer": "Bắt nguồn từ tên của nhà toán học thế kỷ thứ IX: Abu Ja'fa Mohammed ibn Musa al-Khowarizmi."
+  },
+  {
+    "id": "qa_0273",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Đặc trưng 'Đầu vào' (Input) của thuật toán được hiểu như thế nào?",
+    "answer": "Thuật toán nhận dữ liệu vào từ một tập nào đó làm nền tảng để xử lý."
+  },
+  {
+    "id": "qa_0277",
+    "type": "hoi_khai_niem",
+    "topic": "xau_ky_tu",
+    "question": "Đặc trưng 'Đơn trị' (Uniqueness) của thuật toán quy định điều gì về kết quả trung gian?",
+    "answer": "Quy định các kết quả trung gian của từng bước phải được xác định một cách đơn trị, chỉ phụ thuộc vào đầu vào và kết quả của các bước trước đó."
+  },
+  {
+    "id": "qa_0302",
+    "type": "hoi_dinh_nghia",
+    "topic": "xau_ky_tu",
+    "question": "Ý nghĩa của Mệnh đề 1 trong việc đánh giá độ phức tạp của thuật toán Euclide là gì?",
+    "answer": "Mệnh đề này giúp thiết lập giới hạn dưới cho các số a và b dựa trên số bước thực hiện của thuật toán, từ đó có thể suy ra thời gian tính tồi nhất của thuật toán Euclide chỉ ở mức logarit."
+  },
+  {
+    "id": "qa_0311",
+    "type": "hoi_ung_dung",
+    "topic": "xau_ky_tu",
+    "question": "Thuật toán sinh kế tiếp đóng vai trò gì trong phương pháp sinh?",
+    "answer": "Đóng vai trò là công cụ để chuyển đổi từ cấu hình hiện tại sang cấu hình tiếp theo dựa trên thứ tự đã xác định trước đó."
+  },
+  {
+    "id": "qa_0319",
+    "type": "hoi_dieu_kien",
+    "topic": "xau_ky_tu",
+    "question": "Điều kiện 'chấp nhận j' trong thuật toán quay lui thường phụ thuộc vào những yếu tố nào?",
+    "answer": "Ngoài việc phụ thuộc vào bản thân giá trị j, nó còn phụ thuộc vào việc đã chọn các khả năng tại các bước trước đó (từ bước 1 đến i-1)."
+  },
+  {
+    "id": "qa_0346",
+    "type": "hoi_ly_do",
+    "topic": "xau_ky_tu",
+    "question": "Tại sao trong bài toán Người du lịch, ta chỉ xét (n-1)! hành trình thực sự khác nhau?",
+    "answer": "Vì người du lịch có thể xuất phát từ một thành phố bất kỳ, nên ta có thể cố định một thành phố làm điểm xuất phát, dẫn đến số hành trình cần xét giảm từ n! xuống còn (n-1)!."
+  }
+]
