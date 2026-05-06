@@ -26,3 +26,14 @@ data/pdfs/
 data/pdf_corpus.json
 
 .vs/
+
+# Temporary generated training/testing data
+data/dataset_summary.json
+data/discrete_math_knowledge_base.json
+data/discrete_math_model.json
+data/discrete_math_questions.json
+data/eval_set.json
+data/test.json
+data/test.jsonl
+data/train.json
+data/train.jsonl
