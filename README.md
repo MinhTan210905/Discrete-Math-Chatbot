@@ -77,28 +77,29 @@ npm install
 
 ## Cấu hình
 
-Copy hoặc chỉnh sửa `backend/.env`:
+File `.env` **không được push lên Git**. Sau khi clone, tạo file `.env` từ mẫu:
 
-```env
-# Bỏ trống nếu chỉ dùng mode Traditional
-OPENAI_API_KEY=
+```bash
+# Windows
+copy backend\.env.example backend\.env
 
-# --- Dùng OpenAI ---
-OPENAI_BASE_URL=
-OPENAI_CHAT_MODEL=gpt-4o-mini
-
-# --- Hoặc dùng Groq (miễn phí) ---
-# Lấy key tại https://console.groq.com
-# OPENAI_API_KEY=gsk_...
-# OPENAI_BASE_URL=https://api.groq.com/openai/v1
-# OPENAI_CHAT_MODEL=llama-3.3-70b-versatile
-
-PORT=3001
-CHAT_DB_PATH=../data/chatbot.sqlite
-MAX_CONTEXT_MESSAGES=10
-MAX_RETRIEVED_DOCS=5
-MAX_OUTPUT_TOKENS=900
+# Linux / Mac
+cp backend/.env.example backend/.env
 ```
+
+Rồi mở `backend/.env` và điền thông tin:
+
+- **Chỉ dùng mode Traditional**: Không cần làm gì thêm.
+- **Dùng mode RAG với Groq (miễn phí)**:
+  - Lấy key tại [console.groq.com](https://console.groq.com)
+  - Điền `OPENAI_API_KEY=gsk_...`
+  - Điền `OPENAI_BASE_URL=https://api.groq.com/openai/v1`
+  - Đổi `OPENAI_CHAT_MODEL=llama-3.3-70b-versatile`
+- **Dùng mode RAG với OpenAI**:
+  - Lấy key tại [platform.openai.com](https://platform.openai.com/api-keys)
+  - Điền `OPENAI_API_KEY=sk-...`
+  - Giữ `OPENAI_BASE_URL=` trống
+  - Giữ `OPENAI_CHAT_MODEL=gpt-4o-mini`
 
 ---
 
