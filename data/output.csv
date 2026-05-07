@@ -1,4 +1,4 @@
-﻿qa_0041;hoi_dinh_nghia;dai_so_menh_de;Đại số mệnh đề còn được gọi là gì?;Đại số mệnh đề còn được gọi là đại số lôgic.
+qa_0041;hoi_dinh_nghia;dai_so_menh_de;Đại số mệnh đề còn được gọi là gì?;Đại số mệnh đề còn được gọi là đại số lôgic.
 qa_0177;hoi_dinh_nghia;dai_so_menh_de;Chuỗi lũy thừa của hàm giải tích g(x) hội tụ tại lân cận điểm 0 được gọi là gì?;Được gọi là khai triển Maclaurin của hàm g(x).
 qa_0180;hoi_cong_thuc;dai_so_menh_de;Tính chất tương ứng 1-1 nào được sử dụng trong phương pháp hàm sinh?;Tương ứng 1-1 giữa một hàm giải tích và một chuỗi hội tụ trong lân cận điểm 0.
 qa_0210;hoi_khai_niem;dai_so_menh_de;Sự mâu thuẫn dẫn đến kết luận gì về giả thiết ban đầu?;Mâu thuẫn dẫn đến kết luận giả thiết ban đầu (giả thiết phủ định) là sai.
@@ -26,12 +26,12 @@ qa_0165;hoi_khai_niem;ly_thuyet_do_thi;Trong trường hợp dãy số là hữu
 qa_0169;hoi_khai_niem;ly_thuyet_do_thi;Nếu tìm được m sao cho hi = 0 với mọi i > m, bậc của đa thức hàm sinh được xác định như thế nào?;Bậc của đa thức hàm sinh chính bằng m.
 qa_0243;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa đồ thị đầy đủ Kn?;Đồ thị đầy đủ Kn là một bộ gồm hai tập V, E, trong đó V là tập gồm n điểm (gọi là các đỉnh) và E là tập các đoạn nối giữa tất cả các cặp điểm trong V (gọi là các cạnh).
 qa_0244;hoi_dinh_nghia;ly_thuyet_do_thi;Thế nào là tính chất (i,j)-Ramsey của một số nguyên dương m?;Số nguyên dương m có tính chất (i,j)-Ramsey nếu với mọi đồ thị đầy đủ Km mà mỗi cạnh được tô bởi một trong hai màu xanh hoặc đỏ, đồ thị đó luôn chứa đồ thị con Ki toàn cạnh màu đỏ hoặc đồ thị con Kj toàn cạnh màu xanh.
-qa_0248;hoi_khai_niem;ly_thuyet_do_thi;Khái niệm tổng quát hóa số Ramsey cho phép mở rộng những thành phần nào trong ký hiệu R(n1, n2, ..., nk;
-qa_0249;hoi_khai_niem;ly_thuyet_do_thi;Trong ký hiệu số Ramsey tổng quát R(n1, n2, ..., nk;
+qa_0248;hoi_khai_niem;ly_thuyet_do_thi;Khái niệm tổng quát hóa số Ramsey cho phép mở rộng những thành phần nào trong ký hiệu R(n1, n2, ..., nk)?;Cho phép mở rộng số lượng đồ thị con và số lượng màu (k màu thay vì 2 màu).
+qa_0249;hoi_khai_niem;ly_thuyet_do_thi;Trong ký hiệu số Ramsey tổng quát R(n1, n2, ..., nk), chữ k đại diện cho điều gì?;Đại diện cho số lượng màu sắc khác nhau được sử dụng để tô các cạnh của đồ thị.
 qa_0250;hoi_dinh_nghia;ly_thuyet_do_thi;Ý nghĩa của các chỉ số n1, n2, ..., nk trong ký hiệu số Ramsey tổng quát là gì?;Các chỉ số này đại diện cho kích thước của các đồ thị con đầy đủ (Kn) tương ứng với từng loại màu sắc mà ta muốn chắc chắn tìm được ít nhất một cấu hình đồng nhất màu đó.
-qa_0251;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa số Ramsey tổng quát R(n1, n2, ..., nk;
+qa_0251;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa số Ramsey tổng quát R(n1, n2, ..., nk)?;Là số nguyên dương m nhỏ nhất sao cho với mọi cách tô màu các cạnh của đồ thị đầy đủ Km bằng k màu, luôn tồn tại một đồ thị con đầy đủ Kni có toàn cạnh được tô bằng màu i (với i từ 1 đến k).
 qa_0252;hoi_khai_niem;ly_thuyet_do_thi;Tham số r trong số Ramsey tổng quát có thể nhận những giá trị nào?;Tham số r có thể là bất kỳ số nguyên dương nào, tùy thuộc vào việc ta tô màu cho đỉnh (r=1), cạnh (r=2), hay các tập con gồm nhiều đỉnh hơn.
-qa_0253;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa tính chất (i1, i2, ..., in;
+qa_0253;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa tính chất (i1, i2, ..., in)-Ramsey?;Là tính chất mà nếu tô n màu cho các cạnh của đồ thị Km, thì luôn tìm được một đồ thị con Kij toàn màu thứ j.
 qa_0288;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa ký hiệu O lớn (O-notation) cho hàm f(n) và g(n)?;Ta viết f(n) = O(g(n)) và nói f(n) có bậc không quá g(n) nếu tồn tại hằng số dương C1 và số nguyên dương N1 sao cho trị tuyệt đối của f(n) luôn nhỏ hơn hoặc bằng C1 nhân với trị tuyệt đối của g(n) với mọi n lớn hơn hoặc bằng N1.
 qa_0289;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa ký hiệu Omega (Omega-notation) cho hàm f(n) và g(n)?;Ta viết f(n) = Omega(g(n)) và nói f(n) có bậc ít nhất là g(n) nếu tồn tại hằng số dương C2 và số nguyên dương N2 sao cho trị tuyệt đối của f(n) luôn lớn hơn hoặc bằng C2 nhân với trị tuyệt đối của g(n) với mọi n lớn hơn hoặc bằng N2.
 qa_0290;hoi_khai_niem;ly_thuyet_do_thi;Khi nào thì ta nói f(n) có bậc là g(n), ký hiệu là Theta(g(n))?;Ta viết f(n) = Theta(g(n)) khi hàm f(n) đồng thời thỏa mãn f(n) = O(g(n)) và f(n) = Omega(g(n)).
@@ -40,8 +40,8 @@ qa_0297;hoi_dinh_nghia;ly_thuyet_do_thi;Định nghĩa thời gian tính trung b
 qa_0298;hoi_khai_niem;ly_thuyet_do_thi;Làm thế nào để thu được định nghĩa bậc ít nhất (Omega) của các loại thời gian tính?;Bằng cách thay ký hiệu O bởi Omega và cụm từ 'không quá' bởi 'ít nhất' trong các định nghĩa tương ứng về thời gian tính tốt nhất, tồi nhất và trung bình.
 qa_0299;hoi_khai_niem;ly_thuyet_do_thi;Khi nào ta nói thời gian tính (tốt nhất/tồi nhất/trung bình) của thuật toán là Theta(g(n))?;Khi thời gian tính đó vừa có bậc không quá g(n) (là O(g(n))), vừa có bậc ít nhất là g(n) (là Omega(g(n))).
 qa_0308;hoi_khai_niem;ly_thuyet_do_thi;Từ Mệnh đề 2, ta có thể kết luận gì về độ phức tạp thời gian tính của thuật toán Euclide?;Ta có thể kết luận rằng thời gian tính của thuật toán Euclide có bậc logarit đối với giá trị của các số đầu vào, tức là thuật toán này cực kỳ hiệu quả ngay cả với các số rất lớn.
-qa_0312;hoi_khai_niem;ly_thuyet_do_thi;Cấu trúc chung của thủ tục 'Generate' trong phương pháp sinh được mô tả như thế nào?;Bắt đầu bằng việc xây dựng cấu hình ban đầu, đặt biến dừng Stop bằng false
-qa_0318;hoi_khai_niem;ly_thuyet_do_thi;Cấu trúc đệ quy của thủ tục 'Try(i)' được mô tả như thế nào?;Sử dụng vòng lặp duyệt các khả năng j từ 1 đến ni
+qa_0312;hoi_khai_niem;ly_thuyet_do_thi;Cấu trúc chung của thủ tục 'Generate' trong phương pháp sinh được mô tả như thế nào?;Bắt đầu bằng việc xây dựng cấu hình ban đầu, đặt biến dừng Stop bằng false, sau đó lặp lại việc sinh cấu hình tiếp theo cho đến khi Stop bằng true.
+qa_0318;hoi_khai_niem;ly_thuyet_do_thi;Cấu trúc đệ quy của thủ tục 'Try(i)' được mô tả như thế nào?;Sử dụng vòng lặp duyệt các khả năng j từ 1 đến ni, thử gán nếu hợp lệ, in kết quả nếu là bước cuối, ngược lại gọi đệ quy Try(i+1).
 qa_0351;hoi_khai_niem;ly_thuyet_do_thi;Ai là người đặt những nền móng đầu tiên cho lý thuyết đồ thị và vào thời gian nào?;Nhà toán học lỗi lạc người Thụy Sỹ Leonhard Euler đã đề xuất những tư tưởng cơ bản của lý thuyết đồ thị vào những năm đầu của thế kỷ 18.
 qa_0352;hoi_khai_niem;ly_thuyet_do_thi;Bài toán nổi tiếng nào đã đánh dấu sự ra đời của lý thuyết đồ thị?;Đó là bài toán về các cái cầu ở thành phố Konigsberg, được Euler sử dụng mô hình đồ thị để giải quyết.
 qa_0353;hoi_ung_dung;ly_thuyet_do_thi;Trong lĩnh vực điện tử, đồ thị được ứng dụng để làm gì?;Đồ thị được sử dụng để xác định các mạch vòng trong vấn đề giải tích mạch điện.
@@ -460,3 +460,349 @@ qa_0546;hoi_ung_dung;to_hop_chinh_hop_hoan_vi;Hoán vị lặp có ứng dụng 
 qa_0547;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Công thức tính chỉnh hợp không lặp dùng giai thừa là gì?;A(k,n) = n! / (n-k)!.
 qa_0548;hoi_khai_niem;nhi_thuc_to_hop;Tính chất C(k,n) = C(k-1,n-1) + C(k,n-1) được gọi là gì?;Được gọi là hệ thức Pascal, là cơ sở để xây dựng tam giác Pascal.
 qa_0549;hoi_cong_thuc;nhi_thuc_to_hop;Tổng tất cả các hệ số nhị thức C(0,n) + C(1,n) + ... + C(n,n) bằng bao nhiêu?;Tổng bằng 2^n, suy ra từ khai triển nhị thức (1+1)^n.
+qa_0412;hoi_khai_niem;logic_menh_de;Mệnh đề logic là gì?;Là một câu khẳng định có giá trị chân lý xác định: hoặc đúng (True) hoặc sai (False), không thể vừa đúng vừa sai.
+qa_0413;hoi_khai_niem;logic_menh_de;Phép phủ định (NOT) của mệnh đề P là gì?;Là mệnh đề đúng khi P sai và sai khi P đúng, ký hiệu là ¬P.
+qa_0414;hoi_khai_niem;logic_menh_de;Phép hội (AND) của hai mệnh đề P và Q là gì?;Là mệnh đề chỉ đúng khi cả P và Q cùng đúng, ký hiệu là P ∧ Q.
+qa_0415;hoi_khai_niem;logic_menh_de;Phép tuyển (OR) của hai mệnh đề P và Q là gì?;Là mệnh đề sai khi cả P và Q cùng sai, và đúng trong các trường hợp còn lại. Ký hiệu là P ∨ Q.
+qa_0416;hoi_khai_niem;logic_menh_de;Phép kéo theo (IF-THEN) P -> Q có giá trị sai khi nào?;Phép kéo theo P -> Q chỉ sai khi P đúng mà Q sai.
+qa_0417;hoi_khai_niem;logic_menh_de;Mệnh đề tương đương (IF AND ONLY IF) P <-> Q đúng khi nào?;Đúng khi cả P và Q có cùng giá trị chân lý (cùng đúng hoặc cùng sai).
+qa_0418;hoi_khai_niem;logic_menh_de;Luật De Morgan trong logic mệnh đề phát biểu thế nào?;Phủ định của một hội là tuyển các phủ định: ¬(P ∧ Q) <=> ¬P ∨ ¬Q. Và phủ định của một tuyển là hội các phủ định: ¬(P ∨ Q) <=> ¬P ∧ ¬Q.
+qa_0419;hoi_khai_niem;logic_menh_de;Hằng đúng (Tautology) là gì?;Là một biểu thức logic luôn luôn nhận giá trị đúng với mọi giá trị chân lý của các mệnh đề thành phần.
+qa_0420;hoi_khai_niem;logic_menh_de;Hằng sai (Contradiction) là gì?;Là một biểu thức logic luôn luôn nhận giá trị sai với mọi giá trị chân lý của các mệnh đề thành phần.
+qa_0421;hoi_khai_niem;logic_menh_de;Luật hấp thụ (Absorption Law) trong logic là gì?;Là quy tắc rút gọn: P ∨ (P ∧ Q) <=> P và P ∧ (P ∨ Q) <=> P.
+qa_0422;hoi_khai_niem;tap_hop;Tập hợp rỗng là gì?;Là tập hợp không chứa phần tử nào, ký hiệu là ∅.
+qa_0423;hoi_khai_niem;tap_hop;Khi nào tập A được gọi là tập con của tập B?;Khi mọi phần tử của A đều là phần tử của B, ký hiệu là A ⊆ B.
+qa_0424;hoi_khai_niem;tap_hop;Hai tập hợp A và B bằng nhau khi nào?;Khi A là tập con của B và B cũng là tập con của A (A ⊆ B và B ⊆ A).
+qa_0425;hoi_khai_niem;tap_hop;Hợp của hai tập hợp A và B là gì?;Là tập hợp gồm các phần tử thuộc A hoặc thuộc B, ký hiệu A ∪ B.
+qa_0426;hoi_khai_niem;tap_hop;Giao của hai tập hợp A và B là gì?;Là tập hợp gồm các phần tử vừa thuộc A vừa thuộc B, ký hiệu A ∩ B.
+qa_0427;hoi_khai_niem;tap_hop;Hiệu của tập A và tập B (A \ B) là gì?;Là tập hợp gồm các phần tử thuộc A nhưng không thuộc B.
+qa_0428;hoi_khai_niem;tap_hop;Phần bù của tập A trong tập vũ trụ U là gì?;Là tập hợp các phần tử thuộc U nhưng không thuộc A, ký hiệu là A' hoặc U \ A.
+qa_0429;hoi_khai_niem;tap_hop;Tích Đề-các (Cartesian product) của hai tập A và B là gì?;Là tập hợp tất cả các cặp có thứ tự (a, b) với a thuộc A và b thuộc B, ký hiệu A × B.
+qa_0430;hoi_khai_niem;tap_hop;Lực lượng của một tập hợp là gì?;Lực lượng của một tập hợp (thường là tập hữu hạn) là số lượng phần tử của tập hợp đó, ký hiệu là |A|.
+qa_0431;hoi_khai_niem;tap_hop;Tập lũy thừa (Power set) của tập A là gì?;Là tập hợp bao gồm tất cả các tập con của A. Nếu |A| = n thì tập lũy thừa của A có 2^n phần tử.
+qa_0432;hoi_khai_niem;quan_he;Quan hệ 2 ngôi từ tập A vào tập B là gì?;Là một tập con của tích Đề-các A × B.
+qa_0433;hoi_khai_niem;quan_he;Tính phản xạ (Reflexive) của một quan hệ R trên tập A là gì?;Quan hệ R có tính phản xạ nếu với mọi a thuộc A, ta đều có (a, a) thuộc R.
+qa_0434;hoi_khai_niem;quan_he;Tính đối xứng (Symmetric) của một quan hệ là gì?;Nếu (a, b) thuộc R thì (b, a) cũng phải thuộc R với mọi a, b.
+qa_0435;hoi_khai_niem;quan_he;Tính phản xứng (Antisymmetric) của một quan hệ là gì?;Nếu (a, b) thuộc R và (b, a) thuộc R thì suy ra a = b.
+qa_0436;hoi_khai_niem;quan_he;Tính bắc cầu (Transitive) của một quan hệ là gì?;Nếu (a, b) thuộc R và (b, c) thuộc R thì (a, c) cũng thuộc R.
+qa_0437;hoi_khai_niem;quan_he;Quan hệ tương đương (Equivalence relation) là gì?;Là quan hệ trên một tập hợp đồng thời có 3 tính chất: phản xạ, đối xứng và bắc cầu.
+qa_0438;hoi_khai_niem;quan_he;Lớp tương đương (Equivalence class) của phần tử a là gì?;Là tập hợp tất cả các phần tử có quan hệ tương đương với phần tử a.
+qa_0439;hoi_khai_niem;quan_he;Quan hệ thứ tự bộ phận (Partial order) là gì?;Là quan hệ đồng thời có 3 tính chất: phản xạ, phản xứng và bắc cầu.
+qa_0440;hoi_khai_niem;quan_he;Phân hoạch (Partition) của một tập hợp là gì?;Là một họ các tập con khác rỗng, rời nhau từng đôi một và hợp của chúng bằng chính tập hợp ban đầu.
+qa_0441;hoi_khai_niem;quan_he;Mối liên hệ giữa quan hệ tương đương và phân hoạch là gì?;Một quan hệ tương đương trên tập A sẽ tạo ra một phân hoạch trên tập A (các lớp tương đương), và ngược lại.
+qa_0442;hoi_khai_niem;ham_so;Hàm số (Ánh xạ) từ tập A vào tập B là gì?;Là một quy tắc gán cho mỗi phần tử x thuộc tập nguồn A đúng một phần tử y thuộc tập đích B.
+qa_0443;hoi_khai_niem;ham_so;Đơn ánh (Injective function) là gì?;Là hàm số mà các phần tử khác nhau của tập nguồn sẽ có ảnh khác nhau ở tập đích (nếu f(a) = f(b) thì a = b).
+qa_0444;hoi_khai_niem;ham_so;Toàn ánh (Surjective function) là gì?;Là hàm số mà mọi phần tử của tập đích đều là ảnh của ít nhất một phần tử thuộc tập nguồn (Tập giá trị bằng tập đích).
+qa_0445;hoi_khai_niem;ham_so;Song ánh (Bijective function) là gì?;Là hàm số vừa là đơn ánh vừa là toàn ánh.
+qa_0446;hoi_khai_niem;ham_so;Điều kiện để một hàm số có hàm ngược là gì?;Hàm số đó phải là một song ánh.
+qa_0447;hoi_khai_niem;ham_so;Hàm hợp (Composite function) là gì?;Là hàm số được tạo ra bằng cách áp dụng liên tiếp hai hàm số: g(f(x)), trong đó kết quả của hàm f làm đầu vào cho hàm g.
+qa_0448;hoi_khai_niem;ham_so;Hàm sàn (Floor function) là gì?;Ký hiệu là ⌊x⌋, là số nguyên lớn nhất không vượt quá số thực x.
+qa_0449;hoi_khai_niem;ham_so;Hàm trần (Ceiling function) là gì?;Ký hiệu là ⌈x⌉, là số nguyên nhỏ nhất lớn hơn hoặc bằng số thực x.
+qa_0450;hoi_khai_niem;dai_so_boole;Đại số Boole là gì?;Là một cấu trúc đại số làm việc với các biến chỉ nhận giá trị 0 (Sai) và 1 (Đúng) cùng các phép toán AND, OR, NOT.
+qa_0451;hoi_khai_niem;dai_so_boole;Cổng logic AND thực hiện phép toán gì?;Thực hiện phép nhân Boole, ngõ ra chỉ bằng 1 khi tất cả các ngõ vào đều bằng 1.
+qa_0452;hoi_khai_niem;dai_so_boole;Cổng logic OR thực hiện phép toán gì?;Thực hiện phép cộng Boole, ngõ ra bằng 1 khi có ít nhất một ngõ vào bằng 1.
+qa_0453;hoi_khai_niem;dai_so_boole;Cổng logic NOT thực hiện phép toán gì?;Thực hiện phép đảo trạng thái, biến 1 thành 0 và ngược lại.
+qa_0454;hoi_khai_niem;dai_so_boole;Hàm Boole là gì?;Là hàm nhận các biến đầu vào là giá trị Boole và trả về một giá trị Boole (0 hoặc 1).
+qa_0455;hoi_khai_niem;dai_so_boole;Chuẩn tắc hội (Conjunctive Normal Form - CNF) là gì?;Là dạng biểu diễn hàm Boole dưới dạng Tích của các Tổng (AND của các mệnh đề OR).
+qa_0456;hoi_khai_niem;dai_so_boole;Chuẩn tắc tuyển (Disjunctive Normal Form - DNF) là gì?;Là dạng biểu diễn hàm Boole dưới dạng Tổng của các Tích (OR của các mệnh đề AND).
+qa_0457;hoi_khai_niem;dai_so_boole;Bìa Karnaugh (K-map) dùng để làm gì?;Dùng để tối thiểu hóa (rút gọn) các biểu thức của hàm Boole một cách trực quan, giúp thiết kế mạch logic tối ưu.
+qa_0458;hoi_khai_niem;giai_tich_to_hop;Quy tắc cộng trong tổ hợp là gì?;Nếu một công việc có thể làm theo phương án A có m cách, hoặc phương án B có n cách (hai phương án không trùng nhau), thì có tổng cộng m + n cách.
+qa_0459;hoi_khai_niem;giai_tich_to_hop;Quy tắc nhân trong tổ hợp là gì?;Nếu một công việc được chia làm 2 công đoạn liên tiếp, công đoạn 1 có m cách, công đoạn 2 có n cách, thì có tổng cộng m * n cách.
+qa_0460;hoi_khai_niem;giai_tich_to_hop;Hoán vị (Permutation) của n phần tử là gì?;Là một cách sắp xếp có thứ tự tất cả n phần tử đó. Số hoán vị là P(n) = n!.
+qa_0461;hoi_khai_niem;giai_tich_to_hop;Chỉnh hợp (K-Permutation) chập k của n phần tử là gì?;Là cách chọn k phần tử từ n phần tử có tính đến thứ tự. Công thức: P(n, k) = n! / (n-k)!.
+qa_0462;hoi_khai_niem;giai_tich_to_hop;Tổ hợp (Combination) chập k của n phần tử là gì?;Là cách chọn k phần tử từ n phần tử mà không phân biệt thứ tự. Công thức: C(n, k) = n! / (k! * (n-k)!).
+qa_0463;hoi_khai_niem;giai_tich_to_hop;Nguyên lý chuồng bồ câu (Dirichlet) phát biểu như thế nào?;Nếu đem n+1 con bồ câu nhốt vào n cái chuồng thì chắc chắn sẽ có ít nhất một chuồng chứa từ 2 con bồ câu trở lên.
+qa_0464;hoi_khai_niem;giai_tich_to_hop;Nguyên lý bù trừ (Inclusion-Exclusion) dùng để làm gì?;Dùng để đếm số phần tử của hợp nhiều tập hợp bằng cách cộng kích thước từng tập, sau đó trừ đi phần giao của 2 tập, rồi lại cộng phần giao của 3 tập,...
+qa_0465;hoi_khai_niem;giai_tich_to_hop;Tam giác Pascal liên quan gì đến Tổ hợp?;Các phần tử trong tam giác Pascal chính là các hệ số tổ hợp C(n, k).
+qa_0466;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị (Graph) được định nghĩa như thế nào?;Đồ thị G = (V, E), trong đó V là tập các đỉnh (vertices) và E là tập các cạnh (edges) nối các đỉnh với nhau.
+qa_0467;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị vô hướng là gì?;Là đồ thị mà các cạnh trong tập E không có hướng (cạnh nối đỉnh A và đỉnh B được coi là giống cạnh nối B và A).
+qa_0468;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị có hướng (Digraph) là gì?;Là đồ thị mà mỗi cạnh có một hướng xác định đi từ đỉnh này (gốc) sang đỉnh kia (ngọn).
+qa_0469;hoi_khai_niem;ly_thuyet_do_thi;Đa đồ thị (Multigraph) là gì?;Là đồ thị cho phép có nhiều hơn một cạnh nối giữa cùng một cặp đỉnh (cạnh bội).
+qa_0470;hoi_khai_niem;ly_thuyet_do_thi;Khuyên (Loop) trong đồ thị là gì?;Là một cạnh nối từ một đỉnh vòng trở về chính đỉnh đó.
+qa_0471;hoi_khai_niem;ly_thuyet_do_thi;Bậc (Degree) của một đỉnh trong đồ thị vô hướng là gì?;Là số lượng các cạnh liên thuộc (nối) với đỉnh đó. Một khuyên được tính bằng 2 bậc.
+qa_0472;hoi_khai_niem;ly_thuyet_do_thi;Bán bậc vào (In-degree) và Bán bậc ra (Out-degree) là gì?;Trong đồ thị có hướng, bán bậc vào là số cạnh đi đến đỉnh, bán bậc ra là số cạnh đi ra khỏi đỉnh.
+qa_0473;hoi_khai_niem;ly_thuyet_do_thi;Định lý Bắt tay (Handshaking Lemma) phát biểu gì?;Tổng bậc của tất cả các đỉnh trong một đồ thị vô hướng luôn bằng 2 lần số cạnh của đồ thị đó. Hệ quả: Số lượng đỉnh bậc lẻ luôn là một số chẵn.
+qa_0474;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị đầy đủ (Complete graph) Kn là gì?;Là đơn đồ thị vô hướng có n đỉnh, trong đó bất kỳ 2 đỉnh phân biệt nào cũng được nối với nhau bằng đúng một cạnh.
+qa_0475;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị hai phía (Bipartite graph) là gì?;Là đồ thị mà tập đỉnh có thể chia thành hai tập con X và Y rời nhau, sao cho mọi cạnh đều nối một đỉnh trong X với một đỉnh trong Y.
+qa_0476;hoi_khai_niem;ly_thuyet_do_thi;Ma trận kề (Adjacency matrix) của đồ thị là gì?;Là ma trận vuông cấp n (n là số đỉnh), trong đó phần tử A[i][j] biểu diễn số cạnh nối từ đỉnh i đến đỉnh j.
+qa_0477;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị liên thông (Connected graph) là gì?;Một đồ thị vô hướng được gọi là liên thông nếu có đường đi giữa bất kỳ cặp đỉnh nào trong đồ thị.
+qa_0478;hoi_khai_niem;ly_thuyet_do_thi;Chu trình (Cycle) là gì?;Là một đường đi khép kín, tức là đường đi bắt đầu và kết thúc tại cùng một đỉnh, và không đi qua một cạnh nào quá 1 lần.
+qa_0479;hoi_khai_niem;ly_thuyet_do_thi;Đường đi Euler là gì?;Là đường đi đi qua tất cả các cạnh của đồ thị, mỗi cạnh đi qua đúng một lần.
+qa_0480;hoi_khai_niem;ly_thuyet_do_thi;Chu trình Euler là gì?;Là một chu trình đi qua tất cả các cạnh của đồ thị, mỗi cạnh đi qua đúng 1 lần (điểm bắt đầu trùng với điểm kết thúc).
+qa_0481;hoi_khai_niem;ly_thuyet_do_thi;Điều kiện để đồ thị vô hướng liên thông có chu trình Euler là gì?;Đồ thị phải không có bất kỳ đỉnh nào có bậc lẻ (tất cả các đỉnh đều có bậc chẵn).
+qa_0482;hoi_khai_niem;ly_thuyet_do_thi;Điều kiện để đồ thị vô hướng liên thông có đường đi Euler là gì?;Đồ thị phải có chính xác 0 hoặc 2 đỉnh bậc lẻ. Nếu có 2 đỉnh bậc lẻ, đường đi Euler sẽ bắt đầu tại một đỉnh bậc lẻ và kết thúc ở đỉnh bậc lẻ kia.
+qa_0483;hoi_khai_niem;ly_thuyet_do_thi;Đường đi Hamilton là gì?;Là đường đi đi qua tất cả các đỉnh của đồ thị, mỗi đỉnh đi qua đúng một lần.
+qa_0484;hoi_khai_niem;ly_thuyet_do_thi;Chu trình Hamilton là gì?;Là chu trình xuất phát từ 1 đỉnh, đi qua tất cả các đỉnh khác mỗi đỉnh đúng 1 lần rồi quay về đỉnh xuất phát.
+qa_0485;hoi_khai_niem;ly_thuyet_do_thi;Cây (Tree) trong lý thuyết đồ thị là gì?;Cây là một đồ thị vô hướng, liên thông và không có chu trình.
+qa_0486;hoi_khai_niem;ly_thuyet_do_thi;Rừng (Forest) là gì?;Là một đồ thị vô hướng không có chu trình (các thành phần liên thông của rừng là các cây).
+qa_0487;hoi_khai_niem;ly_thuyet_do_thi;Tính chất về số cạnh của cây có n đỉnh là gì?;Một cây có n đỉnh thì luôn có chính xác n - 1 cạnh.
+qa_0488;hoi_khai_niem;ly_thuyet_do_thi;Lá (Leaf) của cây là gì?;Là một đỉnh của cây có bậc đúng bằng 1.
+qa_0489;hoi_khai_niem;ly_thuyet_do_thi;Cây bao trùm (Spanning tree) của đồ thị là gì?;Là một đồ thị con của đồ thị ban đầu, chứa tất cả các đỉnh của đồ thị đó và bản thân nó là một cây.
+qa_0490;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Kruskal dùng để làm gì?;Dùng để tìm cây bao trùm nhỏ nhất (MST) trên đồ thị có trọng số bằng cách luôn ưu tiên chọn các cạnh có trọng số nhỏ nhất mà không tạo thành chu trình.
+qa_0491;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Prim dùng để làm gì?;Cũng dùng để tìm cây bao trùm nhỏ nhất (MST), nhưng hoạt động bằng cách phát triển dần từ một đỉnh ban đầu, mỗi bước thêm một đỉnh gần nhất vào cây.
+qa_0492;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Dijkstra dùng để giải quyết bài toán nào?;Tìm đường đi ngắn nhất từ một đỉnh gốc (đỉnh bắt đầu) đến tất cả các đỉnh khác trong đồ thị có trọng số không âm.
+qa_0493;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị phẳng (Planar graph) là gì?;Là đồ thị có thể vẽ trên một mặt phẳng sao cho không có bất kỳ hai cạnh nào cắt nhau ngoại trừ tại các đỉnh chung.
+qa_0494;hoi_khai_niem;ly_thuyet_do_thi;Công thức Euler cho đồ thị phẳng liên thông là gì?;V - E + F = 2, trong đó V là số đỉnh, E là số cạnh và F là số miền (bao gồm cả miền ngoài).
+qa_0495;hoi_khai_niem;ly_thuyet_do_thi;Định lý Kuratowski về đồ thị phẳng phát biểu thế nào?;Một đồ thị là phẳng khi và chỉ khi nó không chứa đồ thị con nào đồng phôi với đồ thị đầy đủ K5 hoặc đồ thị hai phía đầy đủ K3,3.
+qa_0496;hoi_khai_niem;ly_thuyet_do_thi;Tô màu đồ thị (Graph coloring) là bài toán gì?;Là việc gán màu cho các đỉnh của đồ thị sao cho không có hai đỉnh nào kề nhau (có cạnh nối) lại cùng màu.
+qa_0497;hoi_khai_niem;ly_thuyet_do_thi;Sắc số (Chromatic number) của đồ thị là gì?;Là số lượng màu tối thiểu cần thiết để tô màu hợp lệ cho đồ thị đó, thường được ký hiệu là χ(G).
+qa_0498;hoi_khai_niem;ly_thuyet_do_thi;Duyệt đồ thị theo chiều sâu (DFS) hoạt động như thế nào?;Thuật toán đi xa nhất có thể theo từng nhánh trước khi quay lui (backtracking). DFS thường được cài đặt bằng Stack hoặc đệ quy.
+qa_0499;hoi_khai_niem;ly_thuyet_do_thi;Duyệt đồ thị theo chiều rộng (BFS) hoạt động như thế nào?;Thuật toán thăm tất cả các đỉnh kề trực tiếp với đỉnh hiện tại trước khi tiến xuống các mức sâu hơn. BFS thường được cài đặt bằng Hàng đợi (Queue).
+qa_0500;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị đẳng cấu (Isomorphic graphs) là gì?;Hai đồ thị G và H được gọi là đẳng cấu nếu chúng có cùng cấu trúc, tức là có một song ánh giữa tập đỉnh của chúng bảo toàn số lượng cạnh nối giữa mọi cặp đỉnh.
+qa_0501;hoi_khai_niem;to_hop;Hoán vị là gì?;Hoán vị của một tập hợp có n phần tử là một cách sắp xếp có thứ tự tất cả n phần tử của tập hợp đó. Số hoán vị của tập n phần tử là P(n) = n!.
+qa_0502;hoi_khai_niem;to_hop;Định nghĩa chỉnh hợp?;Chỉnh hợp chập k của n phần tử là một cách chọn ra k phần tử từ tập hợp n phần tử và sắp xếp chúng theo một thứ tự nhất định. Số chỉnh hợp chập k của n là A(n, k) = n! / (n - k)!.
+qa_0503;hoi_khai_niem;to_hop;Tổ hợp là gì?;Tổ hợp chập k của n phần tử là một cách chọn ra k phần tử từ tập hợp n phần tử mà không phân biệt thứ tự. Số tổ hợp chập k của n là C(n, k) = n! / (k! * (n - k)!).
+qa_0504;hoi_khai_niem;to_hop;Nguyên lý cộng là gì?;Nguyên lý cộng phát biểu rằng nếu một công việc có thể thực hiện theo phương án A có m cách hoặc phương án B có n cách (hai phương án không giao nhau), thì tổng số cách thực hiện công việc là m + n.
+qa_0505;hoi_khai_niem;to_hop;Nguyên lý nhân là gì?;Nguyên lý nhân phát biểu rằng nếu một công việc gồm 2 bước liên tiếp, bước 1 có m cách thực hiện và ứng với mỗi cách đó bước 2 có n cách thực hiện, thì tổng số cách hoàn thành công việc là m * n.
+qa_0506;hoi_khai_niem;to_hop;Nguyên lý chuồng bồ câu (Dirichlet) là gì?;Nguyên lý Dirichlet phát biểu rằng nếu ta nhốt n con bồ câu vào m chuồng, với n > m, thì sẽ có ít nhất một chuồng chứa từ hai con bồ câu trở lên.
+qa_0507;hoi_khai_niem;to_hop;Chỉnh hợp lặp là gì?;Chỉnh hợp lặp chập k của n phần tử là một dãy có thứ tự gồm k phần tử được chọn từ n phần tử, trong đó các phần tử có thể lặp lại. Số lượng là n^k.
+qa_0508;hoi_khai_niem;to_hop;Nhị thức Newton là gì?;Nhị thức Newton là công thức dùng để khai triển lũy thừa bậc n của một nhị thức (a + b)^n thành tổng của các đơn thức có chứa tổ hợp chập k của n.
+qa_0509;hoi_khai_niem;to_hop;Công thức Pascal là gì?;Công thức Pascal (hoặc hằng đẳng thức Pascal) là: C(n, k) = C(n-1, k-1) + C(n-1, k). Nó là cơ sở để xây dựng Tam giác Pascal.
+qa_0510;hoi_khai_niem;tap_hop;Tập con là gì?;Tập hợp A được gọi là tập con của tập hợp B nếu mọi phần tử của A đều là phần tử của B. Ký hiệu: A ⊆ B.
+qa_0511;hoi_khai_niem;tap_hop;Tập lũy thừa là gì?;Tập lũy thừa của tập hợp A là tập hợp chứa tất cả các tập con của A (bao gồm cả tập rỗng và chính A). Ký hiệu là P(A) hoặc 2^A. Nếu A có n phần tử thì P(A) có 2^n phần tử.
+qa_0512;hoi_khai_niem;tap_hop;Hiệu của hai tập hợp là gì?;Hiệu của tập A và tập B là tập hợp chứa những phần tử thuộc A nhưng không thuộc B. Ký hiệu là A \ B hoặc A - B.
+qa_0513;hoi_khai_niem;tap_hop;Phần bù của một tập hợp là gì?;Nếu A là tập con của tập vũ trụ U, phần bù của A là tập hợp chứa tất cả các phần tử thuộc U mà không thuộc A. Ký hiệu là A' hoặc A^c.
+qa_0514;hoi_khai_niem;tap_hop;Quy tắc De Morgan cho tập hợp là gì?;Là hai luật cho biết: (A ∪ B)' = A' ∩ B' (phần bù của hợp bằng giao các phần bù) và (A ∩ B)' = A' ∪ B' (phần bù của giao bằng hợp các phần bù).
+qa_0515;hoi_khai_niem;logic;Mệnh đề là gì?;Mệnh đề là một câu khẳng định có giá trị chân lý rõ ràng, hoặc chỉ đúng hoặc chỉ sai, không thể vừa đúng vừa sai.
+qa_0516;hoi_khai_niem;logic;Phủ định của mệnh đề là gì?;Phủ định của mệnh đề P là mệnh đề sai nếu P đúng, và đúng nếu P sai. Ký hiệu là ~P hoặc ¬P.
+qa_0517;hoi_khai_niem;logic;Phép hội (AND) là gì?;Phép hội của hai mệnh đề P và Q (P ∧ Q) là mệnh đề chỉ đúng khi cả P và Q cùng đúng, và sai trong các trường hợp còn lại.
+qa_0518;hoi_khai_niem;logic;Phép tuyển (OR) là gì?;Phép tuyển của hai mệnh đề P và Q (P ∨ Q) là mệnh đề sai khi cả P và Q cùng sai, và đúng trong các trường hợp còn lại (ít nhất một mệnh đề đúng).
+qa_0519;hoi_khai_niem;logic;Phép kéo theo (IF-THEN) là gì?;Mệnh đề kéo theo P → Q chỉ sai khi P đúng và Q sai, đúng trong tất cả các trường hợp khác.
+qa_0520;hoi_khai_niem;logic;Phép tương đương (IFF) là gì?;Mệnh đề tương đương P ↔ Q đúng khi P và Q có cùng giá trị chân lý (cùng đúng hoặc cùng sai), và sai nếu ngược lại.
+qa_0521;hoi_khai_niem;logic;Bảng chân trị là gì?;Bảng chân trị (bảng sự thật) là bảng liệt kê tất cả các trường hợp có thể xảy ra của các biến mệnh đề và kết quả chân lý tương ứng của biểu thức logic.
+qa_0522;hoi_khai_niem;logic;Mâu thuẫn (Contradiction) là gì?;Mâu thuẫn là một biểu thức logic luôn luôn mang giá trị SAI với mọi trường hợp của các biến mệnh đề cấu thành nên nó.
+qa_0523;hoi_khai_niem;logic;Luật De Morgan trong logic mệnh đề là gì?;Là luật phát biểu rằng: ¬(P ∨ Q) ≡ ¬P ∧ ¬Q và ¬(P ∧ Q) ≡ ¬P ∨ ¬Q.
+qa_0524;hoi_khai_niem;logic;Lượng từ phổ dụng (Universal Quantifier) là gì?;"Lượng từ phổ dụng (∀) biểu thị cho cụm từ ""với mọi"", dùng để khẳng định tính chất đúng cho tất cả các phần tử trong miền khảo sát."
+qa_0525;hoi_khai_niem;logic;Lượng từ tồn tại (Existential Quantifier) là gì?;"Lượng từ tồn tại (∃) biểu thị cho cụm từ ""tồn tại ít nhất một"", dùng để khẳng định có ít nhất một phần tử thỏa mãn tính chất nào đó."
+qa_0526;hoi_khai_niem;quan_he;Quan hệ hai ngôi là gì?;Quan hệ hai ngôi R từ tập A đến tập B là một tập con của tích Đề-các A × B. Nó biểu diễn sự liên kết giữa các phần tử của A với các phần tử của B.
+qa_0527;hoi_khai_niem;quan_he;Tính chất phản xạ của quan hệ là gì?;Một quan hệ R trên tập A có tính phản xạ nếu mọi phần tử a thuộc A đều có quan hệ với chính nó, tức là (a, a) ∈ R với mọi a ∈ A.
+qa_0528;hoi_khai_niem;quan_he;Tính chất đối xứng của quan hệ là gì?;Một quan hệ R trên tập A có tính đối xứng nếu (a, b) ∈ R thì luôn kéo theo (b, a) ∈ R.
+qa_0529;hoi_khai_niem;quan_he;Tính chất bắc cầu của quan hệ là gì?;Một quan hệ R trên tập A có tính bắc cầu nếu (a, b) ∈ R và (b, c) ∈ R thì suy ra (a, c) ∈ R.
+qa_0530;hoi_khai_niem;quan_he;Quan hệ tương đương là gì?;Quan hệ tương đương là một quan hệ hai ngôi thỏa mãn cả 3 tính chất: phản xạ, đối xứng và bắc cầu.
+qa_0531;hoi_khai_niem;quan_he;Lớp tương đương là gì?;Lớp tương đương của một phần tử a theo quan hệ tương đương R là tập hợp chứa tất cả các phần tử có quan hệ R với a. Ký hiệu là [a].
+qa_0532;hoi_khai_niem;quan_he;Quan hệ thứ tự là gì?;Quan hệ thứ tự (hay thứ tự bộ phận) là quan hệ hai ngôi thỏa mãn 3 tính chất: phản xạ, phản xứng và bắc cầu.
+qa_0533;hoi_khai_niem;quan_he;Quan hệ thứ tự bộ phận là gì?;Quan hệ thứ tự bộ phận là một quan hệ thứ tự trên tập A mà trong đó có thể có một số cặp phần tử không thể so sánh được với nhau.
+qa_0534;hoi_khai_niem;quan_he;Biểu đồ Hasse là gì?;Biểu đồ Hasse là một biểu đồ thể hiện một tập được sắp thứ tự bộ phận, trong đó bỏ qua các vòng khuyên (phản xạ) và bỏ qua các đường do tính bắc cầu để hình vẽ gọn gàng hơn.
+qa_0535;hoi_khai_niem;ham_so;Hàm số (Ánh xạ) là gì?;Ánh xạ f từ tập A vào tập B là một quy tắc gán mỗi phần tử của A với duy nhất một phần tử của B.
+qa_0536;hoi_khai_niem;ham_so;Miền xác định của hàm số là gì?;Miền xác định (tập nguồn) là tập hợp tất cả các giá trị đầu vào hợp lệ mà hàm số có thể nhận để tính ra một kết quả.
+qa_0537;hoi_khai_niem;ham_so;Miền giá trị của hàm số là gì?;Miền giá trị (tập đích) là tập hợp chứa các giá trị đầu ra được gán tương ứng bởi hàm số từ các giá trị của miền xác định.
+qa_0538;hoi_khai_niem;ham_so;Đơn ánh (Injective) là gì?;Hàm f là đơn ánh nếu hai phần tử đầu vào khác nhau luôn cho hai kết quả đầu ra khác nhau. (f(x1) = f(x2) thì x1 = x2).
+qa_0539;hoi_khai_niem;ham_so;Toàn ánh (Surjective) là gì?;Hàm f là toàn ánh nếu mọi phần tử ở tập đích (B) đều là kết quả của ít nhất một phần tử ở tập nguồn (A). (Ảnh của f bằng đúng B).
+qa_0540;hoi_khai_niem;ham_so;Hàm ngược là gì?;Hàm ngược f^(-1) là hàm số đảo ngược ánh xạ của f: nếu f(a) = b thì f^(-1)(b) = a. Hàm ngược chỉ tồn tại khi hàm ban đầu là song ánh.
+qa_0541;hoi_khai_niem;ham_so;Hàm hợp là gì?;Hàm hợp của f và g (g ∘ f) là hàm số áp dụng f cho đầu vào x, sau đó áp dụng tiếp g cho kết quả vừa thu được: (g ∘ f)(x) = g(f(x)).
+qa_0542;hoi_khai_niem;ly_thuyet_do_thi;Đa đồ thị là gì?;Đa đồ thị là đồ thị trong đó giữa hai đỉnh có thể tồn tại nhiều hơn một cạnh nối (các cạnh song song).
+qa_0543;hoi_khai_niem;ly_thuyet_do_thi;Giả đồ thị là gì?;Giả đồ thị là một loại đa đồ thị cho phép có các cạnh khuyên (cạnh bắt đầu và kết thúc tại cùng một đỉnh).
+qa_0544;hoi_khai_niem;ly_thuyet_do_thi;Bậc vào và bậc ra của đỉnh trong đồ thị có hướng là gì?;Bậc ra là số lượng cạnh đi ra khỏi đỉnh đó. Bậc vào là số lượng cạnh đi tới đỉnh đó.
+qa_0545;hoi_khai_niem;ly_thuyet_do_thi;Định lý bắt tay trong đồ thị là gì?;Định lý bắt tay phát biểu rằng: Tổng bậc của tất cả các đỉnh trong một đồ thị vô hướng luôn bằng 2 lần số cạnh của đồ thị đó. Suy ra số đỉnh bậc lẻ luôn là một số chẵn.
+qa_0546;hoi_khai_niem;ly_thuyet_do_thi;Đỉnh cô lập là gì?;Đỉnh cô lập là đỉnh có bậc bằng 0, tức là không có cạnh nào nối với đỉnh này.
+qa_0547;hoi_khai_niem;ly_thuyet_do_thi;Đỉnh treo là gì?;Đỉnh treo là đỉnh có bậc bằng đúng 1.
+qa_0548;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị vòng (Cycle graph) là gì?;Đồ thị vòng C_n (n>=3) là đồ thị gồm n đỉnh và n cạnh tạo thành một chu trình duy nhất khép kín.
+qa_0549;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị bánh xe (Wheel graph) là gì?;Đồ thị bánh xe W_n được tạo ra bằng cách lấy một đồ thị vòng C_n và thêm một đỉnh trung tâm kết nối tới mọi đỉnh của C_n.
+qa_0550;hoi_khai_niem;ly_thuyet_do_thi;Ma trận kề của đồ thị là gì?;Ma trận kề là ma trận vuông dùng để biểu diễn các đỉnh kề nhau. Nếu đỉnh i và đỉnh j nối với nhau bằng k cạnh thì phần tử a_ij = k.
+qa_0551;hoi_khai_niem;ly_thuyet_do_thi;Ma trận trọng số của đồ thị là gì?;Ma trận trọng số là ma trận mà mỗi phần tử w_ij thể hiện giá trị trọng số của cạnh nối từ đỉnh i đến đỉnh j (hoặc vô cực nếu không có cạnh).
+qa_0552;hoi_khai_niem;ly_thuyet_do_thi;Cây là gì?;Cây là đồ thị vô hướng, liên thông và không có bất kỳ chu trình nào.
+qa_0553;hoi_khai_niem;ly_thuyet_do_thi;Rừng là gì?;Rừng là đồ thị vô hướng không có chu trình. Cây là một thành phần liên thông trong rừng.
+qa_0554;hoi_khai_niem;ly_thuyet_do_thi;Cây có rễ là gì?;Cây có rễ là cây trong đó có một đỉnh đặc biệt được chọn làm gốc (rễ) và các cạnh được định hướng đi xa khỏi rễ hoặc hướng về rễ.
+qa_0555;hoi_khai_niem;ly_thuyet_do_thi;Mức của một đỉnh trong cây có rễ là gì?;Mức của một đỉnh v là độ dài của đường đi duy nhất từ rễ đến đỉnh v. Rễ có mức 0.
+qa_0556;hoi_khai_niem;ly_thuyet_do_thi;Chiều cao của cây là gì?;Chiều cao của cây có rễ là mức lớn nhất của bất kỳ đỉnh nào trong cây đó.
+qa_0557;hoi_khai_niem;ly_thuyet_do_thi;Cây nhị phân là gì?;Cây nhị phân là cây có rễ mà mỗi đỉnh trong đó có tối đa hai con (thường được gọi là con trái và con phải).
+qa_0558;hoi_khai_niem;ly_thuyet_do_thi;Cây m-phân là gì?;Cây m-phân là cây có rễ trong đó mỗi đỉnh trong của nó có nhiều nhất m con. Nếu mỗi đỉnh trong có đúng m con thì là cây m-phân đầy đủ.
+qa_0559;hoi_khai_niem;ly_thuyet_do_thi;Cây bao trùm là gì?;Cây bao trùm (spanning tree) của một đồ thị G là đồ thị con của G chứa tất cả các đỉnh của G và nó là một cái cây.
+qa_0560;hoi_khai_niem;ly_thuyet_do_thi;Duyệt đồ thị theo chiều sâu (DFS) là gì?;DFS là một thuật toán tìm kiếm trên đồ thị, nó luôn đi sâu nhất có thể dọc theo mỗi nhánh rẽ trước khi quay lui (backtracking).
+qa_0561;hoi_khai_niem;ly_thuyet_do_thi;Đường đi ngắn nhất là gì?;Trong đồ thị có trọng số, đường đi ngắn nhất giữa hai đỉnh là đường đi có tổng các trọng số trên các cạnh thuộc đường đi đó là nhỏ nhất.
+qa_0562;hoi_khai_niem;ly_thuyet_do_thi;Thuật toán Dijkstra tìm gì?;Dijkstra là thuật toán dùng để tìm đường đi ngắn nhất từ một đỉnh gốc tới tất cả các đỉnh còn lại trong đồ thị có trọng số không âm.
+qa_0563;hoi_khai_niem;ly_thuyet_do_thi;Điều kiện có chu trình Euler trong đồ thị vô hướng?;Một đa đồ thị vô hướng liên thông có chu trình Euler khi và chỉ khi mọi đỉnh của đồ thị đều có bậc chẵn.
+qa_0564;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị phẳng là gì?;Đồ thị phẳng là đồ thị có thể vẽ được trên mặt phẳng sao cho không có hai cạnh nào cắt nhau tại một điểm không phải là đỉnh.
+qa_0565;hoi_khai_niem;ly_thuyet_do_thi;Sắc số của đồ thị là gì?;Sắc số của đồ thị là số lượng màu tối thiểu cần thiết để tô màu tất cả các đỉnh sao cho không có hai đỉnh kề nhau nào cùng màu. Ký hiệu là χ(G).
+qa_0566;hoi_khai_niem;ly_thuyet_do_thi;Bài toán tô màu đồ thị là gì?;Bài toán tô màu đồ thị là tìm cách gán màu cho các đỉnh của đồ thị sao cho các đỉnh có cạnh nối với nhau phải khác màu.
+qa_0567;hoi_khai_niem;ly_thuyet_do_thi;Định lý Kuratowski là gì?;Định lý phát biểu rằng một đồ thị là đồ thị phẳng khi và chỉ khi nó không chứa một đồ thị con nào đồng phôi với K5 hoặc K3,3.
+qa_0568;hoi_khai_niem;dai_so_boolean;Dạng chuẩn tắc tuyển (SOP) là gì?;SOP (Sum of Products) là cách biểu diễn hàm Boolean dưới dạng tổng của các tích (hợp của các hội), ví dụ: AB + A'C + BC'.
+qa_0569;hoi_khai_niem;dai_so_boolean;Dạng chuẩn tắc hội (POS) là gì?;POS (Product of Sums) là cách biểu diễn hàm Boolean dưới dạng tích của các tổng (hội của các tuyển), ví dụ: (A+B)(A'+C).
+qa_0570;hoi_khai_niem;dai_so_boolean;Cổng logic AND hoạt động như thế nào?;Cổng AND cho đầu ra là 1 chỉ khi tất cả các đầu vào của nó đều là 1. Mọi trường hợp khác đầu ra là 0.
+qa_0571;hoi_khai_niem;dai_so_boolean;Cổng logic OR hoạt động ra sao?;Cổng OR cho đầu ra là 1 nếu có ít nhất một đầu vào là 1. Đầu ra chỉ bằng 0 khi tất cả đầu vào đều là 0.
+qa_0572;hoi_khai_niem;dai_so_boolean;Cổng logic NOT làm nhiệm vụ gì?;Cổng NOT nhận một đầu vào duy nhất và đảo ngược giá trị đó: 1 thành 0 và 0 thành 1.
+qa_0573;hoi_khai_niem;dai_so_boolean;Cổng XOR (Exclusive OR) là gì?;Cổng XOR cho đầu ra là 1 nếu hai đầu vào có giá trị khác nhau (một cái là 0, một cái là 1), và cho ra 0 nếu hai đầu vào giống nhau.
+qa_0574;hoi_khai_niem;dai_so_menh_de;Biến mệnh đề là gì?;Biến mệnh đề là các ký hiệu (thường là p, q, r,...) dùng để đại diện cho các mệnh đề cơ sở trong đại số mệnh đề.
+qa_0575;hoi_khai_niem;dai_so_menh_de;Công thức mệnh đề (Biểu thức logic) là gì?;Là một biểu thức được tạo thành từ các biến mệnh đề, hằng mệnh đề (True/False) và các phép toán logic (NOT, AND, OR, kéo theo, tương đương).
+qa_0576;hoi_khai_niem;dai_so_menh_de;Hai công thức mệnh đề tương đương logic là gì?;Hai công thức mệnh đề được gọi là tương đương logic (ký hiệu ≡ hoặc ⇔) nếu chúng luôn có cùng giá trị chân lý với mọi phép gán giá trị cho các biến mệnh đề cấu thành.
+qa_0577;hoi_khai_niem;dai_so_menh_de;Phép hội (Conjunction) là gì?;Phép hội của hai mệnh đề p và q (p ∧ q) đúng khi và chỉ khi cả p và q đều đúng.
+qa_0578;hoi_khai_niem;dai_so_menh_de;Phép tuyển (Disjunction) là gì?;Phép tuyển của hai mệnh đề p và q (p ∨ q) sai khi và chỉ khi cả p và q đều sai. Nếu có ít nhất 1 mệnh đề đúng thì kết quả là đúng.
+qa_0579;hoi_khai_niem;dai_so_menh_de;Phép tuyển loại trừ (XOR) là gì?;Phép tuyển loại trừ của p và q (p ⊕ q) đúng khi p và q có giá trị chân lý khác nhau, và sai khi chúng có cùng giá trị chân lý.
+qa_0580;hoi_khai_niem;dai_so_menh_de;Tính chất giao hoán của phép hội và phép tuyển là gì?;Tính chất giao hoán: p ∨ q ≡ q ∨ p và p ∧ q ≡ q ∧ p.
+qa_0581;hoi_khai_niem;dai_so_menh_de;Tính chất kết hợp của logic mệnh đề là gì?;Tính chất kết hợp: (p ∨ q) ∨ r ≡ p ∨ (q ∨ r) và (p ∧ q) ∧ r ≡ p ∧ (q ∧ r).
+qa_0582;hoi_khai_niem;dai_so_menh_de;Tính chất phân phối của logic mệnh đề là gì?;Tính chất phân phối: p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r) và p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r).
+qa_0583;hoi_khai_niem;dai_so_menh_de;Luật lũy đẳng (Idempotent laws) là gì?;Luật lũy đẳng: p ∨ p ≡ p và p ∧ p ≡ p.
+qa_0584;hoi_khai_niem;dai_so_menh_de;Luật hấp thụ (Absorption laws) là gì?;Luật hấp thụ: p ∨ (p ∧ q) ≡ p và p ∧ (p ∨ q) ≡ p.
+qa_0585;hoi_khai_niem;dai_so_menh_de;Luật thống trị (Domination laws) là gì?;Luật thống trị: p ∨ True ≡ True và p ∧ False ≡ False.
+qa_0586;hoi_khai_niem;dai_so_menh_de;Luật đồng nhất (Identity laws) là gì?;Luật đồng nhất: p ∧ True ≡ p và p ∨ False ≡ p.
+qa_0587;hoi_khai_niem;dai_so_menh_de;Luật phủ định kép (Double negation law) là gì?;Phủ định của phủ định một mệnh đề chính là mệnh đề đó: ¬(¬p) ≡ p.
+qa_0588;hoi_khai_niem;dai_so_menh_de;Mệnh đề đảo (Converse) của mệnh đề kéo theo p → q là gì?;Mệnh đề đảo của p → q là q → p. (Lưu ý: mệnh đề kéo theo không tương đương với mệnh đề đảo của nó).
+qa_0589;hoi_khai_niem;dai_so_menh_de;Cách biểu diễn phép kéo theo bằng phép tuyển và phủ định?;p → q ≡ ¬p ∨ q (Nếu p thì q tương đương với Không p hoặc q).
+qa_0590;hoi_khai_niem;dai_so_menh_de;Suy luận hợp logic (Valid argument) là gì?;Một suy luận (dãy các tiền đề dẫn đến kết luận) được coi là hợp logic nếu không bao giờ có trường hợp tất cả các tiền đề đều đúng mà kết luận lại sai.
+qa_0591;hoi_khai_niem;dai_so_menh_de;Tam đoạn luận Modus Ponens là gì?;Luật suy luận Modus Ponens: Nếu p → q đúng và p đúng, ta suy ra q đúng. (Tiền đề 1: p → q, Tiền đề 2: p ⊢ Kết luận: q).
+qa_0592;hoi_khai_niem;dai_so_menh_de;Tam đoạn luận giả định (Hypothetical Syllogism) là gì?;Luật suy luận bắc cầu: Nếu p → q và q → r, thì ta suy ra p → r.
+qa_0593;hoi_khai_niem;dai_so_boolean;Phép cộng trong đại số Boole (OR) có tính chất gì?;Phép cộng (+) tương đương với cổng logic OR: 0+0=0, 0+1=1, 1+0=1, 1+1=1.
+qa_0594;hoi_khai_niem;dai_so_boolean;Biến Boole là gì?;Biến Boole là biến chỉ có thể nhận một trong hai giá trị thuộc tập B = {0, 1}.
+qa_0595;hoi_khai_niem;dai_so_boolean;Hàm Boole bậc n là gì?;Hàm Boole bậc n là ánh xạ f: B^n → B. Nó nhận n biến đầu vào Boole và trả về một giá trị Boole (0 hoặc 1).
+qa_0596;hoi_khai_niem;dai_so_boolean;Có bao nhiêu hàm Boole bậc n khác nhau?;Có tất cả 2^(2^n) hàm Boole bậc n khác nhau.
+qa_0597;hoi_khai_niem;dai_so_boolean;Dạng chuẩn tắc tuyển (SOP) của hàm Boole là gì?;Là dạng biểu diễn hàm Boole dưới dạng tổng của các tích (Sum of Products). Ví dụ: f(x, y) = xy' + x'y.
+qa_0598;hoi_khai_niem;dai_so_boolean;Tích chuẩn (Minterm) là gì?;Trong hàm Boole n biến, một minterm là một tích của đúng n biến, trong đó mỗi biến xuất hiện đúng một lần (có thể dạng nguyên hoặc dạng bù).
+qa_0599;hoi_khai_niem;dai_so_boolean;Tổng chuẩn (Maxterm) là gì?;Trong hàm Boole n biến, một maxterm là một tổng của đúng n biến, trong đó mỗi biến xuất hiện đúng một lần (có thể nguyên hoặc bù).
+qa_0600;hoi_khai_niem;dai_so_boolean;Mọi hàm Boole đều có thể biểu diễn dưới dạng nào?;Mọi hàm Boole đều có thể biểu diễn duy nhất dưới dạng chuẩn tắc tuyển hoàn toàn (tổng của các minterm) hoặc chuẩn tắc hội hoàn toàn (tích của các maxterm).
+qa_0601;hoi_khai_niem;dai_so_boolean;Tính chất phần tử bù (Complement laws) trong đại số Boole?;x + x' = 1 và x . x' = 0.
+qa_0602;hoi_khai_niem;dai_so_boolean;Tính chất phần tử đồng nhất (Identity laws) trong Boole?;x + 0 = x và x . 1 = x.
+qa_0603;hoi_khai_niem;dai_so_boolean;Luật hấp thụ (Absorption laws) trong đại số Boole?;x + (x.y) = x và x.(x + y) = x.
+qa_0604;hoi_khai_niem;dai_so_boolean;Luật De Morgan biểu diễn bằng đại số Boole thế nào?;(x + y)' = x' . y' và (x . y)' = x' + y'.
+qa_0605;hoi_khai_niem;dai_so_boolean;K-map cho n biến có bao nhiêu ô?;Bìa Karnaugh cho n biến sẽ có 2^n ô, mỗi ô tương ứng với một minterm của hàm Boole.
+qa_0606;hoi_khai_niem;dai_so_boolean;Nguyên tắc ghép ô trong K-map là gì?;Các ô chứa số 1 kế cận nhau được ghép lại thành các nhóm có kích thước là lũy thừa của 2 (1, 2, 4, 8...). Mục đích là gom nhóm càng lớn càng tốt để rút gọn biến.
+qa_0607;hoi_khai_niem;dai_so_boolean;Implicant (Tế bào) trong tối thiểu hóa hàm Boole là gì?;Là một tích của các biến (chưa bị rút gọn hết cỡ) biểu diễn một nhóm các ô 1 trong K-map. Nếu nó chứa mọi phần tử 1 của hàm thì được gọi là implicant.
+qa_0608;hoi_khai_niem;dai_so_boolean;Prime Implicant (Tế bào lớn nhất) là gì?;Là tế bào không bị bao hàm bởi bất kỳ một tế bào nào lớn hơn nó trong bảng K-map.
+qa_0609;hoi_khai_niem;dai_so_boolean;Hệ chức năng đầy đủ (Functionally complete set) là gì?;Là tập hợp các phép toán Boole sao cho mọi hàm Boole đều có thể biểu diễn được bằng cách chỉ sử dụng các phép toán trong tập đó. Ví dụ: {AND, OR, NOT} hoặc chỉ {NAND} hoặc chỉ {NOR}.
+qa_0610;hoi_khai_niem;dai_so_boolean;Cổng NAND là gì?;Cổng NAND (NOT AND) là cổng đảo của AND. Kết quả bằng 0 khi tất cả đầu vào bằng 1, và bằng 1 trong các trường hợp còn lại. Cổng NAND là một hệ chức năng đầy đủ.
+qa_0611;hoi_khai_niem;dai_so_boolean;Cổng NOR là gì?;Cổng NOR (NOT OR) là cổng đảo của OR. Kết quả bằng 1 khi tất cả đầu vào bằng 0, và bằng 0 trong các trường hợp còn lại. Cổng NOR cũng là một hệ chức năng đầy đủ.
+qa_0612;hoi_khai_niem;dai_so_boolean;Mạch tổ hợp (Combinational circuit) là gì?;Là mạch logic số trong đó giá trị đầu ra ở một thời điểm chỉ phụ thuộc hoàn toàn vào giá trị đầu vào tại thời điểm đó (không có bộ nhớ lưu trạng thái).
+qa_0613;hoi_khai_niem;quan_he_anh_xa;Quan hệ hai ngôi từ A vào B là gì?;Là một tập con của tích Đề-các A × B. Nó tập hợp các cặp (a, b) trong đó a thuộc A có quan hệ với b thuộc B.
+qa_0614;hoi_khai_niem;quan_he_anh_xa;Quan hệ trên một tập hợp A là gì?;Quan hệ hai ngôi trên tập hợp A là một tập con của A × A.
+qa_0615;hoi_khai_niem;quan_he_anh_xa;Ma trận biểu diễn quan hệ (Boolean matrix) là gì?;Là ma trận vuông M trong đó phần tử m_ij = 1 nếu phần tử thứ i có quan hệ với phần tử thứ j, và m_ij = 0 nếu ngược lại.
+qa_0616;hoi_khai_niem;quan_he_anh_xa;Quan hệ ngược (Inverse relation) của R là gì?;Quan hệ ngược của R, ký hiệu R^(-1), là tập hợp các cặp (b, a) sao cho (a, b) thuộc R.
+qa_0617;hoi_khai_niem;quan_he_anh_xa;Hợp thành của hai quan hệ (Composition) S ∘ R là gì?;Nếu R là quan hệ từ A đến B, S là từ B đến C. S ∘ R chứa các cặp (a, c) sao cho tồn tại ít nhất một b thuộc B mà (a, b) ∈ R và (b, c) ∈ S.
+qa_0618;hoi_khai_niem;quan_he_anh_xa;Điều kiện ma trận của quan hệ phản xạ?;Mọi phần tử trên đường chéo chính của ma trận biểu diễn quan hệ đều bằng 1 (m_ii = 1).
+qa_0619;hoi_khai_niem;quan_he_anh_xa;Bao đóng phản xạ (Reflexive closure) của R là gì?;Là quan hệ phản xạ nhỏ nhất chứa R. Có được bằng cách thêm tất cả các cặp (a, a) vào R.
+qa_0620;hoi_khai_niem;quan_he_anh_xa;Bao đóng đối xứng (Symmetric closure) của R là gì?;Là quan hệ đối xứng nhỏ nhất chứa R. Có được bằng cách thêm các cặp (b, a) nếu có (a, b) thuộc R.
+qa_0621;hoi_khai_niem;quan_he_anh_xa;Bao đóng bắc cầu (Transitive closure) của R là gì?;Là quan hệ bắc cầu nhỏ nhất chứa R. Thường được tìm bằng thuật toán Warshall.
+qa_0622;hoi_khai_niem;quan_he_anh_xa;Thuật toán Warshall dùng làm gì?;Thuật toán Warshall dùng để tính bao đóng bắc cầu của một quan hệ (hoặc tìm ma trận đường đi trong đồ thị có hướng).
+qa_0623;hoi_khai_niem;quan_he_anh_xa;Tập thương (Quotient set) là gì?;Tập thương của tập A theo quan hệ tương đương R (ký hiệu A/R) là tập hợp tất cả các lớp tương đương rời nhau của A.
+qa_0624;hoi_khai_niem;quan_he_anh_xa;Phân hoạch của tập hợp là gì?;Phân hoạch của tập A là chia A thành các tập con không rỗng, rời nhau, sao cho hợp của tất cả các tập con này chính bằng A. Mỗi quan hệ tương đương đều tạo ra một phân hoạch và ngược lại.
+qa_0625;hoi_khai_niem;quan_he_anh_xa;Hệ thức chia hết (a chia hết cho b) là quan hệ loại gì?;Hệ thức chia hết trên tập số nguyên dương là một quan hệ thứ tự bộ phận (vì nó phản xạ, phản xứng và bắc cầu).
+qa_0626;hoi_khai_niem;quan_he_anh_xa;Phần tử tối đại (Maximal element) trong tập sắp thứ tự là gì?;Phần tử a là tối đại nếu không có phần tử nào lớn hơn nó (không có x nào sao cho a < x). Có thể có nhiều phần tử tối đại.
+qa_0627;hoi_khai_niem;quan_he_anh_xa;Phần tử lớn nhất (Greatest element) trong tập sắp thứ tự là gì?;Phần tử a là lớn nhất nếu nó lớn hơn hoặc bằng tất cả các phần tử khác trong tập (a ≥ x với mọi x). Nếu có thì chỉ có duy nhất 1 phần tử lớn nhất.
+qa_0628;hoi_khai_niem;quan_he_anh_xa;Phần tử tối tiểu (Minimal element) là gì?;Phần tử b là tối tiểu nếu không có phần tử nào nhỏ hơn nó (không có y nào sao cho y < b).
+qa_0629;hoi_khai_niem;quan_he_anh_xa;Phần tử nhỏ nhất (Least element) là gì?;Phần tử b là nhỏ nhất nếu nó nhỏ hơn hoặc bằng mọi phần tử khác trong tập. Nếu tồn tại thì chỉ có 1.
+qa_0630;hoi_khai_niem;quan_he_anh_xa;Đơn ánh (Injective function) khác gì hàm số thông thường?;Hàm số thông thường cho phép nhiều đầu vào ra cùng một đầu ra, nhưng đơn ánh bắt buộc mỗi đầu ra phải tương ứng với nhiều nhất một đầu vào.
+qa_0631;hoi_khai_niem;quan_he_anh_xa;Điều kiện để tồn tại đơn ánh từ tập A sang tập B hữu hạn là gì?;Số lượng phần tử của A phải nhỏ hơn hoặc bằng số lượng phần tử của B (|A| ≤ |B|).
+qa_0632;hoi_khai_niem;quan_he_anh_xa;Số lượng các hàm số (ánh xạ) từ tập A (m phần tử) sang tập B (n phần tử) là bao nhiêu?;Tổng số hàm số là n^m.
+qa_0633;hoi_khai_niem;quan_he_anh_xa;Số lượng đơn ánh từ tập A (m phần tử) sang tập B (n phần tử) với m ≤ n là bao nhiêu?;Là số chỉnh hợp chập m của n: P(n, m) = n! / (n - m)!.
+qa_0634;hoi_khai_niem;quan_he_anh_xa;Số lượng song ánh từ tập A vào chính nó (|A|=n) là bao nhiêu?;Số lượng song ánh bằng số hoán vị của n phần tử, tức là n!.
+qa_0635;hoi_khai_niem;xau_ky_tu;Bảng chữ cái (Alphabet) là gì?;Bảng chữ cái (ký hiệu thường là Σ) là một tập hợp hữu hạn, khác rỗng các ký hiệu (character/symbol).
+qa_0636;hoi_khai_niem;xau_ky_tu;Xâu ký tự (String/Word) là gì?;Xâu ký tự trên một bảng chữ cái Σ là một dãy hữu hạn các ký hiệu được lấy từ Σ.
+qa_0637;hoi_khai_niem;xau_ky_tu;Độ dài của xâu (String length) là gì?;Độ dài của xâu w (ký hiệu |w|) là số lượng các ký hiệu cấu thành nên xâu đó.
+qa_0638;hoi_khai_niem;xau_ky_tu;Xâu rỗng (Empty string) là gì?;Xâu rỗng (thường ký hiệu là λ hoặc ε) là xâu không chứa ký hiệu nào. Độ dài của xâu rỗng là 0 (|ε| = 0).
+qa_0639;hoi_khai_niem;xau_ky_tu;Phép ghép xâu (Concatenation) là gì?;Là thao tác nối xâu v vào sau xâu u để tạo thành xâu mới uv. Độ dài |uv| = |u| + |v|.
+qa_0640;hoi_khai_niem;xau_ky_tu;Xâu con (Substring) là gì?;Xâu v là xâu con của w nếu w có thể viết thành dạng xvy, trong đó x và y có thể là các xâu rỗng hoặc bất kỳ xâu nào.
+qa_0641;hoi_khai_niem;xau_ky_tu;Tiền tố (Prefix) của xâu là gì?;Tiền tố của xâu w là phần đầu của xâu đó. Nếu w = xy, thì x là một tiền tố của w (x có thể là xâu rỗng hoặc chính w).
+qa_0642;hoi_khai_niem;xau_ky_tu;Hậu tố (Suffix) của xâu là gì?;Hậu tố của xâu w là phần cuối của xâu đó. Nếu w = xy, thì y là một hậu tố của w.
+qa_0643;hoi_khai_niem;xau_ky_tu;Xâu đảo ngược (Reversal) là gì?;Xâu đảo ngược của w (ký hiệu w^R) là xâu được viết theo thứ tự ngược lại các ký tự của w. Ví dụ: (abc)^R = cba.
+qa_0644;hoi_khai_niem;xau_ky_tu;Ngôn ngữ hình thức (Formal Language) là gì?;Một ngôn ngữ L trên bảng chữ cái Σ là một tập hợp bất kỳ gồm các xâu ký tự được tạo ra từ Σ. (L là tập con của Σ*).
+qa_0645;hoi_khai_niem;xau_ky_tu;Bao đóng Kleene (Kleene Star) Σ* là gì?;Σ* là tập hợp tất cả các xâu có thể tạo ra từ bảng chữ cái Σ (bao gồm cả xâu rỗng ε).
+qa_0646;hoi_khai_niem;xau_ky_tu;Bao đóng dương (Positive Closure) Σ+ là gì?;Σ+ là tập hợp tất cả các xâu có thể tạo ra từ bảng chữ cái Σ nhưng KHÔNG bao gồm xâu rỗng ε. (Σ+ = Σ* - {ε}).
+qa_0647;hoi_khai_niem;xau_ky_tu;Biểu thức chính quy (Regular Expression) là gì?;Là một chuỗi ký tự định nghĩa một mẫu tìm kiếm. Trong toán rời rạc, nó dùng để biểu diễn một cách chính xác một ngôn ngữ chính quy.
+qa_0648;hoi_khai_niem;xau_ky_tu;Các phép toán cơ bản trong Biểu thức chính quy là gì?;Bao gồm 3 phép toán: Hợp (Union, ký hiệu + hoặc |), Ghép (Concatenation, ký hiệu . hoặc viết liền), và Bao đóng Kleene (*).
+qa_0649;hoi_khai_niem;xau_ky_tu;Ngôn ngữ chính quy (Regular Language) là gì?;Là ngôn ngữ có thể được biểu diễn bằng một biểu thức chính quy, và có thể được đoán nhận bởi một Otomat hữu hạn (FSA).
+qa_0650;hoi_khai_niem;xau_ky_tu;Otomat hữu hạn đơn định (DFA) là gì?;DFA là mô hình máy trạng thái hữu hạn trong đó từ mỗi trạng thái, với mỗi ký hiệu đầu vào chỉ có đúng một sự chuyển đổi duy nhất sang trạng thái tiếp theo.
+qa_0651;hoi_khai_niem;xau_ky_tu;Định lý Kleene về DFA và Biểu thức chính quy là gì?;Định lý phát biểu rằng một ngôn ngữ được đoán nhận bởi một DFA khi và chỉ khi nó có thể được biểu diễn bằng một biểu thức chính quy.
+qa_0652;hoi_khai_niem;xau_ky_tu;Sự tương đương giữa DFA và NFA?;Mọi ngôn ngữ được đoán nhận bởi một NFA đều có thể được đoán nhận bởi một DFA. Nghĩa là DFA và NFA có sức mạnh biểu diễn ngôn ngữ tương đương nhau.
+qa_0653;hoi_khai_niem;xau_ky_tu;Hợp của hai ngôn ngữ L1 ∪ L2 là gì?;Là ngôn ngữ chứa các xâu thuộc L1 hoặc thuộc L2 (hoặc cả hai).
+qa_0654;hoi_khai_niem;xau_ky_tu;Bao đóng Kleene L* của ngôn ngữ L là gì?;Là hợp của L^0, L^1, L^2... Tức là tập hợp tất cả các xâu tạo bằng cách ghép nối một số lượng hữu hạn bất kỳ (kể cả 0) các xâu từ L.
+qa_0655;hoi_khai_niem;xau_ky_tu;Ngữ pháp (Grammar) hình thức là gì?;Là một tập các quy tắc sản xuất dùng để sinh ra các xâu của một ngôn ngữ. Ký hiệu G = (V, T, S, P) với V là biến, T là kết thúc, S là bắt đầu, P là luật sinh.
+qa_0656;hoi_khai_niem;xau_ky_tu;Ký hiệu kết thúc (Terminal) và không kết thúc (Non-terminal) là gì?;Ký hiệu kết thúc (Terminal) là các ký tự thực sự xuất hiện trong xâu kết quả. Ký hiệu không kết thúc (Biến/Non-terminal) dùng trong quá trình sinh xâu và sẽ bị thay thế dần.
+qa_0657;hoi_khai_niem;xau_ky_tu;Ngữ pháp phi ngữ cảnh (Context-Free Grammar - CFG) là gì?;Là ngữ pháp mà mọi luật sinh đều có dạng A → α, trong đó A là một ký hiệu không kết thúc duy nhất và α là xâu bất kỳ gồm kết thúc và không kết thúc.
+qa_1001;hoi_dinh_nghia;ly_thuyet_do_thi;Đồ thị Hamilton có tính chất gì?;Có chu trình đi qua mọi đỉnh đúng 1 lần.
+qa_1002;hoi_dinh_nghia;ly_thuyet_do_thi;Số màu tối đa của đồ thị hai phía là bao nhiêu?;Tối đa là 2.
+qa_1003;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị K_5 có phẳng không?;Không, theo định lý Kuratowski.
+qa_1004;hoi_khai_niem;ly_thuyet_do_thi;Đồ thị K_3,3 có phẳng không?;Không, theo định lý Kuratowski.
+qa_1005;hoi_cong_thuc;ly_thuyet_do_thi;Tổng bậc của các đỉnh trong đồ thị bằng gì?;Bằng 2 lần số cạnh.
+qa_1006;hoi_cong_thuc;ly_thuyet_do_thi;Cây có n đỉnh thì có bao nhiêu cạnh?;Có n-1 cạnh.
+qa_1007;hoi_dinh_nghia;ly_thuyet_do_thi;Rừng là gì trong lý thuyết đồ thị?;Là đồ thị không có chu trình.
+qa_1008;hoi_dinh_nghia;ly_thuyet_do_thi;Bậc của đỉnh treo là bao nhiêu?;Bậc bằng 1.
+qa_1009;hoi_dinh_nghia;ly_thuyet_do_thi;Đỉnh cô lập có bậc là bao nhiêu?;Bậc bằng 0.
+qa_1010;hoi_cong_thuc;ly_thuyet_do_thi;Đồ thị đầy đủ K_n có bao nhiêu cạnh?;Có n(n-1)/2 cạnh.
+qa_1011;hoi_dinh_nghia;ly_thuyet_do_thi;Bất đẳng thức tam giác trong đồ thị có trọng số là gì?;Trọng số đường đi từ u đến v không lớn hơn tổng trọng số từ u đến w và từ w đến v.
+qa_1012;hoi_dieu_kien;ly_thuyet_do_thi;Đồ thị Euler cần điều kiện gì về bậc của các đỉnh?;Mọi đỉnh đều có bậc chẵn.
+qa_1013;hoi_dieu_kien;ly_thuyet_do_thi;Đường đi Euler cần điều kiện gì?;Có đúng 0 hoặc 2 đỉnh bậc lẻ.
+qa_1014;hoi_cong_thuc;ly_thuyet_do_thi;Sắc số của đồ thị đầy đủ K_n là bao nhiêu?;Là n.
+qa_1015;hoi_cong_thuc;ly_thuyet_do_thi;Sắc số của đồ thị chu trình C_n với n chẵn là bao nhiêu?;Là 2.
+qa_1016;hoi_cong_thuc;ly_thuyet_do_thi;Sắc số của đồ thị chu trình C_n với n lẻ là bao nhiêu?;Là 3.
+qa_1017;hoi_dinh_nghia;ly_thuyet_do_thi;Bán bậc ra của một đỉnh trong đồ thị có hướng là gì?;Số cung đi ra khỏi đỉnh đó.
+qa_1018;hoi_cong_thuc;ly_thuyet_do_thi;Đồ thị vòng n đỉnh có bao nhiêu cạnh?;Có n cạnh.
+qa_1019;hoi_cong_thuc;ly_thuyet_do_thi;Đồ thị lập phương Q_n có bao nhiêu đỉnh?;Có 2^n đỉnh.
+qa_1020;hoi_cong_thuc;ly_thuyet_do_thi;Đồ thị lập phương Q_n có bậc mỗi đỉnh là bao nhiêu?;Bậc là n.
+qa_1021;hoi_dieu_kien;nguyen_ly_dem;Quy tắc cộng trong tổ hợp áp dụng khi nào?;Khi các trường hợp độc lập và rời nhau.
+qa_1022;hoi_dieu_kien;nguyen_ly_dem;Quy tắc nhân áp dụng khi nào?;Khi các bước thực hiện liên tiếp nhau.
+qa_1023;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Số hoán vị của n phần tử là gì?;Là n! (n giai thừa).
+qa_1024;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Công thức tổ hợp chập k của n là gì?;Là n! / (k!(n-k)!).
+qa_1025;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Công thức chỉnh hợp chập k của n là gì?;Là n! / (n-k)!.
+qa_1026;hoi_noi_dung_dinh_ly;nguyen_ly_dem;Nguyên lý chuồng bồ câu phát biểu như thế nào?;Xếp n+1 vật vào n chuồng thì có ít nhất 1 chuồng chứa ít nhất 2 vật.
+qa_1027;hoi_noi_dung_dinh_ly;nguyen_ly_dem;Nguyên lý Dirichlet mở rộng là gì?;Xếp kn+1 vật vào n chuồng thì có ít nhất 1 chuồng chứa ít nhất k+1 vật.
+qa_1028;hoi_ung_dung;nguyen_ly_dem;Tam giác Pascal dùng để làm gì?;Dùng để tính các hệ số tổ hợp nhanh chóng.
+qa_1029;hoi_cong_thuc;nhi_thuc_to_hop;Khai triển nhị thức Newton cho (a+b)^n có bao nhiêu số hạng?;Có n+1 số hạng.
+qa_1030;hoi_cong_thuc;nhi_thuc_to_hop;Tổng các hệ số tổ hợp C(n,k) từ k=0 đến n là bao nhiêu?;Bằng 2^n.
+qa_1031;hoi_cong_thuc;ly_thuyet_tap_hop;Số tập con của tập hợp có n phần tử là bao nhiêu?;Có 2^n tập con.
+qa_1032;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Số chỉnh hợp lặp chập k của n phần tử là gì?;Là n^k.
+qa_1033;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Số tổ hợp lặp chập k của n phần tử là gì?;Là C(n+k-1, k).
+qa_1034;hoi_khai_niem;nguyen_ly_dem;Bài toán chia kẹo Euler tương đương với việc đếm gì?;Đếm số nghiệm nguyên không âm của phương trình x_1 + ... + x_n = k.
+qa_1035;hoi_cong_thuc;to_hop_chinh_hop_hoan_vi;Số lượng cách xếp n người vào bàn tròn là bao nhiêu?;Là (n-1)! cách.
+qa_1036;hoi_dinh_nghia;to_hop_chinh_hop_hoan_vi;Đếm số cách chọn k phần tử từ n phần tử không quan tâm thứ tự là phép toán gì?;Là phép toán Tổ hợp.
+qa_1037;hoi_ung_dung;nguyen_ly_dem;Hàm sinh dùng để làm gì trong tổ hợp?;Dùng để giải các bài toán đếm và hệ thức truy hồi.
+qa_1038;hoi_cong_thuc;nguyen_ly_dem;Hệ thức truy hồi của dãy Fibonacci là gì?;Là F(n) = F(n-1) + F(n-2).
+qa_1039;hoi_cong_thuc;ly_thuyet_do_thi;Số lượng chu trình Hamilton trong K_n là bao nhiêu?;Là (n-1)! / 2.
+qa_1040;hoi_cong_thuc;ly_thuyet_do_thi;Đồ thị song phân K_m,n có bao nhiêu cạnh?;Có m*n cạnh.
+qa_1041;hoi_dinh_nghia;logic_menh_de;Mệnh đề logic là gì?;Là một câu khẳng định chỉ có thể đúng hoặc sai.
+qa_1042;hoi_ky_hieu;logic_menh_de;Ký hiệu phủ định mệnh đề P là gì?;Là ¬P.
+qa_1043;hoi_dieu_kien;logic_menh_de;Phép hội (AND) P ∧ Q đúng khi nào?;Khi cả P và Q đều đúng.
+qa_1044;hoi_dieu_kien;logic_menh_de;Phép tuyển (OR) P ∨ Q sai khi nào?;Khi cả P và Q đều sai.
+qa_1045;hoi_dieu_kien;logic_menh_de;Phép kéo theo P -> Q sai khi nào?;Khi P đúng nhưng Q sai.
+qa_1046;hoi_dieu_kien;logic_menh_de;Phép tương đương P <-> Q đúng khi nào?;Khi P và Q có cùng giá trị chân lý.
+qa_1047;hoi_cong_thuc;logic_menh_de;Luật De Morgan cho phủ định của hội là gì?;¬(P ∧ Q) <=> ¬P ∨ ¬Q.
+qa_1048;hoi_cong_thuc;logic_menh_de;Luật De Morgan cho phủ định của tuyển là gì?;¬(P ∨ Q) <=> ¬P ∧ ¬Q.
+qa_1049;hoi_dinh_nghia;logic_menh_de;Hằng đúng (Tautology) là mệnh đề như thế nào?;Luôn đúng trong mọi trường hợp.
+qa_1050;hoi_dinh_nghia;logic_menh_de;Hằng sai (Contradiction) là mệnh đề như thế nào?;Luôn sai trong mọi trường hợp.
+qa_1051;hoi_cong_thuc;logic_menh_de;Luật hấp thụ cho phép hội và tuyển là gì?;P ∨ (P ∧ Q) <=> P và P ∧ (P ∨ Q) <=> P.
+qa_1052;hoi_cong_thuc;logic_menh_de;Luật thống trị trong logic mệnh đề là gì?;P ∨ True <=> True, P ∧ False <=> False.
+qa_1053;hoi_cong_thuc;logic_menh_de;Luật đồng nhất trong logic mệnh đề là gì?;P ∧ True <=> P, P ∨ False <=> P.
+qa_1054;hoi_dinh_nghia;logic_menh_de;Modus Ponens là quy tắc suy luận nào?;Nếu P và P -> Q thì suy ra Q.
+qa_1055;hoi_dinh_nghia;logic_menh_de;Modus Tollens là quy tắc suy luận nào?;Nếu ¬Q và P -> Q thì suy ra ¬P.
+qa_1056;hoi_noi_dung_dinh_ly;logic_menh_de;Tam đoạn luận (Syllogism) phát biểu gì?;Nếu P -> Q và Q -> R thì suy ra P -> R.
+qa_1057;hoi_khai_niem;logic_menh_de;Mệnh đề đảo của P -> Q là gì?;Là Q -> P.
+qa_1058;hoi_khai_niem;logic_menh_de;Mệnh đề phản của P -> Q là gì?;Là ¬P -> ¬Q.
+qa_1059;hoi_khai_niem;logic_menh_de;Mệnh đề phản đảo của P -> Q là gì?;Là ¬Q -> ¬P.
+qa_1060;hoi_tinh_chat;logic_menh_de;Tính chất logic của mệnh đề phản đảo là gì?;Luôn tương đương logic với mệnh đề gốc P -> Q.
+qa_1061;hoi_dinh_nghia;ly_thuyet_tap_hop;Tập hợp là gì?;Là một nhóm các đối tượng phân biệt.
+qa_1062;hoi_cong_thuc;ly_thuyet_tap_hop;Tập hợp rỗng có bao nhiêu phần tử?;Không có phần tử nào.
+qa_1063;hoi_cong_thuc;ly_thuyet_tap_hop;Giao của tập A và tập rỗng là gì?;Là tập rỗng.
+qa_1064;hoi_cong_thuc;ly_thuyet_tap_hop;Hợp của tập A và tập rỗng là gì?;Là tập A.
+qa_1065;hoi_dinh_nghia;ly_thuyet_tap_hop;Tập con của một tập hợp được định nghĩa thế nào?;Mọi phần tử của nó đều thuộc tập hợp kia.
+qa_1066;hoi_dinh_nghia;ly_thuyet_tap_hop;Tập lũy thừa của tập A là gì?;Là tập hợp chứa tất cả các tập con của A.
+qa_1067;hoi_ky_hieu;ly_thuyet_tap_hop;Ký hiệu của tập hợp các số tự nhiên là gì?;Là N.
+qa_1068;hoi_ky_hieu;ly_thuyet_tap_hop;Ký hiệu của tập hợp các số nguyên là gì?;Là Z.
+qa_1069;hoi_cong_thuc;ly_thuyet_tap_hop;Lực lượng của tập hợp A ∪ B được tính bằng công thức nào?;|A| + |B| - |A ∩ B|.
+qa_1070;hoi_dinh_nghia;ly_thuyet_tap_hop;Tích Đề-các của tập A và B là gì?;Tập các cặp có thứ tự (a,b) với a thuộc A, b thuộc B.
+qa_1071;hoi_dinh_nghia;quan_he_anh_xa;Quan hệ 2 ngôi là gì?;Là tập con của tích Đề-các.
+qa_1072;hoi_dieu_kien;quan_he_anh_xa;Quan hệ tương đương cần thỏa mãn các tính chất nào?;Phản xạ, đối xứng, bắc cầu.
+qa_1073;hoi_dieu_kien;quan_he_anh_xa;Quan hệ thứ tự bộ phận cần thỏa mãn các tính chất nào?;Phản xạ, phản xứng, bắc cầu.
+qa_1074;hoi_dinh_nghia;quan_he_anh_xa;Tính phản xạ của quan hệ R trên A là gì?;Mọi phần tử a thuộc A đều có (a,a) thuộc R.
+qa_1075;hoi_dinh_nghia;quan_he_anh_xa;Lớp tương đương là gì?;Tập các phần tử có quan hệ tương đương với nhau.
+qa_1076;hoi_dinh_nghia;quan_he_anh_xa;Phân hoạch của tập hợp là gì?;Chia tập hợp thành các tập con khác rỗng và rời nhau.
+qa_1077;hoi_dinh_nghia;quan_he_anh_xa;Đơn ánh là hàm số có tính chất gì?;Mọi phần tử khác nhau của tập nguồn đều có ảnh khác nhau.
+qa_1078;hoi_dinh_nghia;quan_he_anh_xa;Toàn ánh là hàm số có tính chất gì?;Tập giá trị bằng tập đích.
+qa_1079;hoi_dinh_nghia;quan_he_anh_xa;Song ánh là gì?;Vừa là đơn ánh vừa là toàn ánh.
+qa_1080;hoi_dieu_kien;quan_he_anh_xa;Hàm số ngược chỉ tồn tại khi nào?;Khi hàm số đó là một song ánh.
+qa_1081;hoi_dinh_nghia;quan_he_anh_xa;Hàm hợp g(f(x)) là gì?;Áp dụng f lên x trước rồi áp dụng g lên kết quả.
+qa_1082;hoi_dinh_nghia;quan_he_anh_xa;Hàm sàn của số thực x là gì?;Số nguyên lớn nhất không vượt quá x.
+qa_1083;hoi_dinh_nghia;quan_he_anh_xa;Hàm trần của số thực x là gì?;Số nguyên nhỏ nhất lớn hơn hoặc bằng x.
+qa_1084;hoi_dinh_nghia;quan_he_anh_xa;Quan hệ đối xứng là gì?;Nếu có (a,b) thì cũng có (b,a).
+qa_1085;hoi_dinh_nghia;quan_he_anh_xa;Quan hệ phản xứng là gì?;Nếu có (a,b) và (b,a) thì a phải bằng b.
+qa_1086;hoi_dinh_nghia;dai_so_boole;Hàm Boole là gì?;Hàm nhận giá trị đầu vào và đầu ra thuộc tập {0, 1}.
+qa_1087;hoi_dinh_nghia;dai_so_boole;Chuẩn tắc DNF là viết tắt của gì?;Dạng chuẩn tắc tuyển (Disjunctive Normal Form).
+qa_1088;hoi_dinh_nghia;dai_so_boole;Chuẩn tắc CNF là viết tắt của gì?;Dạng chuẩn tắc hội (Conjunctive Normal Form).
+qa_1089;hoi_ung_dung;dai_so_boole;Bìa Karnaugh dùng làm gì?;Dùng để rút gọn biểu thức Boole.
+qa_1090;hoi_khai_niem;dai_so_boole;Cổng NAND là gì?;Là phủ định của cổng AND.
+qa_1091;hoi_khai_niem;dai_so_boole;Cổng NOR là gì?;Là phủ định của cổng OR.
+qa_1092;hoi_khai_niem;dai_so_boole;Cổng XOR thực hiện phép toán gì?;Tuyển loại trừ, chỉ đúng khi hai ngõ vào khác nhau.
+qa_1093;hoi_khai_niem;dai_so_boole;Cổng XNOR là gì?;Phủ định của XOR, đúng khi hai ngõ vào giống nhau.
+qa_1094;hoi_tinh_chat;dai_so_boole;Đại số Boole tuân theo luật giao hoán không?;Có, cả AND và OR đều giao hoán.
+qa_1095;hoi_tinh_chat;ly_thuyet_do_thi;Trong đồ thị, Ma trận kề của đồ thị vô hướng có tính chất gì?;Là ma trận đối xứng.
+qa_1096;hoi_cong_thuc;ly_thuyet_do_thi;Tổng các phần tử trên một hàng của ma trận kề bằng gì?;Bằng bậc của đỉnh tương ứng.
+qa_1097;hoi_dieu_kien;ly_thuyet_do_thi;Đồ thị có hướng gọi là liên thông mạnh khi nào?;Có đường đi có hướng giữa mọi cặp đỉnh.
+qa_1098;hoi_cong_thuc;ly_thuyet_do_thi;Rừng gồm k cây và n đỉnh thì có bao nhiêu cạnh?;Có n-k cạnh.
+qa_1099;hoi_tinh_chat;ly_thuyet_do_thi;Đường chéo chính của ma trận kề trong đơn đồ thị chứa giá trị gì?;Chứa toàn số 0.
+qa_1100;hoi_ky_hieu;ly_thuyet_tap_hop;Tập hợp các số vô tỉ được ký hiệu là gì?;Ký hiệu là I hoặc R \ Q.
